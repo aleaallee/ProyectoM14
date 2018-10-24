@@ -1,0 +1,55 @@
+.nav{
+  position: absolute;
+  z-index: 1;
+  a.logo{
+    float: left;
+    position: absolute;
+    font-size: 2vw;
+    text-decoration: none;
+    color: $text;
+    margin: 0.25em 0 0 7em;
+  }
+  .navbar{
+    ul{
+      display: flex;
+      float: left;
+      justify-content: center;
+      list-style-type: none;
+      width: 100%;
+      @include reset;
+      padding-left: 34vw;
+      padding-right: 25vw;
+      margin-top: 1.7em;
+
+      li{
+        flex-wrap: wrap;
+
+        @media(min-width: 1000px){
+          font-family: "Lato";
+          float: right;
+          padding: 10px 43.5px 10px 43.5px;;
+          flex: 1;
+          background-color: rgba(#ffaa00, 0.5);
+
+          &.logo{
+            margin-left: -510px;
+          }
+
+          &.user{
+            text-align: right;
+          }
+
+        }
+        
+        a{
+          text-decoration: none;
+          color: $text;
+          font-size: $font-header-size;
+        }
+      }
+    }
+  }
+  div.user{
+    
+  }
+}

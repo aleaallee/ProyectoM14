@@ -19,7 +19,6 @@
       @include reset;
       padding-left: 34vw;
       padding-right: 25vw;
-      margin-top: 1.7em;
 
       li{
         flex-wrap: wrap;
@@ -27,16 +26,23 @@
         @media(min-width: 1000px){
           font-family: "Lato";
           float: right;
-          padding: 10px 43.5px 10px 43.5px;;
+          padding: 2.7em 4.35em 1em 4.35em;
           flex: 1;
-          background-color: rgba(#ffaa00, 0.5);
+          //background-color: rgba(#ffaa00, 0.5);
 
-          &.logo{
-            margin-left: -510px;
-          }
+          
 
           &.user{
-            text-align: right;
+            margin: 0;
+            padding-top: 0.25em;
+            svg{
+              width: 3.5em;
+              cursor: pointer;
+              transition: .15s fill ease-in-out;
+              &:active{
+                fill: rgba(179, 178, 175, 0.92);
+              }
+            }
           }
 
         }
@@ -49,7 +55,5 @@
       }
     }
   }
-  div.user{
-    
-  }
+  
 }

@@ -3,10 +3,12 @@ body{
   font-family: Lato;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 main{
   &.hero{
-      background: url("../img/main-1.jpg");
+    .mainimage{
+      background: url("../img/main-1.png");
       background-attachment:  fixed;
       background-position:  top;
       background-repeat:  no-repeat;
@@ -14,7 +16,23 @@ main{
       display: block;
       width: 100%;
       height: 100vh;
-      filter: blur(5px);
-      background-color: #ffaa;
+      position: relative;
+      z-index: -1;
+    }
+    
+  }
+  section.apdinfo{ 
+    background-color: rgba(91, 104, 124, 0.7);
+    width: 45em;
+    margin: auto;
+    margin-top: -29.4em;
+    border-radius: 25px 25px 0px 0px;
+    p{
+      font-size: 1.8em;
+      color: $text;
+      padding: 1em;
+      text-align: justify;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.47);
+    }
   }
 }

@@ -11,10 +11,11 @@ $(document).ready(function(){
         }, function(){
             var initwidth = $('.actual').width();
             if ($(window).width() > 1900) {
-                $('span.bar').css({'left': '37.3vw', 'width': initwidth});
+                $('span.bar').css({'left': '40.1vw', 'width': initwidth});
             }else{
                 $('span.bar').css({'left': '39vw', 'width': initwidth});
             }
+            
         });
     });
 });

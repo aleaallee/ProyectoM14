@@ -109,7 +109,7 @@ body {
 }
 
 main.hero .mainimage {
-  background: url("../img/main-1.png");
+  background: url("../assets/img/main-1.png");
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
@@ -138,11 +138,26 @@ main section.apdinfo p {
 }
 
 section.slider {
-  width: 300vw;
+  width: 100vw;
 }
 
-section.slider .images img {
-  float: left;
-  widows: 100vw;
+.slick-slide {
+  height: 400px;
+}
+
+.slick-slide img {
+  height: 400px;
+}
+
+.slick-arrow {
+  z-index: 10;
+}
+
+.slick-prev {
+  left: 0;
+}
+
+.slick-next {
+  right: 0;
 }
 /*# sourceMappingURL=main.css.map */

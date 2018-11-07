@@ -108,6 +108,10 @@ body {
   overflow-x: hidden;
 }
 
+main.hero {
+  margin-bottom: -1.8em;
+}
+
 main.hero .mainimage {
   background: url("../assets/img/main-1.png");
   background-attachment: fixed;

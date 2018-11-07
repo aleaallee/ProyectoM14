@@ -4,9 +4,11 @@ body{
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  //background-color: #3A7CA5;
 }
 main{
   &.hero{
+    margin-bottom: -1.8em;
     .mainimage{
       background: url("../assets/img/main-1.png");
       background-attachment:  fixed;

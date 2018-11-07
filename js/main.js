@@ -1,4 +1,4 @@
-var links = document.querySelectorAll('.navbar > ul > li > a');
+var links = document.querySelectorAll('.navbar > ul > .menu > li  > a');
 for(var link of links){
   console.log(link);
   link.addEventListener('click', function(e){

@@ -8,7 +8,7 @@
     display: flex;
     background-color: #5C687C;
     width: 65vw;
-    height: 65em;
+    height: 60em;
     margin-left: 27em;
     margin-top: 10em;
 
@@ -87,6 +87,13 @@
             background-color: #1b8849;
           }
         }
+
+        .errortext{
+          font-size: 2em;
+          text-align: center;
+          color: red;
+        }
+
       }
     }
 

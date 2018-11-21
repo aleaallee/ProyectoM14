@@ -9,5 +9,16 @@ $(document).on("submit", "form.regform", function(event){
         password : $("input[name='password']", form).val(),
         reppassword : $("input[name='reppassword']", form).val()
     }
+    //Texto de error
+    var errtext = $("p.errortext", form);
     console.table(datos);
+    $.ajax({
+        type: "post",
+        url: "/php/register.php",
+        data: datos,
+        dataType: "json",
+        success: function (response) {
+            
+        }
+    });
 });

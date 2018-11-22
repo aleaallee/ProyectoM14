@@ -23,11 +23,11 @@
   <header class="nav">
     <div class="navbar">
       <ul role="navigation">
-        <li class="logo"><a href="index.html">A.P.D.2</a></li>
+        <li class="logo"><a href="index.php">A.P.D.2</a></li>
         <div class="menu">
-          <li class="obj-nav actual"><a href="index.html">Home</a></li>
-          <li class="obj-nav"><a href="gallery.html">Gallery</a></li>
-          <li class="obj-nav"><a href="contact.html">Contact</a></li>
+          <li class="obj-nav actual"><a href="index.php">Home</a></li>
+          <li class="obj-nav"><a href="gallery.php">Gallery</a></li>
+          <li class="obj-nav"><a href="contact.php">Contact</a></li>
           <span class="bar"></span>
         </div>
         <li class="user obj-nav">

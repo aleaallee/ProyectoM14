@@ -4,29 +4,31 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>A.P.D 2 - User access</title>
+  <title>A.P.D 2 - Inicio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A.P.D.2 - User access">
+  <meta name="description" content="A.P.D.2 Alexa Play Despacito 2">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
   <link rel="stylesheet" href="assets/slick/slick.css">
   <link rel="stylesheet" href="assets/slick/slick-theme.css">
-  <script src="js/jquery-3.3.1.min.js.js"></script>
+  <script src="js/jquery-3.3.1.min.js.js" ></script>
   <script src="assets/slick/slick.min.js" defer></script>
   <script src="js/main.js" defer></script>
-  <script src="js/register.js" defer></script>
+  <script src="js/register.js"></script>
+  <script src="js/nav.js" defer></script>
   <script src="js/slider.js" defer></script>
 </head>
 
-<body bgcolor="#3A7CA5">
+<body>
   <header class="nav">
     <div class="navbar">
       <ul role="navigation">
-        <li class="logo"><a href="index.html">A.P.D.2</a></li>
+        <li class="logo"><a href="index.php">A.P.D.2</a></li>
         <div class="menu">
-          <li class="obj-nav"><a href="index.html">Home</a></li>
-          <li class="obj-nav"><a href="gallery.html">Gallery</a></li>
-          <li class="obj-nav"><a href="contact.html">Contact</a></li>
+          <li class="obj-nav "><a href="index.php">Home</a></li>
+          <li class="obj-nav actual"><a href="gallery.php">Gallery</a></li>
+          <li class="obj-nav"><a href="contact.php">Contact</a></li>
+          <span class="bar"></span>
         </div>
         <li class="user">
           <svg viewBox="0 0 56 65" fill="white" xmlns="http://www.w3.org/2000/svg">
@@ -37,47 +39,23 @@
       </ul>
     </div>
   </header>
-  <main class="reglogin">
-    <div class="splitsec">
-      <div class="login">
-        <form enctype="multipart/form-data" class="loginform">
-          <div class="input">
-            <label for="user"></label>
-            <input type="text" name="user" placeholder="User" maxlength="15" required>
-          </div>
-          <div class="input">
-            <label for="password"></label>
-            <input type="password" name="password" placeholder="Password" maxlength="16" required>
-          </div>
-          <button class="loginbutton" type="submit">Login</button>
-        </form>
-      </div>
-      <div class="reg">
-        <form enctype="multipart/form-data" class="regform">
-          <div class="input">
-            <label for="user"></label>
-            <input type="text" name="user" placeholder="User" maxlength="15" required>
-          </div>
-          <div class="input">
-            <label for="email"></label>
-            <input type="email" name="email" placeholder="Email" required>
-          </div>
-          <div class="input">
-            <label for="password"></label>
-            <input type="password" name="password" placeholder="Password" maxlength="15" required>
-          </div>
-          <div class="input">
-            <label for="reppassword"></label>
-            <input type="password" name="reppassword" placeholder="Repeat password" maxlength="15" autocomplete="current-password"
-              required>
-          </div>
-          <p class="errortext"></p>
-          <button class="registerbutton" type="submit">Register</button>
-        </form>
-      </div>
-    </div>
+  <main class="hero">
+    <div class="mainimage"></div>
+    <section class="apdinfo">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt sollicitudin dui, in iaculis turpis fringilla vehicula. Vivamus nunc odio, ultrices at risus ut, fermentum venenatis lorem. Mauris elit libero, hendrerit ac felis ut, malesuada varius lectus. Donec a interdum nunc. Nullam elit neque, ultrices aliquet pretium pulvinar, varius in mauris. Nunc id quam eu velit hendrerit iaculis. Etiam in felis vitae nisi maximus vestibulum eget eu ante. Pellentesque elementum odio sed purus suscipit, quis interdum leo condimentum. Sed venenatis leo luctus odio feugiat consectetur. </p>
+    </section>
   </main>
-
+  <section class="slider">
+    <div>
+      <img src="assets/img/2.jpg" alt="img1">
+    </div>
+    <div>
+      <img src="assets/img/3.jpg" alt="img1">
+    </div>
+    <div>
+      <img src="assets/img/4.png" alt="img1">
+    </div>
+  </section>
   <footer>
     <div class="linkgroup">
       <ul class="links">

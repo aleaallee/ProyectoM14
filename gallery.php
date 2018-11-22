@@ -39,23 +39,10 @@
       </ul>
     </div>
   </header>
-  <main class="hero">
-    <div class="mainimage"></div>
-    <section class="apdinfo">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt sollicitudin dui, in iaculis turpis fringilla vehicula. Vivamus nunc odio, ultrices at risus ut, fermentum venenatis lorem. Mauris elit libero, hendrerit ac felis ut, malesuada varius lectus. Donec a interdum nunc. Nullam elit neque, ultrices aliquet pretium pulvinar, varius in mauris. Nunc id quam eu velit hendrerit iaculis. Etiam in felis vitae nisi maximus vestibulum eget eu ante. Pellentesque elementum odio sed purus suscipit, quis interdum leo condimentum. Sed venenatis leo luctus odio feugiat consectetur. </p>
-    </section>
+  <main class="gallery">
+  
   </main>
-  <section class="slider">
-    <div>
-      <img src="assets/img/2.jpg" alt="img1">
-    </div>
-    <div>
-      <img src="assets/img/3.jpg" alt="img1">
-    </div>
-    <div>
-      <img src="assets/img/4.png" alt="img1">
-    </div>
-  </section>
+  
   <footer>
     <div class="linkgroup">
       <ul class="links">

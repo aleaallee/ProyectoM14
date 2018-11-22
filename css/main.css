@@ -416,4 +416,10 @@ footer .linkgroup ul li a:hover {
 main.reglogin + footer {
   margin-top: 100px;
 }
+
+main.gallery {
+  width: 100vw;
+  height: 100vh;
+  background-color: #5C687C;
+}
 /*# sourceMappingURL=main.css.map */

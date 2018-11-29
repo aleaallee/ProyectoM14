@@ -507,4 +507,11 @@ main.gallery section.img-grid .img {
 main.gallery section.img-grid .img img {
   width: inherit;
 }
+
+main.user {
+  display: inline-block;
+  width: 100%;
+  height: 100vh;
+  background-color: #5C687C;
+}
 /*# sourceMappingURL=main.css.map */

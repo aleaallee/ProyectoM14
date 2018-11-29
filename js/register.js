@@ -11,7 +11,7 @@ $(document).on("submit", "form.regform", function(event){
     }
     //Texto de error
     var errtext = $("p.errortext", form);
-    console.table(datos);
+    console.log(datos);
     $.ajax({
         type: "post",
         url: "/php/register.php",

@@ -14,7 +14,7 @@
           padding: 1.7em 4.35em 1em 4.35em;
           display: block;
           float: left;
-          
+
           &.logo {
             @include reset;
             padding-left: 4.35em;
@@ -51,17 +51,20 @@
 
       .menu {
         margin-left: 36vw;
-        li{
-          a{
+
+        li {
+          a {
             transition: color .25s ease-in-out;
           }
-          &.actual{
-            a{
+
+          &.actual {
+            a {
               color: darken($text, 75%);
             }
           }
-          &:hover{
-            a{
+
+          &:hover {
+            a {
               color: darken($text, 30%);
             }
           }

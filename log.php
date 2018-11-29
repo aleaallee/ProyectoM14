@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="A.P.D.2 - User access">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
-  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="css/main.css"/>
   <link rel="stylesheet" href="assets/slick/slick.css">
   <link rel="stylesheet" href="assets/slick/slick-theme.css">
   <script src="js/jquery-3.3.1.min.js.js"></script>

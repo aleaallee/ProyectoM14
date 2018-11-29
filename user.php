@@ -18,7 +18,7 @@
   <script src="js/slider.js" defer></script>
 </head>
 
-<body bgcolor="#3A7CA5">
+<body>
   <header class="nav">
     <div class="navbar">
       <ul role="navigation">
@@ -37,45 +37,8 @@
       </ul>
     </div>
   </header>
-  <main class="reglogin">
-    <div class="splitsec">
-      <div class="login">
-        <form enctype="multipart/form-data" class="loginform">
-          <div class="input">
-            <label for="user"></label>
-            <input type="text" name="user" placeholder="User" maxlength="15" required>
-          </div>
-          <div class="input">
-            <label for="password"></label>
-            <input type="password" name="password" placeholder="Password" maxlength="16" required>
-          </div>
-          <button class="loginbutton" type="submit">Login</button>
-        </form>
-      </div>
-      <div class="reg">
-        <form enctype="multipart/form-data" class="regform">
-          <div class="input">
-            <label for="user"></label>
-            <input type="text" name="user" placeholder="User" maxlength="15" required>
-          </div>
-          <div class="input">
-            <label for="email"></label>
-            <input type="email" name="email" placeholder="Email" required>
-          </div>
-          <div class="input">
-            <label for="password"></label>
-            <input type="password" name="password" placeholder="Password" maxlength="15" required>
-          </div>
-          <div class="input">
-            <label for="reppassword"></label>
-            <input type="password" name="reppassword" placeholder="Repeat password" maxlength="15" autocomplete="current-password"
-              required>
-          </div>
-          <p class="errortext"></p>
-          <button class="registerbutton" type="submit">Register</button>
-        </form>
-      </div>
-    </div>
+  <main class="user">
+      <p>Logueado</p>
   </main>
 
   <footer>

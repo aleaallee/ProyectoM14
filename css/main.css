@@ -195,13 +195,21 @@ footer .linkgroup ul li a:hover {
   transition: color .15s ease-out;
 }
 
+.particlesjs {
+  position: absolute;
+  width: 100%;
+  height: calc(100% + 30em);
+  background-color: #3A7CA5;
+  z-index: -1;
+}
+
 .reglogin {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100vw;
-  height: 100vh;
-  background-color: #3A7CA5;
+  height: calc(100vh + 200px);
+  z-index: 1;
 }
 
 .reglogin .splitsec {
@@ -407,6 +415,38 @@ footer .linkgroup ul li a:hover {
 
 main.reglogin + footer {
   margin-top: 100px;
+}
+
+div.message_success {
+  display: block;
+  width: 35em;
+  height: 9em;
+  position: absolute;
+  margin: 0 auto;
+  top: 16vh;
+  left: 37vw;
+  background-color: lawngreen;
+  border-radius: 7px;
+  -webkit-box-shadow: 1px 0 19px black;
+          box-shadow: 1px 0 19px black;
+}
+
+div.message_success img.checked, div.message_success p.message {
+  display: inline-block;
+}
+
+div.message_success img.checked {
+  width: 5em;
+  margin-left: 3em;
+  margin-top: 2em;
+}
+
+div.message_success p.message {
+  color: #1c2833;
+  font-size: 1.7em;
+  margin-top: 2.2em;
+  margin-left: 2em;
+  position: absolute;
 }
 
 main.gallery {

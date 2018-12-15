@@ -15,10 +15,11 @@
   <script src="assets/slick/slick.min.js" defer></script>
   <script src="js/main.js" defer></script>
   <script src="js/register.js" defer></script>
-  <script src="js/slider.js" defer></script>
+  <script src="js/particles.min.js"></script>
 </head>
 
-<body bgcolor="#3A7CA5">
+<body>
+  <div id="particles-js" class="particlesjs"></div>
   <header class="nav">
     <div class="navbar">
       <ul role="navigation">
@@ -77,6 +78,12 @@
       </div>
     </div>
   </main>
+  <div class="message_success">
+    <img src="assets/svg/checked.svg" alt="checked" class="checked">
+    <p class="message">
+        Succesfully registered!
+    </p>
+  </div>
 
   <footer>
     <div class="linkgroup">

@@ -1,4 +1,6 @@
 <?php
+require ('user.php');
+
 class DB{
     protected static $user = 'remote';
     protected static $password = 'remote';
@@ -34,4 +36,4 @@ class DB{
 
     }
 
-    }
+}

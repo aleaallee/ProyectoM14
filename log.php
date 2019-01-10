@@ -78,12 +78,12 @@
       </div>
     </div>
   </main>
-  <div class="message_success">
+  <!--<div class="message_success">
     <img src="assets/svg/checked.svg" alt="checked" class="checked">
     <p class="message">
         Succesfully registered!
     </p>
-  </div>
+  </div>-->
 
   <footer>
     <div class="linkgroup">

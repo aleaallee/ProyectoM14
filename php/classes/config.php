@@ -1,9 +1,10 @@
 <?php
-require ('user.php');
+require('user.php');
+require('lang.php');
 
 class DB{
-    protected static $user = 'remote';
-    protected static $password = 'remote';
+    protected static $user = 'apd25972_remote';
+    protected static $password = 'aA123456789!';
 
     //variable de conexion
     protected static $con;
@@ -18,7 +19,7 @@ class DB{
             ];
 
             //conectarse a la base de datos
-            self::$con = new PDO("mysql:charset=utf8;host=127.0.0.1;port=3306;dbname=apd2", self::$user, self::$password, $options);
+            self::$con = new PDO("mysql:charset=utf8;host=localhost;port=3306;dbname=apd25972_apd2", self::$user, self::$password, $options);
         }catch(PDOException $e){
             //En caso de error
 

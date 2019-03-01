@@ -1,21 +1,19 @@
-$(document).on("submit", "form.regform", function(event){
+particlesJS.load('particles-js', 'js/particles.json', function () {
+    console.log('callback - particles.js config loaded');
+});
+
+$(document).on("submit", "form.regform", function (event) {
     event.preventDefault();
-    $('button.registerbutton').on('click', function(){
-        $("p.errortext").hide();
-    });
 
     var form = $(this);
     //Datos de los inputs del formulario
 
     var datos = {
-        user : $("input[name='user']", form).val(),
-        email : $("input[name='email']", form).val(),
-        password : $("input[name='password']", form).val(),
-        reppassword : $("input[name='reppassword']", form).val()
+        user: $("input[name='user']", form).val(),
+        email: $("input[name='email']", form).val(),
+        password: $("input[name='password']", form).val(),
+        reppassword: $("input[name='reppassword']", form).val()
     };
-
-    //Texto de error
-    var errtext = $("p.errortext", $('form.regform'));
 
     $.ajax({
         type: "post",
@@ -23,21 +21,68 @@ $(document).on("submit", "form.regform", function(event){
         data: datos,
         dataType: "json",
         async: true,
-    }).done(function ajaxDone(data){
+    }).done(function ajaxDone(data) {
         console.log('Succesfully registered.');
-        if(data.redirect !== undefined){
+        if (data.redirect !== undefined) {
             window.location.replace(data.redirect);
-        }else if(data.error !== undefined){
-            errtext.text(data.error).show();
+        } else if (data.error !== undefined) {
+            Swal.fire({
+                type: 'error',
+                title: 'Oops...',
+                text: data.error
+            })
         }
 
-    }).fail(function ajaxFail(e){
+    }).fail(function ajaxFail(e) {
         console.log(e.message);
-        errtext.text(e.error).show();
-    }).always(function ajaxAlwaysDoThis(test){
+        Swal.fire({
+            type: 'error',
+            title: 'Oops...',
+            text: e.error
+        })
+    }).always(function ajaxAlwaysDoThis(test) {
         console.log(test);
     });
 });
-particlesJS.load('particles-js', 'js/particles.json', function(){
-    console.log('callback - particles.js config loaded');
+$(document).on("submit", "form.loginform", function (event) {
+    event.preventDefault();
+
+    var form = $(this);
+    //Datos de los inputs del formulario
+
+    var datos = {
+        user: $("input[name='user']", form).val(),
+        password: $("input[name='password']", form).val(),
+    };
+
+
+    $.ajax({
+        type: "post",
+        url: "php/register.php",
+        data: datos,
+        dataType: "json",
+        async: true,
+    }).done(function ajaxDone(data) {
+        console.log('Succesfully registered.');
+        if (data.redirect !== undefined) {
+            window.location.replace(data.redirect);
+        } else if (data.error !== undefined) {
+            Swal.fire({
+                type: 'error',
+                title: 'Oops...',
+                text: data.error
+            })
+        }
+
+    }).fail(function ajaxFail(e) {
+        console.log(e.message);
+        Swal.fire({
+            type: 'error',
+            title: 'Oops...',
+            text: e.error
+        })
+    }).always(function ajaxAlwaysDoThis(test) {
+        console.log(test);
+    });
 });
+

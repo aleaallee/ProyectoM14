@@ -1,16 +1,16 @@
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *::before {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *::after {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -216,11 +216,13 @@ footer .linkgroup ul li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #5C687C;
+  background-color: rgba(58, 125, 166, 0.1);
   width: 65vw;
   height: 60em;
   margin-left: 27em;
   margin-top: 10em;
+  border: 2px solid #3b5da5;
+  border-radius: 20px;
 }
 
 @media (min-width: 1900px) {
@@ -232,8 +234,8 @@ footer .linkgroup ul li a:hover {
 .reglogin .splitsec .login,
 .reglogin .splitsec .reg {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .reglogin .splitsec .login form,
@@ -428,7 +430,7 @@ div.message_success {
   background-color: lawngreen;
   border-radius: 7px;
   -webkit-box-shadow: 1px 0 19px black;
-          box-shadow: 1px 0 19px black;
+  box-shadow: 1px 0 19px black;
 }
 
 div.message_success img.checked, div.message_success p.message {
@@ -524,7 +526,7 @@ main.gallery section.img-grid {
   display: grid;
   width: 100vw;
   -ms-grid-columns: 33.33% 33.33% 33.33%;
-      grid-template-columns: 33.33% 33.33% 33.33%;
+  grid-template-columns: 33.33% 33.33% 33.33%;
   grid-row-gap: 5em;
   grid-column-gap: 5em;
   margin-top: 3em;
@@ -536,7 +538,7 @@ main.gallery section.img-grid {
 @media (min-width: 1900px) {
   main.gallery section.img-grid {
     -ms-grid-columns: 25% 25% 25% 25%;
-        grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 25% 25% 25% 25%;
   }
 }
 

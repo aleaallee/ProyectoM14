@@ -1,4 +1,5 @@
-<?php
+<?php /** @noinspection SqlNoDataSourceInspection */
+
 //require("config.php");
 
 class User{
@@ -10,11 +11,17 @@ class User{
         $this->con = DB::getConnection();
     }
 
+  /**
+   * @param $email
+   * @param $user
+   * @param bool $return_assoc
+   * @return bool|mixed
+   */
     public static function findUser($email, $user, $return_assoc=false){
         $con = DB::getConnection();
 
         //Se asegura de que el usuario no exista
-        $buscarUsuario = $con->prepare("SELECT Username, Password FROM users WHERE Email = LOWER(:email) OR Username = :user LIMIT 1");
+        $buscarUsuario = $con->prepare("SELECT Username, Password FROM Users WHERE Email = LOWER(:email) OR Username = :user LIMIT 1");
         $buscarUsuario->bindParam(':email', $email, PDO::PARAM_STR);
         $buscarUsuario->bindParam(':user', $user);
         $buscarUsuario->execute();
@@ -25,6 +32,28 @@ class User{
 
         $usuario_encontrado = (boolean) $buscarUsuario->rowCount();
         return $usuario_encontrado;
+
+    }
+
+  /**
+   * @param $user
+   * @param $password
+   * @return bool
+   */
+    public static function verifyPassword($user, $password){
+      $con = DB::getConnection();
+
+      $contraHash = password_hash($password, 'PASSWORD_DEFAULT');
+
+      //Se verifica que la contraseña introducida coincida con la del usuario
+
+      $verificarContra = $con->prepare("SELECT Password FROM Users WHERE Username = :user LIMIT  1");
+      $verificarContra->bindParam(':user', $user);
+      $verificarContra->execute();
+
+      $datos = $verificarContra->fetch();
+      //si la contraseña introducida coincide con la de la base de datos se devuelve true.
+      return $datos == $contraHash;
 
     }
 

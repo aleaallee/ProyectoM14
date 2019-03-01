@@ -1,7 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a764f139-6d52-4902-ad45-ded0e7562bc7" name="Default Changelist" comment="fixed aria label on navbar" />
+    <list default="true" id="a764f139-6d52-4902-ad45-ded0e7562bc7" name="Default Changelist" comment="fixed aria label on navbar">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/lato/Lato-Black.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/lato/Lato-BlackItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/lato/Lato-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/lato/Lato-BoldItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/lato/Lato-Hairline.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/lato/Lato-HairlineItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/lato/Lato-Italic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/lato/Lato-Light.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/lato/Lato-LightItalic.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/fonts/lato/Lato-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/main-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/slick/ajax-loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/slick/config.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/slick/fonts/slick.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/slick/fonts/slick.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/slick/fonts/slick.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/slick/fonts/slick.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/slick/slick-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/slick/slick-theme.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/slick/slick-theme.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/slick/slick-theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/slick/slick.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/slick/slick.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/slick/slick.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/slick/slick.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/slick/slick.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/slick/slick.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/svg/checked.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/svg/console.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/svg/leftarrow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/svg/picture.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/svg/planing.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/svg/rightarrow.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/svg/user.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/users/user_sample.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/normalize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/slick-theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/slick-theme.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/slick-theme.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/slick-theme.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/slick.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/slick.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/slick.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/slick.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gallery.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/gtest.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/gtest2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery-3.3.1.min.js.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/nav.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/particles.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/particles.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/register.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/slider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/classes/config.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/classes/user.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/register.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/main/_config.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/main/_fonts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/main/_utils.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/sections/_contact.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/sections/_footer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/sections/_gallery.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/sections/_header.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/sections/_principal.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/sections/_register.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/sections/_slider.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/sections/_user.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/user.php" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,38 +166,47 @@
     <session id="-2053266152">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.17" value="1" />
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.open.time.7" value="2" />
+          <entry key="project.open.time.4" value="2" />
+          <entry key="project.open.time.6" value="3" />
+          <entry key="project.open.time.7" value="4" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="css" value="2" />
           <entry key="js" value="6" />
-          <entry key="php" value="6" />
+          <entry key="map" value="2" />
+          <entry key="php" value="7" />
+          <entry key="scss" value="1" />
           <entry key="sql" value="1" />
           <entry key="ts" value="2" />
           <entry key="users" value="1" />
+          <entry key="yaml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="CSS" value="2" />
           <entry key="Database Element" value="1" />
           <entry key="JavaScript" value="6" />
-          <entry key="PHP" value="6" />
+          <entry key="PHP" value="7" />
+          <entry key="SCSS" value="1" />
           <entry key="Scratch" value="1" />
+          <entry key="SourceMap" value="2" />
           <entry key="TypeScript" value="2" />
+          <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="js" value="241" />
           <entry key="php" value="202" />
+          <entry key="scss" value="2" />
           <entry key="txt" value="4" />
         </counts>
       </usages-collector>
@@ -120,75 +215,41 @@
           <entry key="JavaScript" value="241" />
           <entry key="PHP" value="202" />
           <entry key="PLAIN_TEXT" value="4" />
+          <entry key="SCSS" value="2" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/index.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="128">
-                  <caret line="8" column="68" selection-start-line="8" selection-start-column="68" selection-end-line="8" selection-end-column="68" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/log.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1360">
-                  <caret line="85" column="11" selection-start-line="85" selection-start-column="11" selection-end-line="85" selection-end-column="11" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php/register.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="672">
-                  <caret line="42" column="46" selection-start-line="42" selection-start-column="46" selection-end-line="42" selection-end-column="46" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php/classes/config.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="32">
-                  <caret line="2" selection-start-line="2" selection-end-line="2" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/php/classes/user.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="112">
-                  <caret line="7" selection-start-line="7" selection-end-line="7" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/js/register.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="288">
-                  <caret line="18" selection-start-line="18" selection-end-line="18" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scss/sections/_register.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="8" column="68" selection-start-line="8" selection-start-column="68" selection-end-line="8" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="423">
+              <caret line="558" column="36" selection-start-line="558" selection-start-column="36" selection-end-line="558" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
@@ -203,6 +264,8 @@
         <option value="$PROJECT_DIR$/php/classes/user.php" />
         <option value="$PROJECT_DIR$/log.php" />
         <option value="$PROJECT_DIR$/js/register.js" />
+        <option value="$PROJECT_DIR$/scss/sections/_register.scss" />
+        <option value="$PROJECT_DIR$/css/main.css" />
       </list>
     </option>
   </component>
@@ -254,7 +317,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -265,28 +327,34 @@
             <path>
               <item name="ProyectoM14" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProyectoM14" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ProyectoM14" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProyectoM14" type="462c0819:PsiDirectoryNode" />
-              <item name="php" type="462c0819:PsiDirectoryNode" />
+              <item name="scss" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ProyectoM14" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProyectoM14" type="462c0819:PsiDirectoryNode" />
-              <item name="php" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="scss" type="462c0819:PsiDirectoryNode" />
+              <item name="sections" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mariadb" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.jscs" value="true" />
@@ -333,6 +401,11 @@
       <workItem from="1547021812628" duration="608000" />
       <workItem from="1547381927241" duration="15000" />
       <workItem from="1548106820621" duration="5000" />
+      <workItem from="1548195597596" duration="793000" />
+      <workItem from="1548359694254" duration="82000" />
+      <workItem from="1548551299809" duration="3000" />
+      <workItem from="1550655339975" duration="1072000" />
+      <workItem from="1551441483786" duration="491000" />
     </task>
     <task id="LOCAL-00001" summary="fixed aria label on navbar">
       <created>1541010028048</created>
@@ -345,12 +418,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9652000" />
+    <option name="totallyTimeSpent" value="12093000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.080404684" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17465389" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -367,10 +441,12 @@
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.32937366" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.32937366" />
+      <window_info anchor="bottom" id="File Transfer" order="14" visible="true" weight="0.32937366" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.01970181" />
+      <window_info anchor="right" id="Database" order="3" weight="0.01970181" />
+      <window_info anchor="right" id="Remote Host" order="4" visible="true" weight="0.12087327" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -423,13 +499,6 @@
     <entry file="file://$PROJECT_DIR$/user.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="68" selection-start-line="8" selection-start-column="68" selection-end-line="8" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/log.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1360">
@@ -462,6 +531,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/sections/_register.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="68" selection-start-line="8" selection-start-column="68" selection-end-line="8" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css.map">
+      <provider editor-type-id="sourcemapFileViewerProvider" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.min.css.map">
+      <provider editor-type-id="sourcemapFileViewerProvider" />
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="558" column="36" selection-start-line="558" selection-start-column="36" selection-end-line="558" selection-end-column="36" />
         </state>
       </provider>
     </entry>

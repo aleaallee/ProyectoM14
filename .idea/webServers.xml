@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="de1f0c1c-cbd9-4446-bca6-3dadf9d14423" name="Siteground apd2" url="http://apd2.es">
+        <fileTransfer host="es75.siteground.eu" port="21" rootFolder="/public_html/">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

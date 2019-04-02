@@ -29,6 +29,28 @@
           &.user {
             float: right;
 
+            .circle{
+              @include circle(4em);
+              background-color: #0af;
+              border-radius: 25px;
+              margin-top: -1.2em;
+              transition: .5s ease-in-out background-color; 
+              &:hover{
+                cursor: pointer;
+              }
+              &:active{
+                background-color: #088acc;
+              }
+              a{
+                @include reset;
+                display: block;
+                text-transform: uppercase;
+                font-size: 3em;
+                color: #ffffff;
+                text-align: center;
+              }
+            }
+
             svg {
               @include reset;
               width: 4em;

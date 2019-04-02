@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       $return['is_logged_in'] = false;
 
     } else {
-      $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+      $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
 
       $adduser = $con->prepare("INSERT INTO Users(username, email, password, created) 
             values(:user, LOWER(:email), :password, NOW() )");

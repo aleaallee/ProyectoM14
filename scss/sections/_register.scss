@@ -5,6 +5,7 @@
   background-color: #3A7CA5;
   z-index: -1;
 }
+
 .reglogin {
   display: flex;
   width: 100vw;
@@ -13,12 +14,11 @@
 
   .splitsec {
     display: flex;
-    background-color: hsla(203, 48%, 44%, 0.1);
+    //background-color: hsla(203, 48%, 44%, 0.1);
     width: 65vw;
     height: 60em;
     margin-left: 27em;
     margin-top: 10em;
-    border: 2px solid hsla(221, 47%, 44%,1 );
     border-radius: 20px;
     @media(min-width: 1900px) {
       margin-left: 33em;
@@ -70,10 +70,9 @@
               }
             }
 
-            &:-webkit-autofill,
-            &-webkit-autofill:hover,
-            -webkit-autofill:focus,
-            -webkit-autofill:active {
+
+            --webkit-autofill:focus,
+            --webkit-autofill:active {
               background: none;
             }
           }
@@ -104,9 +103,6 @@
       }
     }
 
-    .login {
-      border-right: 1px solid #C4C4C4;
-    }
   }
 }
 

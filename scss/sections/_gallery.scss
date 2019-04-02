@@ -25,7 +25,6 @@ main.gallery {
          }
 
          .info {
-            display: inline-block;
             position: absolute;
             height: 10em;
             width: 80em;
@@ -85,9 +84,13 @@ main.gallery {
 
       .img {
          width: 30em;
-
+         height: 30em;
          img {
             width: inherit;
+         }
+         &.upload{
+            background-color: rgba(199, 196, 187, 0.64);
+            border: 2px dashed #313131;
          }
       }
    }

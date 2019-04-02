@@ -1,6 +1,18 @@
-main.user{
-    display: inline-block;
-    width: 100%;
-    height: 100vh;
-    background-color: $principal;
+main.user {
+  display: inline-block;
+  width: 100%;
+  height: 100vh;
+  background-color: #3A7CA5;
+  .profile {
+    display: grid;
+    width: 70%;
+    height: 50em;
+    background-color: hsl(210, 67%, 75%);
+    margin: auto;
+    margin-top: 10em;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    
+
+  }
 }

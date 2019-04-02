@@ -2,91 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a764f139-6d52-4902-ad45-ded0e7562bc7" name="Default Changelist" comment="fixed aria label on navbar">
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/lato/Lato-Black.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/lato/Lato-BlackItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/lato/Lato-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/lato/Lato-BoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/lato/Lato-Hairline.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/lato/Lato-HairlineItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/lato/Lato-Italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/lato/Lato-Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/lato/Lato-LightItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/fonts/lato/Lato-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/main-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/slick/ajax-loader.gif" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/slick/config.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/slick/fonts/slick.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/slick/fonts/slick.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/slick/fonts/slick.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/slick/fonts/slick.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/slick/slick-theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/slick/slick-theme.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/slick/slick-theme.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/slick/slick-theme.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/slick/slick.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/slick/slick.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/slick/slick.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/slick/slick.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/slick/slick.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/slick/slick.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/svg/checked.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/svg/console.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/svg/leftarrow.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/svg/picture.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/svg/planing.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/svg/rightarrow.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/svg/user.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/users/user_sample.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/normalize.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/slick-theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/slick-theme.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/slick-theme.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/slick-theme.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/slick.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/slick.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/slick.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/slick.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gallery.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/gtest.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/gtest2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jquery-3.3.1.min.js.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/nav.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/particles.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/particles.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/register.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/slider.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/log.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/classes/config.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/classes/user.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/register.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/main.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/main/_config.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/main/_fonts.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/main/_utils.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/sections/_contact.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/sections/_footer.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/sections/_gallery.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/sections/_header.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/sections/_principal.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/sections/_register.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/sections/_slider.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/sections/_user.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/user.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gallery.php" beforeDir="false" afterPath="$PROJECT_DIR$/gallery.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/register.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log.php" beforeDir="false" afterPath="$PROJECT_DIR$/log.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/classes/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/classes/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/classes/lang.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/classes/lang.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/classes/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/classes/user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/main/_config.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/main/_config.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/sections/_gallery.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/sections/_gallery.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/sections/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/sections/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/sections/_principal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/sections/_principal.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/sections/_register.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/sections/_register.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/sections/_user.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/sections/_user.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/user.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -172,17 +111,24 @@
           <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.6" value="3" />
           <entry key="project.open.time.7" value="4" />
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.open.time.8" value="2" />
+          <entry key="project.opened" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="2" />
-          <entry key="js" value="6" />
+          <entry key="PHP/C:/xampp/htdocs/ProyectoM14" value="1" />
+          <entry key="css" value="4" />
+          <entry key="ftpquota" value="1" />
+          <entry key="htaccess" value="4" />
+          <entry key="js" value="11" />
+          <entry key="mKp3FPikP4RK8woBiVZ2miRPnS-_a-t9I8FPxw9WFKE" value="1" />
           <entry key="map" value="2" />
-          <entry key="php" value="7" />
-          <entry key="scss" value="1" />
+          <entry key="md" value="1" />
+          <entry key="php" value="48" />
+          <entry key="php_errorlog" value="1" />
+          <entry key="scss" value="6" />
+          <entry key="sg-hosted" value="1" />
           <entry key="sql" value="1" />
           <entry key="ts" value="2" />
           <entry key="users" value="1" />
@@ -191,65 +137,164 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="2" />
+          <entry key="CSS" value="4" />
           <entry key="Database Element" value="1" />
-          <entry key="JavaScript" value="6" />
-          <entry key="PHP" value="7" />
-          <entry key="SCSS" value="1" />
+          <entry key="JavaScript" value="11" />
+          <entry key="Markdown" value="1" />
+          <entry key="PHP" value="48" />
+          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="SCSS" value="6" />
           <entry key="Scratch" value="1" />
           <entry key="SourceMap" value="2" />
           <entry key="TypeScript" value="2" />
+          <entry key="UML" value="1" />
           <entry key="YAML" value="1" />
+          <entry key="htaccess" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="js" value="241" />
-          <entry key="php" value="202" />
-          <entry key="scss" value="2" />
+          <entry key="htaccess" value="162" />
+          <entry key="js" value="821" />
+          <entry key="php" value="3779" />
+          <entry key="scss" value="53" />
           <entry key="txt" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JavaScript" value="241" />
-          <entry key="PHP" value="202" />
+          <entry key="HTML" value="29" />
+          <entry key="JavaScript" value="821" />
+          <entry key="PHP" value="3750" />
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="SCSS" value="2" />
+          <entry key="SCSS" value="53" />
+          <entry key="htaccess" value="162" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scss/sections/_register.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="8" column="68" selection-start-line="8" selection-start-column="68" selection-end-line="8" selection-end-column="68" />
+            <state relative-caret-position="709">
+              <caret line="122" column="9" lean-forward="true" selection-start-line="103" selection-end-line="122" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/main.css">
+        <entry file="file://$PROJECT_DIR$/user.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="558" column="36" selection-start-line="558" selection-start-column="36" selection-end-line="558" selection-end-column="36" />
+            <state relative-caret-position="821">
+              <caret line="72" column="9" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/log.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="592">
+              <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contact.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="13" column="83" selection-start-line="13" selection-start-column="64" selection-end-line="13" selection-end-column="83" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/langVar.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/register.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>.splitsec</find>
+      <find>public function fetch</find>
+      <find>new</find>
+      <find>logueado</find>
+      <find>user.php</find>
+      <find>.php&quot;&gt;Gallery</find>
+      <find>&lt;?php NAV_GALLERY ?&gt;</find>
+      <find>.php&quot;&gt;Contact</find>
+      <find>PASSWORD_DEFAULT</find>
+      <find>&gt;Terms</find>
+      <find>echo TERMS</find>
+      <find>css/main.css</find>
+      <find>css/main.css?v=1.4&quot;/&gt;</find>
+      <find>css/main.css?v=1.6</find>
+      <find>css/main.css?v=1.7</find>
+      <find>css/main.css?v=1.8</find>
+      <find>css/main.css?v=1.9</find>
+      <find>&lt;p&gt;&quot;.$_COOKIE[&quot;user&quot;][0].&quot;&lt;/p&gt;</find>
+      <find>css/main.css?v=1.10</find>
+      <find>css/main.css?v=1.11</find>
+      <find>css/main.css?v=1.12</find>
+      <find>css/main.css?v=1.13</find>
+      <find>css/main.css?v=1.14</find>
+      <find>css/main.css?v=1.15</find>
+      <find>css/main.css?v=1.16</find>
+      <find>css/main.css?v=1.17</find>
+      <find>css/main.css?v=1.18</find>
+      <find>css/main.css?v=1.19</find>
+      <find>css/main.css?v=1.20</find>
+      <find>&lt;footer&gt;     &lt;div class=&quot;linkgroup&quot;&gt;         &lt;ul class=&quot;links&quot;&gt;             &lt;li&gt;&lt;a href=&quot;#&quot;&gt;A.P.D.2&lt;/a&gt;&lt;/li&gt;             &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Gallery&lt;/a&gt;&lt;/li&gt;         &lt;/ul&gt;         &lt;ul class=&quot;links&quot;&gt;             &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;             &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;?php echo BODY_TERMS ?&gt;&lt;/a&gt;&lt;/li&gt;         &lt;/ul&gt;     &lt;/div&gt; &lt;/footer&gt;</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>.php&quot;&gt;&lt;?php NAV_GALLERY ?&gt;</replace>
+      <replace>&lt;?php echo NAV_GALLERY ?&gt;</replace>
+      <replace>.php&quot;&gt;&lt;?php echo NAV_CONTACT ?&gt;</replace>
+      <replace>PASSWORD_BCRYPT</replace>
+      <replace>&gt;&lt;?php echo TERMS ?&gt;</replace>
+      <replace>echo BODY_TERMS</replace>
+      <replace>css/main.css?v=1.4</replace>
+      <replace>css/main.css?v=1.6</replace>
+      <replace>css/main.css?v=1.6&quot;&gt;</replace>
+      <replace>css/main.css?v=1.7</replace>
+      <replace>css/main.css?v=1.8</replace>
+      <replace>css/main.css?v=1.9</replace>
+      <replace>css/main.css?v=1.10</replace>
+      <replace>&lt;a href='user.php'&gt;&quot;.$_COOKIE[&quot;user&quot;][0].&quot;&lt;/a&gt;</replace>
+      <replace>css/main.css?v=1.11</replace>
+      <replace>css/main.css?v=1.12</replace>
+      <replace>css/main.css?v=1.13</replace>
+      <replace>css/main.css?v=1.14</replace>
+      <replace>css/main.css?v=1.15</replace>
+      <replace>css/main.css?v=1.16</replace>
+      <replace>css/main.css?v=1.17</replace>
+      <replace>css/main.css?v=1.18</replace>
+      <replace>css/main.css?v=1.19</replace>
+      <replace>css/main.css?v=1.20</replace>
+      <replace>css/main.css?v=1.21</replace>
+      <replace>&lt;footer&gt;     &lt;div class=&quot;linkgroup&quot;&gt;         &lt;ul class=&quot;links&quot;&gt;            &lt;!--&lt;li&gt;&lt;a href=&quot;index.php&quot;&gt;A.P.D.2&lt;/a&gt;&lt;/li&gt;--&gt;             &lt;li&gt;                 &lt;select name=&quot;langSelector&quot; &gt;                     &lt;option selected disabled&gt;&lt;?php echo MENU_LANG ?&gt;&lt;/option&gt;                     &lt;option value=&quot;ES&quot;&gt;ES&lt;/option&gt;                     &lt;option value=&quot;EN&quot;&gt;EN&lt;/option&gt;                     &lt;option value=&quot;CAT&quot;&gt;CAT&lt;/option&gt;                 &lt;/select&gt;             &lt;/li&gt;             &lt;li&gt;&lt;a href=&quot;gallery.php&quot;&gt;&lt;?php echo NAV_GALLERY ?&gt;&lt;/a&gt;&lt;/li&gt;         &lt;/ul&gt;         &lt;ul class=&quot;links&quot;&gt;             &lt;li&gt;&lt;a href=&quot;contact.php&quot;&gt;&lt;?php echo NAV_CONTACT ?&gt;&lt;/a&gt;&lt;/li&gt;             &lt;li&gt;&lt;a href=&quot;terms.php&quot;&gt;&lt;?php echo BODY_TERMS ?&gt;&lt;/a&gt;&lt;/li&gt;         &lt;/ul&gt;     &lt;/div&gt; &lt;/footer&gt;</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>C:\xampp\htdocs\ProyectoM14</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
@@ -260,14 +305,34 @@
       <list>
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/php/register.php" />
-        <option value="$PROJECT_DIR$/php/classes/user.php" />
-        <option value="$PROJECT_DIR$/log.php" />
-        <option value="$PROJECT_DIR$/js/register.js" />
-        <option value="$PROJECT_DIR$/scss/sections/_register.scss" />
         <option value="$PROJECT_DIR$/css/main.css" />
+        <option value="$PROJECT_DIR$/php/lang.php" />
+        <option value="$PROJECT_DIR$/php/testApis/lang.php" />
+        <option value="$PROJECT_DIR$/php/classes/lang.php" />
+        <option value="$PROJECT_DIR$/php/classes/config.php" />
+        <option value="$PROJECT_DIR$/php/getLang.php" />
+        <option value="$PROJECT_DIR$/php/classes/user.php" />
+        <option value="$PROJECT_DIR$/php/login.php" />
+        <option value="$PROJECT_DIR$/.htaccess" />
+        <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/js/register.js" />
+        <option value="$PROJECT_DIR$/php/register.php" />
+        <option value="$PROJECT_DIR$/php/langVar.php" />
+        <option value="$PROJECT_DIR$/gallery.php" />
+        <option value="$PROJECT_DIR$/log.php" />
+        <option value="$PROJECT_DIR$/contact.php" />
+        <option value="$PROJECT_DIR$/scss/sections/_register.scss" />
+        <option value="$PROJECT_DIR$/scss/main.scss" />
+        <option value="$PROJECT_DIR$/scss/sections/_user.scss" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/user.php" />
       </list>
     </option>
+  </component>
+  <component name="JsBowerSettings">
+    <node-interpreter value="project" />
+    <bower-package value="" />
+    <bower.json value="" />
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -317,6 +382,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -328,6 +394,17 @@
               <item name="ProyectoM14" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProyectoM14" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProyectoM14" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProyectoM14" type="462c0819:PsiDirectoryNode" />
+              <item name="php" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProyectoM14" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProyectoM14" type="462c0819:PsiDirectoryNode" />
+              <item name="php" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ProyectoM14" type="b2602c69:ProjectViewProjectNode" />
@@ -344,11 +421,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mariadb" />
+    <property name="NewWatcherDialog.advanced.open" value="true" />
+    <property name="ToolWindowFind.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
@@ -366,7 +444,12 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.jscs" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\ProyectoM14\php\testApis" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -405,7 +488,8 @@
       <workItem from="1548359694254" duration="82000" />
       <workItem from="1548551299809" duration="3000" />
       <workItem from="1550655339975" duration="1072000" />
-      <workItem from="1551441483786" duration="491000" />
+      <workItem from="1551441483786" duration="33226000" />
+      <workItem from="1552853034053" duration="32888000" />
     </task>
     <task id="LOCAL-00001" summary="fixed aria label on navbar">
       <created>1541010028048</created>
@@ -418,35 +502,44 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12093000" />
+    <option name="totallyTimeSpent" value="77716000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17465389" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12140575" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32937366" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32937366" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32937366" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32937366" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32937366" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32937366" />
       <window_info active="true" anchor="bottom" id="Messages" order="12" visible="true" weight="0.32937366" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.32937366" />
-      <window_info anchor="bottom" id="File Transfer" order="14" visible="true" weight="0.32937366" />
+      <window_info anchor="bottom" id="File Transfer" order="14" weight="0.32937366" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.01970181" />
-      <window_info anchor="right" id="Remote Host" order="4" visible="true" weight="0.12087327" />
+      <window_info anchor="right" id="Database" order="3" weight="0.36155483" />
+      <window_info anchor="right" id="Remote Host" order="4" weight="0.08253461" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -462,16 +555,6 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/assets/desktop.ini" />
     <entry file="file://$PROJECT_DIR$/index.html" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="23">
-            <caret line="1" column="6" selection-start-line="1" selection-end-line="1" selection-end-column="6" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/423cd14b-57fd-4499-b4ab-c732a0cf1d83/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -496,58 +579,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="85" column="11" selection-start-line="85" selection-start-column="11" selection-end-line="85" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="42" column="46" selection-start-line="42" selection-start-column="46" selection-end-line="42" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/classes/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/php/classes/user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/register.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/sections/_register.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="8" column="68" selection-start-line="8" selection-start-column="68" selection-end-line="8" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css.map">
       <provider editor-type-id="sourcemapFileViewerProvider" />
       <provider selected="true" editor-type-id="text-editor" />
@@ -561,8 +592,217 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="558" column="36" selection-start-line="558" selection-start-column="36" selection-end-line="558" selection-end-column="36" />
+        <state relative-caret-position="728">
+          <caret line="556" column="36" selection-start-line="556" selection-start-column="36" selection-end-line="556" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/php_errorlog" />
+    <entry file="file://$PROJECT_DIR$/.well-known/acme-challenge/mKp3FPikP4RK8woBiVZ2miRPnS-_a-t9I8FPxw9WFKE">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.well-known/acme-challenge/sg-hosted">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_4.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="465" column="9" selection-start-line="465" selection-start-column="9" selection-end-line="465" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/PDO/PDO.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="1359" column="20" selection-start-line="1359" selection-start-column="20" selection-end-line="1359" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/testApis/lang.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="24" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://PHP/C:/xampp/htdocs/ProyectoM14">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>PHP</ID>
+          <OriginalElement>$PROJECT_DIR$</OriginalElement>
+          <nodes>
+            <node x="" y="">$PROJECT_DIR$/css</node>
+            <node x="" y="">$PROJECT_DIR$/img</node>
+            <node x="" y="">$PROJECT_DIR$/php</node>
+            <node x="" y="">$PROJECT_DIR$/.well-known</node>
+            <node x="" y="">$PROJECT_DIR$/assets</node>
+            <node x="" y="">$PROJECT_DIR$/js</node>
+            <node x="" y="">$PROJECT_DIR$/scss</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="103.5" y="125.5" />
+          <SelectedNodes />
+          <Categories />
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="16">
+            <caret line="1" column="6" selection-start-line="1" selection-end-line="1" selection-end-column="6" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/sections/_header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="26" column="11" selection-start-line="1" selection-start-column="4" selection-end-line="26" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/password/password.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="717">
+          <caret line="183" column="9" selection-start-line="183" selection-start-column="9" selection-end-line="183" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/classes/user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/getLang.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.ftpquota">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="48" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="30" column="26" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/classes/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/classes/lang.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="48" column="24" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gallery.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="39" column="66" selection-start-line="39" selection-start-column="66" selection-end-line="39" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="13" column="83" selection-start-line="13" selection-start-column="64" selection-end-line="13" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/langVar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/sections/_register.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/css/main.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/slick.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/sections/_user.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="709">
+          <caret line="122" column="9" lean-forward="true" selection-start-line="103" selection-end-line="122" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="821">
+          <caret line="72" column="9" selection-start-line="72" selection-start-column="9" selection-end-line="72" selection-end-column="9" />
         </state>
       </provider>
     </entry>

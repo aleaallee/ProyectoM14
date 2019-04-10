@@ -1,5 +1,6 @@
 <?php
 require_once('php/langVar.php');
+require_once('php/classes/img.php');
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -18,7 +19,8 @@ require_once('php/langVar.php');
     <script src="js/jquery-3.3.1.min.js.js"></script>
     <script src="assets/slick/slick.min.js" defer></script>
     <script src="js/main.js?v=<?php echo time();?>" defer></script>
-    <script src="js/imageGrid.js?v=<?php echo time();?>" defer></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
 </head>
 
 <body>
@@ -66,32 +68,9 @@ require_once('php/langVar.php');
             </aside>
             <div class="section images active">
                 <div class="imagegrid">
-                    <div class="image">
-                        <img src="assets/img/3.jpg" alt="uploadImage" class="userimg">
-                    </div>
-                    <div class="image">
-                        <img src="assets/img/3.jpg" alt="uploadImage" class="userimg">
-                    </div>
-                    <div class="image">
-                        <img src="assets/img/3.jpg" alt="uploadImage" class="userimg">
-                    </div>
-                    <div class="image">
-                        <img src="assets/img/3.jpg" alt="uploadImage" class="userimg">
-                    </div>
-                    <div class="image">
-                        <img src="assets/img/3.jpg" alt="uploadImage" class="userimg">
-                    </div>
-                    <div class="image">
-                        <img src="assets/img/3.jpg" alt="uploadImage" class="userimg">
-                    </div>
-                    <div class="image">
-                        <img src="assets/img/3.jpg" alt="uploadImage" class="userimg">
-                    </div>
-                    <div class="image">
-                        <img src="assets/img/3.jpg" alt="uploadImage" class="userimg">
-                    </div>
+                    <?php echo img::printUserImages($_COOKIE['user']);?>
+                    
                 </div>
-
 
             </div>
             <div class="section data">

@@ -33,7 +33,6 @@ $(document).on("submit", "form.regform", function (event) {
         }
 
     }).fail(function ajaxFail(e) {
-        console.log(e.message);
         Swal.fire({
             type: 'error',
             title: 'Oops...',

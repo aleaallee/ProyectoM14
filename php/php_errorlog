@@ -1,0 +1,116 @@
+[09-Mar-2019 15:17:20 CST6CDT] PHP Notice:  Undefined index: email in /home/apd25972/public_html/php/register.php on line 13
+[09-Mar-2019 15:17:20 CST6CDT] PHP Notice:  Undefined index: reppassword in /home/apd25972/public_html/php/register.php on line 20
+[09-Mar-2019 16:45:42 CST6CDT] PHP Fatal error:  require_once(): Failed opening required '../classes/config.php' (include_path='.:/usr/local/php71/pear') in /home/apd25972/public_html/php/getLang.php on line 2
+[09-Mar-2019 16:45:56 CST6CDT] PHP Notice:  Array to string conversion in /home/apd25972/public_html/php/getLang.php on line 17
+[09-Mar-2019 16:46:09 CST6CDT] PHP Notice:  Undefined offset: 0 in /home/apd25972/public_html/php/getLang.php on line 17
+[09-Mar-2019 16:46:11 CST6CDT] PHP Notice:  Undefined offset: 0 in /home/apd25972/public_html/php/getLang.php on line 17
+[09-Mar-2019 16:47:19 CST6CDT] PHP Notice:  Array to string conversion in /home/apd25972/public_html/php/getLang.php on line 14
+[09-Mar-2019 16:47:33 CST6CDT] PHP Notice:  Array to string conversion in /home/apd25972/public_html/php/getLang.php on line 14
+[09-Mar-2019 16:47:35 CST6CDT] PHP Notice:  Array to string conversion in /home/apd25972/public_html/php/getLang.php on line 14
+[09-Mar-2019 16:47:36 CST6CDT] PHP Notice:  Array to string conversion in /home/apd25972/public_html/php/getLang.php on line 14
+[09-Mar-2019 16:47:43 CST6CDT] PHP Notice:  Undefined offset: 0 in /home/apd25972/public_html/php/classes/lang.php on line 46
+[09-Mar-2019 16:48:30 CST6CDT] PHP Notice:  Array to string conversion in /home/apd25972/public_html/php/classes/lang.php on line 47
+[09-Mar-2019 16:48:57 CST6CDT] PHP Warning:  Invalid argument supplied for foreach() in /home/apd25972/public_html/php/classes/lang.php on line 47
+[09-Mar-2019 16:49:08 CST6CDT] PHP Warning:  Invalid argument supplied for foreach() in /home/apd25972/public_html/php/classes/lang.php on line 47
+[09-Mar-2019 17:00:20 CST6CDT] PHP Notice:  Undefined offset: 0 in /home/apd25972/public_html/php/classes/lang.php on line 50
+[09-Mar-2019 17:00:29 CST6CDT] PHP Notice:  Array to string conversion in /home/apd25972/public_html/php/getLang.php on line 17
+[09-Mar-2019 17:01:01 CST6CDT] PHP Notice:  Array to string conversion in /home/apd25972/public_html/php/getLang.php on line 17
+[09-Mar-2019 17:01:24 CST6CDT] PHP Notice:  Array to string conversion in /home/apd25972/public_html/php/getLang.php on line 17
+[09-Mar-2019 17:12:33 CST6CDT] PHP Notice:  Use of undefined constant NAV_HOME - assumed 'NAV_HOME' in /home/apd25972/public_html/php/langVar.php on line 10
+[09-Mar-2019 17:13:30 CST6CDT] PHP Notice:  Use of undefined constant NAV_HOME - assumed 'NAV_HOME' in /home/apd25972/public_html/php/langVar.php on line 10
+[09-Mar-2019 17:16:53 CST6CDT] PHP Notice:  Use of undefined constant NAV_HOME - assumed 'NAV_HOME' in /home/apd25972/public_html/php/langVar.php on line 10
+[09-Mar-2019 17:16:54 CST6CDT] PHP Notice:  Use of undefined constant NAV_HOME - assumed 'NAV_HOME' in /home/apd25972/public_html/php/langVar.php on line 10
+[09-Mar-2019 17:16:55 CST6CDT] PHP Notice:  Use of undefined constant NAV_HOME - assumed 'NAV_HOME' in /home/apd25972/public_html/php/langVar.php on line 10
+[09-Mar-2019 17:16:56 CST6CDT] PHP Notice:  Use of undefined constant NAV_HOME - assumed 'NAV_HOME' in /home/apd25972/public_html/php/langVar.php on line 10
+[09-Mar-2019 17:50:16 CST6CDT] PHP Fatal error:  require_once(): Failed opening required './user.php' (include_path='.:/usr/local/php71/pear') in /home/apd25972/public_html/php/classes/config.php on line 2
+[09-Mar-2019 17:50:18 CST6CDT] PHP Fatal error:  require_once(): Failed opening required './user.php' (include_path='.:/usr/local/php71/pear') in /home/apd25972/public_html/php/classes/config.php on line 2
+[09-Mar-2019 17:50:29 CST6CDT] PHP Fatal error:  require(): Failed opening required './user.php' (include_path='.:/usr/local/php71/pear') in /home/apd25972/public_html/php/classes/config.php on line 2
+[11-Mar-2019 14:58:59 CST6CDT] PHP Notice:  Undefined index: email in /home/apd25972/public_html/php/register.php on line 13
+[11-Mar-2019 14:58:59 CST6CDT] PHP Notice:  Undefined index: reppassword in /home/apd25972/public_html/php/register.php on line 20
+[11-Mar-2019 14:59:04 CST6CDT] PHP Notice:  Undefined index: email in /home/apd25972/public_html/php/register.php on line 13
+[11-Mar-2019 14:59:04 CST6CDT] PHP Notice:  Undefined index: reppassword in /home/apd25972/public_html/php/register.php on line 20
+[11-Mar-2019 15:03:03 CST6CDT] PHP Notice:  Undefined index: email in /home/apd25972/public_html/php/register.php on line 13
+[11-Mar-2019 15:03:03 CST6CDT] PHP Notice:  Undefined index: reppassword in /home/apd25972/public_html/php/register.php on line 20
+[11-Mar-2019 15:06:39 CST6CDT] PHP Notice:  Undefined index: email in /home/apd25972/public_html/php/register.php on line 13
+[11-Mar-2019 15:06:39 CST6CDT] PHP Notice:  Undefined index: reppassword in /home/apd25972/public_html/php/register.php on line 20
+[11-Mar-2019 15:07:53 CST6CDT] PHP Notice:  Undefined index: email in /home/apd25972/public_html/php/register.php on line 13
+[11-Mar-2019 15:07:53 CST6CDT] PHP Notice:  Undefined index: reppassword in /home/apd25972/public_html/php/register.php on line 20
+[11-Mar-2019 15:08:28 CST6CDT] PHP Notice:  Undefined index: email in /home/apd25972/public_html/php/register.php on line 13
+[11-Mar-2019 15:08:28 CST6CDT] PHP Notice:  Undefined index: reppassword in /home/apd25972/public_html/php/register.php on line 20
+[11-Mar-2019 15:08:38 CST6CDT] PHP Notice:  Undefined index: email in /home/apd25972/public_html/php/register.php on line 13
+[11-Mar-2019 15:08:38 CST6CDT] PHP Notice:  Undefined index: reppassword in /home/apd25972/public_html/php/register.php on line 20
+[11-Mar-2019 15:08:55 CST6CDT] PHP Notice:  Undefined variable: email in /home/apd25972/public_html/php/login.php on line 15
+[11-Mar-2019 15:08:55 CST6CDT] PHP Warning:  password_hash() expects parameter 2 to be integer, string given in /home/apd25972/public_html/php/classes/user.php on line 48
+[11-Mar-2019 15:11:39 CST6CDT] PHP Warning:  password_hash() expects parameter 2 to be integer, string given in /home/apd25972/public_html/php/classes/user.php on line 56
+[11-Mar-2019 15:12:30 CST6CDT] PHP Warning:  password_hash() expects parameter 2 to be integer, string given in /home/apd25972/public_html/php/classes/user.php on line 56
+[11-Mar-2019 15:14:08 CST6CDT] PHP Warning:  password_hash() expects parameter 2 to be integer, string given in /home/apd25972/public_html/php/classes/user.php on line 56
+[11-Mar-2019 15:15:10 CST6CDT] PHP Warning:  password_hash() expects parameter 2 to be integer, string given in /home/apd25972/public_html/php/classes/user.php on line 56
+[11-Mar-2019 15:15:34 CST6CDT] PHP Warning:  password_hash() expects parameter 2 to be integer, string given in /home/apd25972/public_html/php/classes/user.php on line 56
+[11-Mar-2019 15:16:07 CST6CDT] PHP Warning:  password_hash() expects parameter 2 to be integer, string given in /home/apd25972/public_html/php/classes/user.php on line 56
+[11-Mar-2019 15:16:43 CST6CDT] PHP Warning:  password_hash() expects parameter 2 to be integer, string given in /home/apd25972/public_html/php/classes/user.php on line 56
+[11-Mar-2019 15:23:50 CST6CDT] PHP Warning:  password_hash() expects parameter 2 to be integer, string given in /home/apd25972/public_html/php/classes/user.php on line 56
+[18-Mar-2019 11:27:20 CST6CDT] PHP Warning:  password_hash() expects parameter 2 to be integer, string given in /home/apd25972/public_html/php/classes/user.php on line 56
+[18-Mar-2019 11:41:00 CST6CDT] PHP Notice:  Array to string conversion in /home/apd25972/public_html/php/classes/user.php on line 66
+[18-Mar-2019 11:41:17 CST6CDT] PHP Notice:  Array to string conversion in /home/apd25972/public_html/php/classes/user.php on line 66
+[18-Mar-2019 11:41:19 CST6CDT] PHP Notice:  Array to string conversion in /home/apd25972/public_html/php/classes/user.php on line 66
+[18-Mar-2019 11:41:42 CST6CDT] PHP Notice:  Undefined offset: 0 in /home/apd25972/public_html/php/classes/user.php on line 66
+[10-Apr-2019 14:05:25 CST6CDT] PHP Warning:  require_once(php/langVar.php): failed to open stream: No such file or directory in /home/apd25972/public_html/php/classes/img.php on line 4
+[10-Apr-2019 14:05:25 CST6CDT] PHP Fatal error:  require_once(): Failed opening required 'php/langVar.php' (include_path='.:/usr/local/php71/pear') in /home/apd25972/public_html/php/classes/img.php on line 4
+[10-Apr-2019 14:06:18 CST6CDT] PHP Warning:  require_once(php/langVar.php): failed to open stream: No such file or directory in /home/apd25972/public_html/php/classes/img.php on line 4
+[10-Apr-2019 14:06:18 CST6CDT] PHP Fatal error:  require_once(): Failed opening required 'php/langVar.php' (include_path='.:/usr/local/php71/pear') in /home/apd25972/public_html/php/classes/img.php on line 4
+[10-Apr-2019 14:54:36 CST6CDT] PHP Notice:  Undefined index: file in /home/apd25972/public_html/php/imageUpload.php on line 12
+[10-Apr-2019 14:57:53 CST6CDT] PHP Notice:  Use of undefined constant file - assumed 'file' in /home/apd25972/public_html/php/imageUpload.php on line 23
+[10-Apr-2019 15:36:58 CST6CDT] PHP Notice:  Only variables should be passed by reference in /home/apd25972/public_html/php/imageUpload.php on line 18
+[10-Apr-2019 15:36:58 CST6CDT] PHP Warning:  move_uploaded_file(/home/apd25972/public_html/php../img/uploads1458059818658_zpsfbb0obqt.jpg): failed to open stream: No such file or directory in /home/apd25972/public_html/php/imageUpload.php on line 40
+[10-Apr-2019 15:36:58 CST6CDT] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpJh2QNz' to '/home/apd25972/public_html/php../img/uploads1458059818658_zpsfbb0obqt.jpg' in /home/apd25972/public_html/php/imageUpload.php on line 40
+[10-Apr-2019 15:38:27 CST6CDT] PHP Notice:  Only variables should be passed by reference in /home/apd25972/public_html/php/imageUpload.php on line 18
+[10-Apr-2019 15:41:56 CST6CDT] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1458059818658_zpsfbb0obqt.jpg' for key 'PRIMARY' in /home/apd25972/public_html/php/imageUpload.php:34
+Stack trace:
+#0 /home/apd25972/public_html/php/imageUpload.php(34): PDOStatement->execute()
+#1 {main}
+  thrown in /home/apd25972/public_html/php/imageUpload.php on line 34
+[10-Apr-2019 15:44:51 CST6CDT] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1458059818658_zpsfbb0obqt.jpg' for key 'PRIMARY' in /home/apd25972/public_html/php/imageUpload.php:34
+Stack trace:
+#0 /home/apd25972/public_html/php/imageUpload.php(34): PDOStatement->execute()
+#1 {main}
+  thrown in /home/apd25972/public_html/php/imageUpload.php on line 34
+[10-Apr-2019 15:44:52 CST6CDT] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1458059818658_zpsfbb0obqt.jpg' for key 'PRIMARY' in /home/apd25972/public_html/php/imageUpload.php:34
+Stack trace:
+#0 /home/apd25972/public_html/php/imageUpload.php(34): PDOStatement->execute()
+#1 {main}
+  thrown in /home/apd25972/public_html/php/imageUpload.php on line 34
+[10-Apr-2019 15:44:53 CST6CDT] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1458059818658_zpsfbb0obqt.jpg' for key 'PRIMARY' in /home/apd25972/public_html/php/imageUpload.php:34
+Stack trace:
+#0 /home/apd25972/public_html/php/imageUpload.php(34): PDOStatement->execute()
+#1 {main}
+  thrown in /home/apd25972/public_html/php/imageUpload.php on line 34
+[10-Apr-2019 15:44:54 CST6CDT] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1458059818658_zpsfbb0obqt.jpg' for key 'PRIMARY' in /home/apd25972/public_html/php/imageUpload.php:34
+Stack trace:
+#0 /home/apd25972/public_html/php/imageUpload.php(34): PDOStatement->execute()
+#1 {main}
+  thrown in /home/apd25972/public_html/php/imageUpload.php on line 34
+[10-Apr-2019 15:44:54 CST6CDT] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1458059818658_zpsfbb0obqt.jpg' for key 'PRIMARY' in /home/apd25972/public_html/php/imageUpload.php:34
+Stack trace:
+#0 /home/apd25972/public_html/php/imageUpload.php(34): PDOStatement->execute()
+#1 {main}
+  thrown in /home/apd25972/public_html/php/imageUpload.php on line 34
+[10-Apr-2019 15:44:55 CST6CDT] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1458059818658_zpsfbb0obqt.jpg' for key 'PRIMARY' in /home/apd25972/public_html/php/imageUpload.php:34
+Stack trace:
+#0 /home/apd25972/public_html/php/imageUpload.php(34): PDOStatement->execute()
+#1 {main}
+  thrown in /home/apd25972/public_html/php/imageUpload.php on line 34
+[10-Apr-2019 15:44:55 CST6CDT] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1458059818658_zpsfbb0obqt.jpg' for key 'PRIMARY' in /home/apd25972/public_html/php/imageUpload.php:34
+Stack trace:
+#0 /home/apd25972/public_html/php/imageUpload.php(34): PDOStatement->execute()
+#1 {main}
+  thrown in /home/apd25972/public_html/php/imageUpload.php on line 34
+[10-Apr-2019 15:44:55 CST6CDT] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1458059818658_zpsfbb0obqt.jpg' for key 'PRIMARY' in /home/apd25972/public_html/php/imageUpload.php:34
+Stack trace:
+#0 /home/apd25972/public_html/php/imageUpload.php(34): PDOStatement->execute()
+#1 {main}
+  thrown in /home/apd25972/public_html/php/imageUpload.php on line 34
+[10-Apr-2019 15:59:02 CST6CDT] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'b868687eb9893719784108fee9690463' for key 'PRIMARY' in /home/apd25972/public_html/php/imageUpload.php:34
+Stack trace:
+#0 /home/apd25972/public_html/php/imageUpload.php(34): PDOStatement->execute()
+#1 {main}
+  thrown in /home/apd25972/public_html/php/imageUpload.php on line 34

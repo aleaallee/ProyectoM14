@@ -1,6 +1,6 @@
 main.gallery {
   width: 100vw;
-  height: 100vh;
+  height: 94em;
   background-color: $principal;
   display: inline-block;
 
@@ -71,26 +71,45 @@ main.gallery {
   section.img-grid {
     display: grid;
     width: 100vw;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 22em);
     grid-row-gap: 5em;
     grid-column-gap: 5em;
     grid-auto-flow: dense;
-    margin-top: 3em;
+    margin-top: 10em;
     margin-bottom: 2em;
-    padding-left: 12%;
-    padding-right: 12%;
+    padding-left: 14%;
+    padding-right: 7%;
+
+    @media (min-width: 1200px) {
+      grid-template-columns: repeat(3, 29em);
+      margin-top: 11em;
+    }
+
+    @media (min-width: 1300px) {
+      margin-bottom: 18em;
+    }
 
     @media (min-width: 1900px) {
       grid-template-columns: repeat(4, 1fr);
       margin-top: 13em;
+      margin-bottom: 2em;
+      padding-left: 12%;
+      padding-right: 12%;
     }
 
     .img {
       width: 100%;
       border-radius: 10px;
-      img {
+      height: 21em;
+      a {
         width: inherit;
         border-radius: inherit;
+        height: inherit;
+        img {
+          width: inherit;
+          border-radius: inherit;
+          height: inherit;
+        }
       }
       &:hover {
         cursor: pointer;
@@ -98,8 +117,8 @@ main.gallery {
       &.upload {
         background-color: rgba(199, 196, 187, 0.64);
         border: 2px dashed #313131;
-        width: 33em;
-        height: 19em;
+        width: 22em;
+        height: 21em;
         &:hover {
           cursor: pointer;
           border-color: lighten($color: #313131, $amount: 10%);
@@ -112,12 +131,98 @@ main.gallery {
           display: block;
           font-size: 4.6em;
           font-family: "lato";
-          top: 1.4em;
-          left: 3.2em;
-          position: relative;
+          margin: 1.6em 0 0 2em;
           color: #333;
+          @media (min-width: 1200px) {
+            margin: 1.6em 0 0 2.8em;
+          }
+          @media (min-width: 1300px) {
+            margin: 1.6em 0 0 2.7em;
+          }
+          @media (min-width: 1900px) {
+            margin: 2.1em 0 0 3em;
+          }
+        }
+        @media (min-width: 1200px) {
+          width: 29em;
+        }
+        @media (min-width: 1300px) {
+        }
+        @media (min-width: 1900px) {
+          height: 25em;
+          width: 33em;
         }
       }
+      @media(min-width: 1900px){
+        height: 25em;
+      }
+      
+    }
+    a {
+      color: transparent;
+    }
+  }
+}
+.uploadModal {
+  display: none;
+  position: absolute;
+  background-image: linear-gradient(
+    to right bottom,
+    #5c687c,
+    #4e5d7e,
+    #44527f,
+    #3e467f,
+    #3c387c
+  ) !important;
+  color: #333;
+  width: 136em;
+  form {
+    margin-bottom: 5em;
+  }
+  fieldset {
+    margin: 3em 12em 0 12em;
+    border-radius: 5em;
+    @media(min-width: 1200px){
+      margin: 3em 20em 0 20em;
+    }
+    legend,
+    label {
+      color: #fff;
+    }
+    legend {
+      text-align: center;
+      font-size: 3em;
+    }
+    label {
+      margin-left: 3em;
+      font-size: 2em;
+    }
+    input[type="file"] {
+      color: whitesmoke;
+      margin: 1em 0 1em 1em;
+    }
+    img {
+      display: none;
+      width: 70em;
+      margin: 0 0 2em 6em;
+      &.active {
+        display: block;
+      }
+    }
+    button {
+      padding: 0.8em 2.8em 0.8em 2.8em;
+      margin-left: 6em;
+      border-radius: 1em;
+      color: white;
+      font-size: 2.2em;
+      border: none;
+      background-image: linear-gradient(
+        to right bottom,
+        #00cdd2,
+        #00aacd,
+        #0085be,
+        #045fa3
+      );
     }
   }
 }

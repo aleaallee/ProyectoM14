@@ -61,7 +61,14 @@ main.user {
       }
       aside.list {
         width: 18em;
-        background-image: linear-gradient(to right bottom,#0095dd,#009de0,#00a4e2,#00ace3,#00b3e4);
+        background-image: linear-gradient(
+          to right bottom,
+          #0095dd,
+          #009de0,
+          #00a4e2,
+          #00ace3,
+          #00b3e4
+        );
         border-bottom-left-radius: 9px;
         ul {
           font-size: 2.2em;
@@ -109,20 +116,25 @@ main.user {
             grid-column-gap: 2em;
             grid-auto-flow: dense;
             padding: 3em 3em 3em 5em;
+
+            width: inherit;
             .image {
               width: 100%;
               border-radius: 10px;
-              transition: all .5s linear-in-out;
+              transition: all 0.5s linear-in-out;
               &:hover {
                 cursor: pointer;
               }
-              &.activeImg{
+              &.activeImg {
                 grid-column: 1 / span 3;
-                transition: all .5s linear-in-out;
-              }         
-              img {
+                transition: all 0.5s linear-in-out;
+              }
+              a {
                 width: inherit;
-                border-radius: inherit;
+                img {
+                  width: inherit;
+                  border-radius: inherit;
+                }
               }
             }
             @media (min-width: 1900px) {

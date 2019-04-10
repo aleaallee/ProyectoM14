@@ -26,8 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     } else {
       $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
 
-      $adduser = $con->prepare("INSERT INTO Users(username, email, password, created) 
-            values(:user, LOWER(:email), :password, NOW() )");
+      $adduser = $con->prepare("INSERT INTO Users(username, email, password, created) values(:user, LOWER(:email), :password, NOW() )");
 
 
       $adduser->bindParam(':user', $user, PDO::PARAM_STR);
@@ -39,13 +38,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
       $return['redirect'] = '/index.php?message=welcome';
 
-
-      /*
-       * https://github.com/KalobTaulien/PHP-Login-System/blob/master/assets/js/main.js
-       * https://github.com/KalobTaulien/PHP-Login-System/blob/master/ajax/register.php
-       * https://github.com/KalobTaulien/PHP-Login-System/blob/master/ajax/login.php
-       * https://github.com/KalobTaulien/PHP-Login-System/blob/master/inc/classes/User.php
-       * */
 
     }
   } else {

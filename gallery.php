@@ -16,10 +16,11 @@ require_once('php/classes/img.php');
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.min.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="assets/slick/slick.css">
     <link rel="stylesheet" href="assets/slick/slick-theme.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
     <script src="js/jquery-3.3.1.min.js.js"></script>
     <script src="assets/slick/slick.min.js" defer></script>
     <script src="js/main.js?v=<?php echo time(); ?>" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
     <script src="js/nav.js" defer></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
@@ -59,23 +60,26 @@ require_once('php/classes/img.php');
     </div>
 </header>
 <main class="gallery">
-    <section class="preview">
-        <div class="previewimg">
-            <img src="img/gtest.png" alt="Test image">
-            <div class="info">
-                <div class="user">
-                    <img src="assets/users/user_sample.png" alt="User">
-                    <p>@User</p>
-                    <div class="popularity">&#x2764;</div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="img-grid">
-        <?php echo img::printImages(); ?>
-        <div class="img upload">
-        </div>
+    <div class="uploadModal" id="uploadModal">
+        <form name="imgUpload" id="galleryForm" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend><?php echo GALLERY_UPLOAD_IMAGE ?></legend>
+                <label for="title"><?php echo GALLERY_TITLE ?>: <input type="text" name="title"
+                                                                       placeholder="<?php echo GALLERY_TITLE ?>"></label><br/>
+                <label for="image"><?php echo GALLERY_IMAGE ?>: <input type="file" name="image"></label><br/>
+                <img src="#" alt="UploadedImage" id="UploadedImage">
+                <button class="imgUpload"><?php echo GALLERY_UPLOAD ?></button>
+            </fieldset>
+        </form>
+    </div>
 
+    <section class="img-grid">
+      <?php echo img::printImages(); ?>
+      <?php
+      if (isset($_COOKIE['user'])) {
+          echo "<a data-fancybox data-src=\"#uploadModal\" href=\"javascript:;\"><div class=\"img upload\"></div></a>";
+      }
+      ?>
     </section>
 </main>
 
@@ -99,6 +103,27 @@ require_once('php/classes/img.php');
         </ul>
     </div>
 </footer>
+<script>
+  $(document).ready(function () {
+    function readURL(input) {
+
+      if (input.files && input.files[0]) {
+        let reader = new FileReader();
+
+        reader.onload = function (e) {
+          $('fieldset > img').attr('src', e.target.result);
+          $('fieldset > img').addClass('active');
+        };
+
+        reader.readAsDataURL(input.files[0]);
+      }
+    }
+
+    $("input[type=file]").change(function () {
+      readURL(this);
+    });
+  })
+</script>
 </body>
 
 </html>

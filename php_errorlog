@@ -1,0 +1,86 @@
+[09-Mar-2019 17:19:32 CST6CDT] PHP Fatal error:  require_once(): Failed opening required 'php/langVar' (include_path='.:/usr/local/php71/pear') in /home/apd25972/public_html/index.php on line 2
+[09-Mar-2019 17:28:48 CST6CDT] PHP Parse error:  syntax error, unexpected 'NAV_HOME' (T_STRING), expecting variable (T_VARIABLE) or '$' in /home/apd25972/public_html/index.php on line 53
+[09-Mar-2019 17:48:30 CST6CDT] PHP Fatal error:  Uncaught Error: Class 'DB' not found in /home/apd25972/public_html/php/classes/lang.php:42
+Stack trace:
+#0 /home/apd25972/public_html/php/langVar.php(7): lang::getTranslation('ES', 'NAV_HOME')
+#1 /home/apd25972/public_html/index.php(2): require_once('/home/apd25972/...')
+#2 {main}
+  thrown in /home/apd25972/public_html/php/classes/lang.php on line 42
+[09-Mar-2019 17:49:04 CST6CDT] PHP Notice:  Use of undefined constant NAV_HOME - assumed 'NAV_HOME' in /home/apd25972/public_html/user.php on line 28
+[09-Mar-2019 17:49:07 CST6CDT] PHP Notice:  Use of undefined constant NAV_HOME - assumed 'NAV_HOME' in /home/apd25972/public_html/user.php on line 28
+[09-Mar-2019 17:49:14 CST6CDT] PHP Notice:  Use of undefined constant NAV_HOME - assumed 'NAV_HOME' in /home/apd25972/public_html/user.php on line 28
+[19-Mar-2019 12:53:52 CST6CDT] PHP Notice:  Use of undefined constant TERMS - assumed 'TERMS' in /home/apd25972/public_html/log.php on line 94
+[19-Mar-2019 12:54:58 CST6CDT] PHP Notice:  Use of undefined constant TERMS - assumed 'TERMS' in /home/apd25972/public_html/log.php on line 94
+[19-Mar-2019 12:55:08 CST6CDT] PHP Notice:  Use of undefined constant TERMS - assumed 'TERMS' in /home/apd25972/public_html/log.php on line 94
+[19-Mar-2019 12:55:10 CST6CDT] PHP Notice:  Use of undefined constant TERMS - assumed 'TERMS' in /home/apd25972/public_html/log.php on line 94
+[19-Mar-2019 12:55:13 CST6CDT] PHP Notice:  Use of undefined constant TERMS - assumed 'TERMS' in /home/apd25972/public_html/log.php on line 94
+[19-Mar-2019 12:55:58 CST6CDT] PHP Notice:  Use of undefined constant TERMS - assumed 'TERMS' in /home/apd25972/public_html/log.php on line 94
+[19-Mar-2019 12:57:12 CST6CDT] PHP Notice:  Use of undefined constant TERMS - assumed 'TERMS' in /home/apd25972/public_html/log.php on line 94
+[19-Mar-2019 13:00:38 CST6CDT] PHP Notice:  Use of undefined constant TERMS - assumed 'TERMS' in /home/apd25972/public_html/log.php on line 94
+[19-Mar-2019 13:01:14 CST6CDT] PHP Notice:  Use of undefined constant TERMS - assumed 'TERMS' in /home/apd25972/public_html/log.php on line 94
+[19-Mar-2019 13:01:33 CST6CDT] PHP Notice:  Use of undefined constant TERMS - assumed 'TERMS' in /home/apd25972/public_html/log.php on line 94
+[19-Mar-2019 13:03:48 CST6CDT] PHP Notice:  Use of undefined constant TERMS - assumed 'TERMS' in /home/apd25972/public_html/log.php on line 94
+[19-Mar-2019 13:03:52 CST6CDT] PHP Notice:  Use of undefined constant TERMS - assumed 'TERMS' in /home/apd25972/public_html/log.php on line 94
+[19-Mar-2019 13:04:07 CST6CDT] PHP Notice:  Use of undefined constant TERMS - assumed 'TERMS' in /home/apd25972/public_html/log.php on line 94
+[19-Mar-2019 13:04:14 CST6CDT] PHP Notice:  Use of undefined constant TERMS - assumed 'TERMS' in /home/apd25972/public_html/log.php on line 94
+[19-Mar-2019 13:04:27 CST6CDT] PHP Notice:  Use of undefined constant TERMS - assumed 'TERMS' in /home/apd25972/public_html/log.php on line 94
+[20-Mar-2019 10:21:10 CST6CDT] PHP Notice:  Use of undefined constant TERMS - assumed 'TERMS' in /home/apd25972/public_html/log.php on line 94
+[20-Mar-2019 10:21:34 CST6CDT] PHP Notice:  Use of undefined constant TERMS - assumed 'TERMS' in /home/apd25972/public_html/gallery.php on line 105
+[20-Mar-2019 10:22:00 CST6CDT] PHP Notice:  Use of undefined constant TERMS - assumed 'TERMS' in /home/apd25972/public_html/log.php on line 94
+[20-Mar-2019 10:23:52 CST6CDT] PHP Notice:  Use of undefined constant TERMS - assumed 'TERMS' in /home/apd25972/public_html/contact.php on line 70
+[20-Mar-2019 11:04:09 CST6CDT] PHP Warning:  filemtime(): stat failed for /home/apd25972/public_htmlcss/main.css in /home/apd25972/public_html/index.php on line 6
+[20-Mar-2019 20:10:21 CST6CDT] PHP Notice:  Use of undefined constant TERMS - assumed 'TERMS' in /home/apd25972/public_html/contact.php on line 70
+[21-Mar-2019 20:59:47 CST6CDT] PHP Notice:  Use of undefined constant TERMS - assumed 'TERMS' in /home/apd25972/public_html/gallery.php on line 105
+[21-Mar-2019 20:59:55 CST6CDT] PHP Notice:  Use of undefined constant TERMS - assumed 'TERMS' in /home/apd25972/public_html/gallery.php on line 105
+[30-Mar-2019 16:45:19 CST6CDT] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/apd25972/public_html/user.php on line 36
+[03-Apr-2019 13:41:22 CST6CDT] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/apd25972/public_html/user.php on line 36
+[04-Apr-2019 11:33:23 CST6CDT] PHP Notice:  Undefined index: user in /home/apd25972/public_html/user.php on line 53
+[04-Apr-2019 11:37:28 CST6CDT] PHP Notice:  Undefined index: user in /home/apd25972/public_html/user.php on line 53
+[05-Apr-2019 14:11:01 CST6CDT] PHP Notice:  Undefined index: user in /home/apd25972/public_html/user.php on line 53
+[08-Apr-2019 09:07:12 CST6CDT] PHP Notice:  Undefined index: user in /home/apd25972/public_html/user.php on line 53
+[09-Apr-2019 13:37:32 CST6CDT] PHP Notice:  Undefined index: user in /home/apd25972/public_html/user.php on line 53
+[09-Apr-2019 18:20:39 CST6CDT] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'apd25972_apd2.uploads' doesn't exist in /home/apd25972/public_html/php/classes/img.php:19
+Stack trace:
+#0 /home/apd25972/public_html/php/classes/img.php(19): PDO->prepare('Select * FROM u...')
+#1 /home/apd25972/public_html/gallery.php(72): img::printImages()
+#2 {main}
+  thrown in /home/apd25972/public_html/php/classes/img.php on line 19
+[09-Apr-2019 18:25:16 CST6CDT] PHP Notice:  Use of undefined constant FETCH_CLASS - assumed 'FETCH_CLASS' in /home/apd25972/public_html/php/classes/img.php on line 21
+[09-Apr-2019 18:25:16 CST6CDT] PHP Warning:  PDOStatement::fetchAll() expects parameter 1 to be integer, string given in /home/apd25972/public_html/php/classes/img.php on line 21
+[09-Apr-2019 18:25:16 CST6CDT] PHP Notice:  Undefined variable: datos in /home/apd25972/public_html/php/classes/img.php on line 24
+[09-Apr-2019 18:31:40 CST6CDT] PHP Notice:  Undefined variable: datos in /home/apd25972/public_html/php/classes/img.php on line 33
+[09-Apr-2019 18:41:54 CST6CDT] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/apd25972/public_html/php/classes/img.php:26
+Stack trace:
+#0 /home/apd25972/public_html/gallery.php(72): img::printImages()
+#1 {main}
+  thrown in /home/apd25972/public_html/php/classes/img.php on line 26
+[09-Apr-2019 18:42:08 CST6CDT] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/apd25972/public_html/php/classes/img.php on line 26
+[09-Apr-2019 18:42:17 CST6CDT] PHP Deprecated:  Non-static method img::getTitle() should not be called statically in /home/apd25972/public_html/php/classes/img.php on line 26
+[10-Apr-2019 09:19:13 CST6CDT] PHP Warning:  require_once(../langVar.php): failed to open stream: No such file or directory in /home/apd25972/public_html/php/classes/img.php on line 4
+[10-Apr-2019 09:19:13 CST6CDT] PHP Fatal error:  require_once(): Failed opening required '../langVar.php' (include_path='.:/usr/local/php71/pear') in /home/apd25972/public_html/php/classes/img.php on line 4
+[10-Apr-2019 09:19:15 CST6CDT] PHP Warning:  require_once(../langVar.php): failed to open stream: No such file or directory in /home/apd25972/public_html/php/classes/img.php on line 4
+[10-Apr-2019 09:19:15 CST6CDT] PHP Fatal error:  require_once(): Failed opening required '../langVar.php' (include_path='.:/usr/local/php71/pear') in /home/apd25972/public_html/php/classes/img.php on line 4
+[10-Apr-2019 14:06:58 CST6CDT] PHP Warning:  require_once(../langVar.php): failed to open stream: No such file or directory in /home/apd25972/public_html/php/classes/img.php on line 4
+[10-Apr-2019 14:06:58 CST6CDT] PHP Fatal error:  require_once(): Failed opening required '../langVar.php' (include_path='.:/usr/local/php71/pear') in /home/apd25972/public_html/php/classes/img.php on line 4
+[10-Apr-2019 14:06:59 CST6CDT] PHP Warning:  require_once(../langVar.php): failed to open stream: No such file or directory in /home/apd25972/public_html/php/classes/img.php on line 4
+[10-Apr-2019 14:06:59 CST6CDT] PHP Fatal error:  require_once(): Failed opening required '../langVar.php' (include_path='.:/usr/local/php71/pear') in /home/apd25972/public_html/php/classes/img.php on line 4
+[10-Apr-2019 14:07:15 CST6CDT] PHP Warning:  require_once(langVar.php): failed to open stream: No such file or directory in /home/apd25972/public_html/php/classes/img.php on line 4
+[10-Apr-2019 14:07:15 CST6CDT] PHP Fatal error:  require_once(): Failed opening required 'langVar.php' (include_path='.:/usr/local/php71/pear') in /home/apd25972/public_html/php/classes/img.php on line 4
+[10-Apr-2019 14:07:29 CST6CDT] PHP Warning:  require_once(../../langVar.php): failed to open stream: No such file or directory in /home/apd25972/public_html/php/classes/img.php on line 4
+[10-Apr-2019 14:07:29 CST6CDT] PHP Fatal error:  require_once(): Failed opening required '../../langVar.php' (include_path='.:/usr/local/php71/pear') in /home/apd25972/public_html/php/classes/img.php on line 4
+[10-Apr-2019 14:07:44 CST6CDT] PHP Warning:  require_once(../langVar.php): failed to open stream: No such file or directory in /home/apd25972/public_html/php/classes/img.php on line 4
+[10-Apr-2019 14:07:44 CST6CDT] PHP Fatal error:  require_once(): Failed opening required '../langVar.php' (include_path='.:/usr/local/php71/pear') in /home/apd25972/public_html/php/classes/img.php on line 4
+[10-Apr-2019 14:08:09 CST6CDT] PHP Warning:  require_once(../langVar.php): failed to open stream: No such file or directory in /home/apd25972/public_html/php/classes/img.php on line 4
+[10-Apr-2019 14:08:09 CST6CDT] PHP Fatal error:  require_once(): Failed opening required '../langVar.php' (include_path='.:/usr/local/php71/pear') in /home/apd25972/public_html/php/classes/img.php on line 4
+[10-Apr-2019 14:08:10 CST6CDT] PHP Warning:  require_once(../langVar.php): failed to open stream: No such file or directory in /home/apd25972/public_html/php/classes/img.php on line 4
+[10-Apr-2019 14:08:10 CST6CDT] PHP Fatal error:  require_once(): Failed opening required '../langVar.php' (include_path='.:/usr/local/php71/pear') in /home/apd25972/public_html/php/classes/img.php on line 4
+[10-Apr-2019 14:08:50 CST6CDT] PHP Notice:  Undefined variable: lang in /home/apd25972/public_html/php/classes/img.php on line 4
+[10-Apr-2019 14:08:50 CST6CDT] PHP Notice:  Constant GALLERY_BY already defined in /home/apd25972/public_html/php/langVar.php on line 15
+[10-Apr-2019 14:08:52 CST6CDT] PHP Notice:  Undefined variable: lang in /home/apd25972/public_html/php/classes/img.php on line 4
+[10-Apr-2019 14:08:52 CST6CDT] PHP Notice:  Constant GALLERY_BY already defined in /home/apd25972/public_html/php/langVar.php on line 15
+[10-Apr-2019 14:09:20 CST6CDT] PHP Notice:  Undefined variable: lang in /home/apd25972/public_html/php/classes/img.php on line 5
+[10-Apr-2019 14:09:20 CST6CDT] PHP Notice:  Constant GALLERY_BY already defined in /home/apd25972/public_html/php/langVar.php on line 15
+[10-Apr-2019 14:09:21 CST6CDT] PHP Notice:  Undefined variable: lang in /home/apd25972/public_html/php/classes/img.php on line 5
+[10-Apr-2019 14:09:21 CST6CDT] PHP Notice:  Constant GALLERY_BY already defined in /home/apd25972/public_html/php/langVar.php on line 15
+[10-Apr-2019 14:09:46 CST6CDT] PHP Notice:  Undefined variable: lang in /home/apd25972/public_html/php/classes/img.php on line 4
+[10-Apr-2019 14:09:46 CST6CDT] PHP Notice:  Constant GALLERY_BY already defined in /home/apd25972/public_html/php/langVar.php on line 15

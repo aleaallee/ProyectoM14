@@ -1,0 +1,18 @@
+[09-Mar-2019 16:58:57 CST6CDT] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: PDO::FETCH_KEY_PAIR fetch mode requires the result set to contain extactly 2 columns. in /home/apd25972/public_html/php/classes/lang.php:29
+Stack trace:
+#0 /home/apd25972/public_html/php/classes/lang.php(29): PDOStatement->fetch(12)
+#1 /home/apd25972/public_html/php/testApis/lang.php(17): lang::getApiTranslation('ES')
+#2 {main}
+  thrown in /home/apd25972/public_html/php/classes/lang.php on line 29
+[09-Mar-2019 16:59:06 CST6CDT] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: No fetch-into object specified. in /home/apd25972/public_html/php/classes/lang.php:29
+Stack trace:
+#0 /home/apd25972/public_html/php/classes/lang.php(29): PDOStatement->fetch(9)
+#1 /home/apd25972/public_html/php/testApis/lang.php(17): lang::getApiTranslation('ES')
+#2 {main}
+  thrown in /home/apd25972/public_html/php/classes/lang.php on line 29
+[09-Mar-2019 16:59:07 CST6CDT] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000]: General error: No fetch-into object specified. in /home/apd25972/public_html/php/classes/lang.php:29
+Stack trace:
+#0 /home/apd25972/public_html/php/classes/lang.php(29): PDOStatement->fetch(9)
+#1 /home/apd25972/public_html/php/testApis/lang.php(17): lang::getApiTranslation('ES')
+#2 {main}
+  thrown in /home/apd25972/public_html/php/classes/lang.php on line 29

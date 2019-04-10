@@ -1,8 +1,9 @@
 footer {
   display: inline-block;
+  position: absolute;
   width: 100vw;
   height: 14em;
-  margin-bottom: -1em;
+  margin-top: 0;
   background-color: #2A2D34;
 
   .linkgroup {
@@ -31,6 +32,10 @@ footer {
         }
       }
     }
+  }
+  
+  @media(min-width: 1900px){
+    margin-top: 0;
   }
   
 }

@@ -7,16 +7,18 @@ require_once('php/langVar.php');
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>A.P.D 2 - User access</title>
+    <title>A.P.D 2 - User</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A.P.D.2 - User access">
+    <meta name="description" content="A.P.D.2 - User">
+    <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css?v=1.21">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.min.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="assets/slick/slick.css">
     <link rel="stylesheet" href="assets/slick/slick-theme.css">
     <script src="js/jquery-3.3.1.min.js.js"></script>
     <script src="assets/slick/slick.min.js" defer></script>
-    <script src="js/main.js" defer></script>
+    <script src="js/main.js?v=<?php echo time();?>" defer></script>
+    <script src="js/imageGrid.js?v=<?php echo time();?>" defer></script>
 </head>
 
 <body>
@@ -34,7 +36,7 @@ require_once('php/langVar.php');
             echo "
                 <li class=\"user obj-nav\">
                   <div class='circle'>
-                    <a href='user.php'>". $_COOKIE["user"][0] . "</a>
+                    <a href='user.php'>" . $_COOKIE["user"][0] . "</a>
                   </div>
                 </li>
               ";
@@ -47,7 +49,55 @@ require_once('php/langVar.php');
 </header>
 <main class="user">
     <div class="profile">
+        <section class="top">
+            <div class="userimg">
+                <p><?php echo $_COOKIE["user"][0] ?></p>
+                <p class="username"><?php echo $_COOKIE["user"] ?></p>
+            </div>
 
+        </section>
+        <section class="bottom">
+            <aside class="list">
+                <ul>
+                    <li class="active"><a href="https://www.apd2.es/user.php?active=img"><?php echo USER_IMAGES; ?></a>
+                    </li>
+                    <li><a href="https://www.apd2.es/user.php?active=img"><?php echo USER_INFO ?></a></li>
+                </ul>
+            </aside>
+            <div class="section images active">
+                <div class="imagegrid">
+                    <div class="image">
+                        <img src="assets/img/3.jpg" alt="uploadImage" class="userimg">
+                    </div>
+                    <div class="image">
+                        <img src="assets/img/3.jpg" alt="uploadImage" class="userimg">
+                    </div>
+                    <div class="image">
+                        <img src="assets/img/3.jpg" alt="uploadImage" class="userimg">
+                    </div>
+                    <div class="image">
+                        <img src="assets/img/3.jpg" alt="uploadImage" class="userimg">
+                    </div>
+                    <div class="image">
+                        <img src="assets/img/3.jpg" alt="uploadImage" class="userimg">
+                    </div>
+                    <div class="image">
+                        <img src="assets/img/3.jpg" alt="uploadImage" class="userimg">
+                    </div>
+                    <div class="image">
+                        <img src="assets/img/3.jpg" alt="uploadImage" class="userimg">
+                    </div>
+                    <div class="image">
+                        <img src="assets/img/3.jpg" alt="uploadImage" class="userimg">
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="section data">
+
+            </div>
+        </section>
     </div>
 </main>
 
@@ -56,7 +106,7 @@ require_once('php/langVar.php');
         <ul class="links">
             <!--<li><a href="index.php">A.P.D.2</a></li>-->
             <li>
-                <select name="langSelector" >
+                <select name="langSelector">
                     <option selected disabled><?php echo MENU_LANG ?></option>
                     <option value="ES">ES</option>
                     <option value="EN">EN</option>

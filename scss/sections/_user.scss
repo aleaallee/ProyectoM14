@@ -1,18 +1,140 @@
 main.user {
   display: inline-block;
   width: 100%;
-  height: 100vh;
-  background-color: #3A7CA5;
+
+  background-color: #3a7ca5;
   .profile {
     display: grid;
     width: 70%;
-    height: 50em;
     background-color: hsl(210, 67%, 75%);
     margin: auto;
-    margin-top: 10em;
+    margin-top: 15em;
+    margin-bottom: 15em;
     border-radius: 10px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    
+    .top,
+    .bottom {
+      width: 100%;
+    }
+    .top {
+      height: 20em;
+      background-image: linear-gradient(
+        to right top,
+        #3259b3,
+        #0064af,
+        #006ca5,
+        #007196,
+        #007487
+      );
+      .userimg {
+        width: 13em;
+        height: 13em;
+        margin: 3em 0 0 5em;
+        background-color: hsla(209, 75%, 40%, 1);
+        border-radius: 118px;
+        box-shadow: 0 2px 4px #333;
+        p {
+          position: absolute;
+          margin-left: 0.95em;
+          margin-top: 0.7em;
+          font-size: 5em;
+          text-transform: capitalize;
+          color: ghostwhite;
+        }
+        p.username {
+          margin-top: 0.9em;
+          margin-left: 3.7em;
+          text-transform: none;
+          font-size: 4.3em;
+          color: #eaeaea;
+          text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+        }
+      }
+    }
+    .bottom {
+      display: flex;
+      width: 100%;
+      //height: 45em;
+      aside.list,
+      div.section {
+        float: left;
+      }
+      aside.list {
+        width: 18em;
+        background-image: linear-gradient(to right bottom,#0095dd,#009de0,#00a4e2,#00ace3,#00b3e4);
+        border-bottom-left-radius: 9px;
+        ul {
+          font-size: 2.2em;
+          color: white;
+          list-style-type: none;
+          margin-top: 7.5em;
+          margin-left: 1em;
+          margin-right: 0;
+          padding: 0;
+          li {
+            margin-bottom: 1em;
+            a {
+              text-decoration: none;
+              color: inherit;
+            }
+            &.active {
+              a {
+                color: #005088;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+      }
+      div.section {
+        display: none;
+        background-image: linear-gradient(
+          to left top,
+          #0095dd,
+          #009de0,
+          #00a4e2,
+          #00ace3,
+          #00b3e4
+        );
+        width: 80.939%;
+        border-bottom-right-radius: 1em;
+        &.active {
+          display: inline-block;
+        }
+        &.images {
+          .imagegrid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-row-gap: 2em;
+            grid-column-gap: 2em;
+            grid-auto-flow: dense;
+            padding: 3em 3em 3em 5em;
+            .image {
+              width: 100%;
+              border-radius: 10px;
+              transition: all .5s linear-in-out;
+              &:hover {
+                cursor: pointer;
+              }
+              &.activeImg{
+                grid-column: 1 / span 3;
+                transition: all .5s linear-in-out;
+              }         
+              img {
+                width: inherit;
+                border-radius: inherit;
+              }
+            }
+            @media (min-width: 1900px) {
+              padding-left: 3em;
+            }
+          }
+        }
 
+        @media (min-width: 1900px) {
+          width: 86.486%;
+        }
+      }
+    }
   }
 }

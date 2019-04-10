@@ -1,6 +1,5 @@
 <?php
 require_once('php/langVar.php');
-
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -9,56 +8,34 @@ require_once('php/langVar.php');
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>A.P.D 2 - Inicio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A.P.D.2 Alexa Play Despacito 2">
     <link rel="manifest" href="site.webmanifest">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A.P.D.2 - Gallery">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.min.css?v=<?php echo time();?>">
     <link rel="stylesheet" href="assets/slick/slick.css">
     <link rel="stylesheet" href="assets/slick/slick-theme.css">
     <script src="js/jquery-3.3.1.min.js.js"></script>
     <script src="assets/slick/slick.min.js" defer></script>
-    <script src="js/main.js?v=15" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/register.js"></script>
     <script src="js/nav.js" defer></script>
     <script src="js/slider.js" defer></script>
 </head>
 
 <body>
-<?php
-if (isset($_GET['message'])) {
-  switch ($_GET['message']) {
-    case 'welcome':
-      echo "<script>
-        Swal.fire('Registered!.',
-        'You have succesfully registered',
-        'success')
-      </script>";
-      break;
-
-    case 'logged':
-      echo "<script>
-        Swal.fire('Logged!.',
-        'You have succesfully logged-in',
-        'success')
-      </script>";
-      header("Location: https://www.apd2.es/");
-      break;
-  }
-}
-?>
 <header class="nav">
     <div class="navbar">
         <ul role="navigation">
             <li class="logo"><a href="index.php">A.P.D.2</a></li>
             <div class="menu">
-                <li class="obj-nav actual"><a href="index.php"><?php echo NAV_HOME ?></a></li>
-                <li class="obj-nav"><a href="gallery.php"><?php echo NAV_GALLERY ?></a></li>
+                <li class="obj-nav "><a href="index.php"><?php echo NAV_HOME; ?></a></li>
+                <li class="obj-nav actual"><a href="gallery.php"><?php echo NAV_GALLERY ?></a></li>
                 <li class="obj-nav"><a href="contact.php"><?php echo NAV_CONTACT ?></a></li>
-                <span class="bar"></span>
-            </div><?php
+            </div>
+          <?php
           if (isset($_COOKIE['user'])) {
-              echo "
+            echo "
                 <li class=\"user obj-nav\">
                   <div class='circle'>
                     <a href='user.php'>".$_COOKIE["user"][0]."</a>
@@ -76,49 +53,74 @@ if (isset($_GET['message'])) {
               ';
           }
           ?>
-
         </ul>
     </div>
 </header>
-<main class="hero">
-    <div class="mainimage"></div>
-    <section class="apdinfo">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt sollicitudin dui, in iaculis turpis
-            fringilla vehicula. Vivamus nunc odio, ultrices at risus ut, fermentum venenatis lorem. Mauris elit libero,
-            hendrerit ac felis ut, malesuada varius lectus. Donec a interdum nunc. Nullam elit neque, ultrices aliquet
-            pretium pulvinar, varius in mauris. Nunc id quam eu velit hendrerit iaculis. Etiam in felis vitae nisi
-            maximus vestibulum eget eu ante. Pellentesque elementum odio sed purus suscipit, quis interdum leo
-            condimentum. Sed venenatis leo luctus odio feugiat consectetur. </p>
+<main class="gallery">
+    <section class="preview shown">
+        <div class="previewimg">
+            <img src="img/gtest.png" alt="Test image">
+            <div class="info">
+                <div class="user">
+                    <img src="assets/users/user_sample.png" alt="User">
+                    <p>@User</p>
+                    <div class="popularity">&#x2764;</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="img-grid">
+        <div class="img">
+            <img src="img/gtest.png" alt="test_img">
+        </div>
+        <div class="img">
+            <img src="img/gtest.png" alt="test_img">
+        </div>
+        <div class="img">
+            <img src="img/gtest.png" alt="test_img">
+        </div>
+        <div class="img">
+            <img src="img/gtest.png" alt="test_img">
+        </div>
+        <div class="img">
+            <img src="img/gtest.png" alt="test_img">
+        </div>
+        <div class="img">
+            <img src="img/gtest.png" alt="test_img">
+        </div>
+        <div class="img">
+            <img src="img/gtest.png" alt="test_img">
+        </div>
+        <div class="img">
+            <img src="img/gtest.png" alt="test_img">
+        </div>
+        <div class="img">
+            <img src="img/gtest.png" alt="test_img">
+        </div>
+        <div class="img">
+            <img src="img/gtest.png" alt="test_img">
+        </div>
+        <div class="img">
+            <img src="img/gtest.png" alt="test_img">
+        </div>
+        <div class="img">
+            <img src="img/gtest.png" alt="test_img">
+        </div>
+        <div class="img upload">
+
+        </div>
     </section>
 </main>
-<section class="slider">
-    <div>
-        <img src="assets/img/2.jpg" alt="img1">
-    </div>
-    <div>
-        <img src="assets/img/3.jpg" alt="img1">
-    </div>
-    <div>
-        <img src="assets/img/4.png" alt="img1">
-    </div>
-</section>
+
 <footer>
     <div class="linkgroup">
         <ul class="links">
-            <!--<li><a href="index.php">A.P.D.2</a></li>-->
-            <li>
-                <select name="langSelector">
-                    <option selected disabled><?php echo MENU_LANG ?></option>
-                    <option value="ES">ES</option>
-                    <option value="EN">EN</option>
-                    <option value="CAT">CAT</option>
-                </select>
-            </li>
-            <li><a href="gallery.php"><?php echo NAV_GALLERY ?></a></li>
+            <li><a href="#">A.P.D.2</a></li>
+            <li><a href="#">Gallery</a></li>
         </ul>
         <ul class="links">
-            <li><a href="contact.php"><?php echo NAV_CONTACT ?></a></li>
-            <li><a href="terms.php"><?php echo BODY_TERMS ?></a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#"><?php echo BODY_TERMS ?></a></li>
         </ul>
     </div>
 </footer>

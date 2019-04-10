@@ -10,3 +10,5 @@ define("NAV_GALLERY", lang::getTranslation($lang, "NAV_GALLERY"));
 define("NAV_CONTACT", lang::getTranslation($lang, "NAV_CONTACT"));
 define("BODY_TERMS", lang::getTranslation($lang, "BODY_TERMS"));
 define("MENU_LANG", lang::getTranslation($lang, "MENU_LANG"));
+define("USER_IMAGES", lang::getTranslation($lang, "USER_IMAGES"));
+define("USER_INFO", lang::getTranslation($lang, "USER_INFO"));

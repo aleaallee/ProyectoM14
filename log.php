@@ -11,10 +11,11 @@ if (isset($_COOKIE["user"])) {
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>A.P.D 2 - User access</title>
+    <link rel="manifest" href="site.webmanifest">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="A.P.D.2 - User access">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css?v=1.21">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.min.css?v=<?php echo time();?>">
     <link rel="stylesheet" href="assets/slick/slick.css">
     <link rel="stylesheet" href="assets/slick/slick-theme.css">
     <script src="js/jquery-3.3.1.min.js.js"></script>

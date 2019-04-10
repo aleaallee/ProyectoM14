@@ -11,7 +11,7 @@ require_once('php/langVar.php');
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="A.P.D.2 Alexa Play Despacito 2">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css?v=1.21">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.min.css?v=<?php echo time();?>">
     <link rel="stylesheet" href="assets/slick/slick.css">
     <link rel="stylesheet" href="assets/slick/slick-theme.css">
     <script src="js/jquery-3.3.1.min.js.js"></script>

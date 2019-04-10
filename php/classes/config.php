@@ -1,6 +1,7 @@
 <?php
 require_once('/home/apd25972/public_html/php/classes/user.php');
 require_once('lang.php');
+require_once('img.php');
 
 /**
  * Class DB

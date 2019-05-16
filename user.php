@@ -19,7 +19,6 @@ require_once('php/classes/img.php');
     <script src="js/jquery-3.3.1.min.js.js"></script>
     <script src="assets/slick/slick.min.js" defer></script>
     <script src="js/main.js?v=<?php echo time();?>" defer></script>
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
 </head>
 
@@ -38,8 +37,11 @@ require_once('php/classes/img.php');
             echo "
                 <li class=\"user obj-nav\">
                   <div class='circle'>
-                    <a href='user.php'>" . $_COOKIE["user"][0] . "</a>
+                    <a href='user.php'>".$_COOKIE["user"][0]."</a>
                   </div>
+                  <div class='logOut'>
+                    <span class='sessionClose'>".NAV_SESSION_CLOSE."</span>
+                   </div>
                 </li>
               ";
           } else {
@@ -60,16 +62,24 @@ require_once('php/classes/img.php');
         </section>
         <section class="bottom">
             <aside class="list">
-                <ul>
-                    <li class="active"><a href="https://www.apd2.es/user.php?active=img"><?php echo USER_IMAGES; ?></a>
+                <ul class="userMenuSelection">
+                    <li id="images" class="active"><a href=""><?php echo USER_IMAGES; ?></a>
                     </li>
-                    <li><a href="https://www.apd2.es/user.php?active=img"><?php echo USER_INFO ?></a></li>
+                    <?php
+                        if($_COOKIE['user'] != "admin"){
+                            echo "<li id='info'><a href=\"#\">".USER_INFO."</a></li>";
+                        }
+                    ?>
+                    <?php
+                        if($_COOKIE['user'] == "admin"){
+                            echo "<li id='admin'><a href=\"#\">Admin</a></li>";
+                        }
+                    ?>
                 </ul>
             </aside>
             <div class="section images active">
                 <div class="imagegrid">
                     <?php echo img::printUserImages($_COOKIE['user']);?>
-                    
                 </div>
 
             </div>
@@ -101,5 +111,23 @@ require_once('php/classes/img.php');
     </div>
 </footer>
 </body>
-
+<script>
+  var images = $('#images');
+  var info = $('#info');
+  var admin = $('#admin');
+  $(document).on('ready', function(){
+    $(images).on('click', function (e) {
+      e.preventDefault();
+      console.log(e);
+      if (info.hasClass('active')) {
+        info.removeClass('active');
+      }
+      if (admin.hasClass('active')) {
+        admin.removeClass('active');
+      }
+    });
+  
+  })
+  
+</script>
 </html>

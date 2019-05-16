@@ -84,3 +84,7 @@ Stack trace:
 [10-Apr-2019 14:09:21 CST6CDT] PHP Notice:  Constant GALLERY_BY already defined in /home/apd25972/public_html/php/langVar.php on line 15
 [10-Apr-2019 14:09:46 CST6CDT] PHP Notice:  Undefined variable: lang in /home/apd25972/public_html/php/classes/img.php on line 4
 [10-Apr-2019 14:09:46 CST6CDT] PHP Notice:  Constant GALLERY_BY already defined in /home/apd25972/public_html/php/langVar.php on line 15
+[10-Apr-2019 17:13:59 CST6CDT] PHP Notice:  Undefined index: user in /home/apd25972/public_html/user.php on line 54
+[11-Apr-2019 12:15:06 CST6CDT] PHP Notice:  Undefined index: user in /home/apd25972/public_html/user.php on line 58
+[11-Apr-2019 12:20:52 CST6CDT] PHP Notice:  Undefined index: user in /home/apd25972/public_html/user.php on line 58
+[11-Apr-2019 12:22:37 CST6CDT] PHP Notice:  Undefined variable: _cookie in /home/apd25972/public_html/user.php on line 69

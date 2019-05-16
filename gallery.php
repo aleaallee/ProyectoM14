@@ -41,8 +41,11 @@ require_once('php/classes/img.php');
             echo "
                 <li class=\"user obj-nav\">
                   <div class='circle'>
-                    <a href='user.php'>" . $_COOKIE["user"][0] . "</a>
+                    <a href='user.php'>".$_COOKIE["user"][0]."</a>
                   </div>
+                  <div class='logOut'>
+                    <span class='sessionClose'>".NAV_SESSION_CLOSE."</span>
+                   </div>
                 </li>
               ";
           } else {

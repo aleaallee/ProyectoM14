@@ -22,7 +22,6 @@ class img {
     $consulta->bindColumn('Upload_Date', $upload_date);
     while($fila = $consulta->fetch(PDO::FETCH_COLUMN)){
       $titulo = img::getTitle($img_id);
-      //Estos echos de tablas solo son para probar
       echo "<div class='img'>
             <a data-fancybox='galeria' data-caption='$titulo -  ".GALLERY_BY ." $uploader' href='img/uploads/$img_id'><img src='img/uploads/$img_id' alt='$titulo'></a>
         
@@ -40,9 +39,8 @@ class img {
     $consulta->bindColumn('Upload_Date', $upload_date);
     while($fila = $consulta->fetch(PDO::FETCH_COLUMN)){
       $titulo = img::getTitle($img_id);
-      //Estos echos de tablas solo son para probar
       echo "<div class='image'>
-            <a data-fancybox='galeria' data-caption='$titulo -  ".GALLERY_BY ." $uploader' href='img/uploads/$img_id'><img src='img/uploads/$img_id' alt='$titulo'></a>
+            <a data-fancybox='test'  href='img/uploads/$img_id'><img src='img/uploads/$img_id' alt='$titulo'></a>
         
       </div>";
 

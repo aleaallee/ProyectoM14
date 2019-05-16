@@ -10,65 +10,84 @@
       list-style-type: none;
 
       li {
-        @media(min-width: 1000px) {
-          padding: 1.7em 4.35em 1em 4.35em;
-          display: block;
+        padding: 1.7em 4.35em 1em 4.35em;
+        display: block;
+        float: left;
+
+        &.logo {
+          @include reset;
+          padding-left: 4.35em;
+          padding-top: 0.3em;
           float: left;
 
-          &.logo {
-            @include reset;
-            padding-left: 4.35em;
-            padding-top: 0.3em;
-            float: left;
-
-            a {
-              font-size: 2vw;
-            }
-          }
-
-          &.user {
-            float: right;
-
-            .circle{
-              @include circle(4em);
-              background-color: #0af;
-              border-radius: 25px;
-              margin-top: -1.2em;
-              transition: .5s ease-in-out background-color; 
-              &:hover{
-                cursor: pointer;
-              }
-              &:active{
-                background-color: #088acc;
-              }
-              a{
-                @include reset;
-                display: block;
-                text-transform: uppercase;
-                font-size: 3em;
-                color: #ffffff;
-                text-align: center;
-              }
-            }
-
-            svg {
-              @include reset;
-              width: 4em;
-              margin-top: -1.7em;
-              cursor: pointer;
-              transition: .15s fill ease-in-out;
-
-              &:hover {
-                fill: rgba(179, 178, 175, 0.92);
-              }
-
-              &:active {
-                fill: rgba(100, 100, 99, 0.92);
-              }
-            }
+          a {
+            font-size: 2vw;
           }
         }
 
+        &.user {
+          float: right;
+          
+
+          .circle {
+            @include circle(4em);
+            background-color: #0af;
+            border-radius: 25px;
+            margin-top: -1.2em;
+            margin-left: 7.3em;
+            transition: 0.5s ease-in-out background-color;
+            &:hover {
+              cursor: pointer;
+            }
+            &:active {
+              background-color: #088acc;
+            }
+            a {
+              @include reset;
+              display: block;
+              text-transform: uppercase;
+              font-size: 3em;
+              color: #ffffff;
+              text-align: center;
+            }
+          }
+          .logOut {
+            display: none;
+            height: 5em;
+            width: 12em;
+            margin-top: 1em;
+            border-radius: 0.6em;
+            background-color: #088acc;
+            span {
+              color: white;
+              font-size: 1.5em;
+              text-align: center;
+              margin-left: 1em;
+              &:hover{
+                cursor: pointer;
+              }
+            }
+
+            &.active {
+              display: block;
+            }
+          }
+          svg {
+            @include reset;
+            width: 4em;
+            margin-top: -1.7em;
+            cursor: pointer;
+            transition: 0.15s fill ease-in-out;
+
+            &:hover {
+              fill: rgba(179, 178, 175, 0.92);
+            }
+
+            &:active {
+              fill: rgba(100, 100, 99, 0.92);
+            }
+          }
+        }
       }
 
       .menu {
@@ -76,7 +95,7 @@
 
         li {
           a {
-            transition: color .25s ease-in-out;
+            transition: color 0.25s ease-in-out;
           }
 
           &.actual {
@@ -100,5 +119,4 @@
       font-size: $font-header-size;
     }
   }
-
 }

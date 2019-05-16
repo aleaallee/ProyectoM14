@@ -40,6 +40,9 @@ require_once('php/langVar.php');
                   <div class='circle'>
                     <a href='user.php'>".$_COOKIE["user"][0]."</a>
                   </div>
+                  <div class='logOut'>
+                    <span class='sessionClose'>".NAV_SESSION_CLOSE."</span>
+                   </div>
                 </li>
               ";
           } else {

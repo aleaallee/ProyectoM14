@@ -18,7 +18,7 @@ require_once('php/langVar.php');
     <link rel="stylesheet" href="assets/slick/slick-theme.css">
     <script src="js/jquery-3.3.1.min.js.js"></script>
     <script src="assets/slick/slick.min.js" defer></script>
-    <script src="js/main.js?v=15" defer></script>
+    <script src="js/main.js?v=<?php echo time(); ?>" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
     <script src="js/nav.js" defer></script>
     <script src="js/slider.js" defer></script>
@@ -63,6 +63,9 @@ if (isset($_GET['message'])) {
                   <div class='circle'>
                     <a href='user.php'>".$_COOKIE["user"][0]."</a>
                   </div>
+                  <div class='logOut'>
+                    <span class='sessionClose'>".NAV_SESSION_CLOSE."</span>
+                   </div>
                 </li>
               ";
           } else {

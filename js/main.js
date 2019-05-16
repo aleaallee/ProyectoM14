@@ -35,8 +35,8 @@ $(document).on('submit', 'form[name="imgUpload"]', function (e) {
   formdata.append('file', datos.file);
   formdata.append('uploader', datos.uploader);
   /*for (let value of formdata.entries()) {
-    console.log(value);
-  }*/
+   console.log(value);
+   }*/
   $.ajax({
     type: "post",
     url: "php/imageUpload.php",
@@ -44,16 +44,15 @@ $(document).on('submit', 'form[name="imgUpload"]', function (e) {
     processData: false,
     data: formdata,
     cache: false
-  }).done(function(datos){
+  }).done(function (datos) {
     Swal.fire({
       type: 'success',
       title: 'success',
       text: datos.message
     });
+    window.location.replace(window.location.href);
 
-    //window.location.replace(window.location.href);
-
-  }).fail(function(e){
+  }).fail(function (e) {
     Swal.fire({
       type: 'error',
       title: 'Oops...',
@@ -62,7 +61,15 @@ $(document).on('submit', 'form[name="imgUpload"]', function (e) {
   });
 });
 
-//console.log(formdata);
 
-
-
+$(document).ready(function () {
+  $('li.user').mouseover(function () {
+    $('.logOut').addClass('active');
+  }).mouseout(function () {
+    $('.logOut').removeClass('active');
+  });
+  $('.sessionClose').on('click', function () {
+    document.cookie += "user=awd;expires=Thu, 01 Jan 1970 00:00:01 GMT;";
+    window.location.replace(window.location.href);
+  });
+});

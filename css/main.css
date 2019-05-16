@@ -33,64 +33,97 @@
   list-style-type: none;
 }
 
-@media (min-width: 1000px) {
-  .nav .navbar ul li {
-    padding: 1.7em 4.35em 1em 4.35em;
-    display: block;
-    float: left;
-  }
-  .nav .navbar ul li.logo {
-    margin: 0;
-    padding: 0;
-    padding-left: 4.35em;
-    padding-top: 0.3em;
-    float: left;
-  }
-  .nav .navbar ul li.logo a {
-    font-size: 2vw;
-  }
-  .nav .navbar ul li.user {
-    float: right;
-  }
-  .nav .navbar ul li.user .circle {
-    width: 4em;
-    height: 4em;
-    background-color: #0af;
-    border-radius: 25px;
-    margin-top: -1.2em;
-    -webkit-transition: .5s ease-in-out background-color;
-    transition: .5s ease-in-out background-color;
-  }
-  .nav .navbar ul li.user .circle:hover {
-    cursor: pointer;
-  }
-  .nav .navbar ul li.user .circle:active {
-    background-color: #088acc;
-  }
-  .nav .navbar ul li.user .circle a {
-    margin: 0;
-    padding: 0;
-    display: block;
-    text-transform: uppercase;
-    font-size: 3em;
-    color: #ffffff;
-    text-align: center;
-  }
-  .nav .navbar ul li.user svg {
-    margin: 0;
-    padding: 0;
-    width: 4em;
-    margin-top: -1.7em;
-    cursor: pointer;
-    -webkit-transition: .15s fill ease-in-out;
-    transition: .15s fill ease-in-out;
-  }
-  .nav .navbar ul li.user svg:hover {
-    fill: rgba(179, 178, 175, 0.92);
-  }
-  .nav .navbar ul li.user svg:active {
-    fill: rgba(100, 100, 99, 0.92);
-  }
+.nav .navbar ul li {
+  padding: 1.7em 4.35em 1em 4.35em;
+  display: block;
+  float: left;
+}
+
+.nav .navbar ul li.logo {
+  margin: 0;
+  padding: 0;
+  padding-left: 4.35em;
+  padding-top: 0.3em;
+  float: left;
+}
+
+.nav .navbar ul li.logo a {
+  font-size: 2vw;
+}
+
+.nav .navbar ul li.user {
+  float: right;
+}
+
+.nav .navbar ul li.user .circle {
+  width: 4em;
+  height: 4em;
+  background-color: #0af;
+  border-radius: 25px;
+  margin-top: -1.2em;
+  margin-left: 7.3em;
+  -webkit-transition: 0.5s ease-in-out background-color;
+  transition: 0.5s ease-in-out background-color;
+}
+
+.nav .navbar ul li.user .circle:hover {
+  cursor: pointer;
+}
+
+.nav .navbar ul li.user .circle:active {
+  background-color: #088acc;
+}
+
+.nav .navbar ul li.user .circle a {
+  margin: 0;
+  padding: 0;
+  display: block;
+  text-transform: uppercase;
+  font-size: 3em;
+  color: #ffffff;
+  text-align: center;
+}
+
+.nav .navbar ul li.user .logOut {
+  display: none;
+  height: 5em;
+  width: 12em;
+  margin-top: 1em;
+  border-radius: 0.6em;
+  background-color: #088acc;
+}
+
+.nav .navbar ul li.user .logOut span {
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+  margin-left: 1em;
+}
+
+.nav .navbar ul li.user .logOut span:hover {
+  cursor: pointer;
+}
+
+.nav .navbar ul li.user .logOut.active {
+  display: block;
+}
+
+.nav .navbar ul li.user svg {
+  margin: 0;
+  padding: 0;
+  width: 4em;
+  margin-top: -1.7em;
+  cursor: pointer;
+  -webkit-transition: 0.15s fill ease-in-out;
+  transition: 0.15s fill ease-in-out;
+}
+
+.nav .navbar ul li.user svg:hover {
+  fill: rgba(179, 178, 175, 0.92);
+}
+
+.nav .navbar ul li.user svg:active {
+  fill: rgba(100, 100, 99, 0.92);
 }
 
 .nav .navbar ul .menu {
@@ -98,8 +131,8 @@
 }
 
 .nav .navbar ul .menu li a {
-  -webkit-transition: color .25s ease-in-out;
-  transition: color .25s ease-in-out;
+  -webkit-transition: color 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out;
 }
 
 .nav .navbar ul .menu li.actual a {
@@ -463,7 +496,6 @@ div.message_success p.message {
 
 main.gallery {
   width: 100vw;
-  height: 94em;
   background-color: #5C687C;
   display: inline-block;
 }

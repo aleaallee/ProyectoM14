@@ -61,7 +61,7 @@
   background-color: #0af;
   border-radius: 25px;
   margin-top: -1.2em;
-  margin-left: 7.3em;
+  margin-left: -15.7em;
   -webkit-transition: 0.5s ease-in-out background-color;
   transition: 0.5s ease-in-out background-color;
 }
@@ -77,6 +77,7 @@
 .nav .navbar ul li.user .circle a {
   margin: 0;
   padding: 0;
+  margin-left: 0.3em;
   display: block;
   text-transform: uppercase;
   font-size: 3em;
@@ -84,20 +85,29 @@
   text-align: center;
 }
 
+.nav .navbar ul li.user .circle a span {
+  margin-left: 2em;
+  font-size: 1rem;
+  text-transform: none;
+}
+
 .nav .navbar ul li.user .logOut {
   display: none;
-  height: 5em;
-  width: 12em;
-  margin-top: 1em;
+  position: absolute;
+  min-height: 2em;
+  min-width: 3.5em;
+  top: 2.4em;
+  right: 4em;
   border-radius: 0.6em;
   background-color: #088acc;
 }
 
 .nav .navbar ul li.user .logOut span {
   color: white;
-  font-size: 1.5em;
+  font-size: 2.6em;
   text-align: center;
-  margin-left: 1em;
+  margin-left: 0.2em;
+  margin-bottom: 1em;
 }
 
 .nav .navbar ul li.user .logOut span:hover {
@@ -127,7 +137,7 @@
 }
 
 .nav .navbar ul .menu {
-  margin-left: 36vw;
+  margin-left: 16vw;
 }
 
 .nav .navbar ul .menu li a {
@@ -141,6 +151,18 @@
 
 .nav .navbar ul .menu li:hover a {
   color: #b3b3b3;
+}
+
+@media (min-width: 1200px) {
+  .nav .navbar ul .menu {
+    margin-left: 23vw;
+  }
+}
+
+@media (min-width: 1900px) {
+  .nav .navbar ul .menu {
+    margin-left: 36vw;
+  }
 }
 
 .nav .navbar a {
@@ -162,38 +184,171 @@ main.hero {
 }
 
 main.hero .mainimage {
-  background: url("../assets/img/main-1.png");
+  background: url("../assets/img/2.jpg");
   background-attachment: fixed;
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
   width: 100vw;
-  height: 66.15em;
+  height: 83.15em;
   position: relative;
   z-index: -1;
 }
 
+@media (min-width: 1200px) {
+  main.hero .mainimage {
+    height: 82.55em;
+  }
+}
+
 @media (min-width: 1900px) {
   main.hero .mainimage {
-    height: 100vh;
+    height: 106.2vh;
   }
 }
 
 main section.apdinfo {
-  background-color: rgba(91, 104, 124, 0.7);
-  width: 45em;
+  position: absolute;
+  background-color: rgba(91, 104, 124, 0.5);
+  max-width: 50%;
   margin: auto;
-  margin-top: -29.4em;
-  border-radius: 25px 25px 0px 0px;
+  top: 30%;
+  left: 25%;
+  border-radius: 25px;
 }
 
 main section.apdinfo p {
-  font-size: 1.8em;
+  font-size: 2em;
   color: #fff;
   padding: 1em;
   text-align: justify;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.47);
+}
+
+div.projects {
+  min-height: 52rem;
+  width: 100%;
+  padding: 1rem 5rem 3rem 5rem;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#3259b3), color-stop(#0064af), color-stop(#006ca5), color-stop(#007196), to(#007487));
+  background-image: linear-gradient(to right top, #3259b3, #0064af, #006ca5, #007196, #007487);
+}
+
+div.projects h1 {
+  font-size: 5em;
+  color: sandybrown;
+  text-align: center;
+}
+
+div.projects section.gamesgrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3em;
+  min-height: inherit;
+  width: inherit;
+}
+
+div.projects section.gamesgrid h1 {
+  font-size: 2em;
+  grid-column: span 3;
+}
+
+div.projects section.gamesgrid .griditem {
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  height: 21em;
+}
+
+div.projects section.gamesgrid .griditem a {
+  width: inherit;
+  border-radius: inherit;
+  height: inherit;
+  text-decoration: none;
+  color: white;
+}
+
+div.projects section.gamesgrid .griditem a img {
+  width: inherit;
+  border-radius: inherit;
+  height: inherit;
+}
+
+div.projects section.gamesgrid .griditem .description {
+  position: absolute;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 0;
+  padding: 1.2em 2.3em;
+  word-break: break-word;
+  text-align: justify;
+  text-indent: 2rem;
+  border-radius: inherit;
+  height: inherit;
+  width: inherit;
+}
+
+div.projects section.gamesgrid .griditem .description.active {
+  display: block;
+  -webkit-animation: slideInLeft .5s ease-in-out;
+          animation: slideInLeft .5s ease-in-out;
+}
+
+div.projects section.gamesgrid .griditem .description.done {
+  display: block;
+  -webkit-animation: slideOutRight .5s ease-in-out;
+          animation: slideOutRight .5s ease-in-out;
+}
+
+div.projects section.gamesgrid .griditem .description a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.07rem;
+}
+
+@media (min-width: 1300px) {
+  div.projects section.gamesgrid .griditem .description a {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1900px) {
+  div.projects section.gamesgrid .griditem .description a {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  div.projects section.gamesgrid .griditem .description {
+    padding: 1.2em 3.2em;
+  }
+}
+
+@media (min-width: 1300px) {
+  div.projects section.gamesgrid .griditem .description {
+    padding: 0.5em 2.6em;
+  }
+}
+
+@media (min-width: 1900px) {
+  div.projects section.gamesgrid .griditem .description {
+    padding: 3.2em 3.3em;
+  }
+}
+
+@media (min-width: 1900px) {
+  div.projects section.gamesgrid .griditem {
+    height: 25em;
+  }
+}
+
+@media (min-width: 1200px) {
+  div.projects {
+    min-height: 50rem;
+    padding: 1rem 9rem 3rem 9rem;
+  }
 }
 
 section.slider {
@@ -496,6 +651,7 @@ div.message_success p.message {
 
 main.gallery {
   width: 100vw;
+  min-height: 100vh;
   background-color: #5C687C;
   display: inline-block;
 }
@@ -599,11 +755,9 @@ main.gallery section.img-grid {
 
 @media (min-width: 1900px) {
   main.gallery section.img-grid {
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
     margin-top: 13em;
     margin-bottom: 2em;
-    padding-left: 12%;
+    padding-left: 23%;
     padding-right: 12%;
   }
 }
@@ -682,7 +836,6 @@ main.gallery section.img-grid .img.upload::before {
 @media (min-width: 1900px) {
   main.gallery section.img-grid .img.upload {
     height: 25em;
-    width: 33em;
   }
 }
 
@@ -761,6 +914,103 @@ main.gallery section.img-grid a {
   background-image: linear-gradient(to right bottom, #00cdd2, #00aacd, #0085be, #045fa3);
 }
 
+main.contact {
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#3259b3), color-stop(#0064af), color-stop(#006ca5), color-stop(#007196), to(#007487));
+  background-image: linear-gradient(to right top, #3259b3, #0064af, #006ca5, #007196, #007487);
+  min-height: 122vh;
+}
+
+main.contact .contactform {
+  border-top-right-radius: 3em;
+  border-bottom-right-radius: 3em;
+  -webkit-box-shadow: 1px 1px 10px #111;
+  box-shadow: 1px 1px 10px #111;
+  min-width: 50%;
+  width: 93%;
+  height: 40rem;
+  position: absolute;
+  top: 12%;
+  left: 3%;
+}
+
+main.contact .contactform .left,
+main.contact .contactform .right {
+  float: left;
+  height: 100%;
+  width: 50%;
+}
+
+main.contact .contactform .right {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#0095dd), color-stop(#009de0), color-stop(#00a4e2), color-stop(#00ace3), to(#00b3e4));
+  background-image: linear-gradient(to right bottom, #0095dd, #009de0, #00a4e2, #00ace3, #00b3e4);
+  border-top-right-radius: 3em;
+  border-bottom-right-radius: 3em;
+}
+
+main.contact .contactform .right form fieldset {
+  border-top-right-radius: 3em;
+  margin-top: 6em;
+  border: none;
+}
+
+main.contact .contactform .right form fieldset legend {
+  margin-left: 9rem;
+  font-size: 3em;
+}
+
+main.contact .contactform .right form fieldset div.field {
+  margin-top: 1rem;
+}
+
+main.contact .contactform .right form fieldset div.field label {
+  float: left;
+  clear: both;
+  font-size: 2em;
+  margin-left: 5%;
+  padding-top: 0.5em;
+}
+
+main.contact .contactform .right form fieldset div.field label input,
+main.contact .contactform .right form fieldset div.field label textarea {
+  border: none;
+  outline: none;
+  vertical-align: top;
+  margin-left: 1em;
+  padding: 0.3em;
+  border-radius: 0.5em;
+}
+
+main.contact .contactform .right form fieldset input[type="submit"] {
+  float: left;
+  font-size: 2.5em;
+  border: none;
+  border-radius: 0.5em;
+  margin-top: 1em;
+  margin-left: 41%;
+  padding: 0.6rem 1.2rem 0.8rem 1.2rem;
+  background: #f27474;
+}
+
+main.contact .contactform .right form fieldset input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+  main.contact .contactform {
+    width: 70%;
+    top: 12%;
+    left: 16%;
+  }
+}
+
+@media (min-width: 1900px) {
+  main.contact .contactform {
+    top: 18%;
+    left: 25%;
+    width: 50%;
+  }
+}
+
 main.user {
   display: inline-block;
   width: 100%;
@@ -770,7 +1020,7 @@ main.user {
 main.user .profile {
   display: -ms-grid;
   display: grid;
-  width: 70%;
+  width: 76%;
   background-color: #95bfea;
   margin: auto;
   margin-top: 15em;
@@ -824,6 +1074,7 @@ main.user .profile .bottom {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  min-height: 33em;
 }
 
 main.user .profile .bottom aside.list,
@@ -842,7 +1093,7 @@ main.user .profile .bottom aside.list ul {
   font-size: 2.2em;
   color: white;
   list-style-type: none;
-  margin-top: 7.5em;
+  margin-top: 3.5em;
   margin-left: 1em;
   margin-right: 0;
   padding: 0;
@@ -852,14 +1103,13 @@ main.user .profile .bottom aside.list ul li {
   margin-bottom: 1em;
 }
 
-main.user .profile .bottom aside.list ul li a {
-  text-decoration: none;
-  color: inherit;
-}
-
-main.user .profile .bottom aside.list ul li.active a {
+main.user .profile .bottom aside.list ul li.active {
   color: #005088;
   font-weight: bold;
+}
+
+main.user .profile .bottom aside.list ul li:hover {
+  cursor: pointer;
 }
 
 main.user .profile .bottom div.section {
@@ -889,8 +1139,8 @@ main.user .profile .bottom div.section.images .imagegrid {
 main.user .profile .bottom div.section.images .imagegrid .image {
   width: 100%;
   border-radius: 10px;
-  -webkit-transition: all 0.5s linear-in-out;
-  transition: all 0.5s linear-in-out;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
 }
 
 main.user .profile .bottom div.section.images .imagegrid .image:hover {
@@ -901,8 +1151,8 @@ main.user .profile .bottom div.section.images .imagegrid .image.activeImg {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1 / span 3;
-  -webkit-transition: all 0.5s linear-in-out;
-  transition: all 0.5s linear-in-out;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
 }
 
 main.user .profile .bottom div.section.images .imagegrid .image a {
@@ -914,15 +1164,278 @@ main.user .profile .bottom div.section.images .imagegrid .image a img {
   border-radius: inherit;
 }
 
+@media (min-width: 1300px) {
+  main.user .profile .bottom div.section.images .imagegrid {
+    width: 82.939%;
+  }
+}
+
 @media (min-width: 1900px) {
   main.user .profile .bottom div.section.images .imagegrid {
+    width: 80.939%;
     padding-left: 3em;
   }
+}
+
+main.user .profile .bottom div.section.data fieldset, main.user .profile .bottom div.section.admin fieldset {
+  margin: 1rem 3rem 1rem 3rem;
+  border: 2px solid #a2aebb;
+  border-radius: 8px;
+}
+
+main.user .profile .bottom div.section.data fieldset legend, main.user .profile .bottom div.section.admin fieldset legend {
+  color: #dfe0e2;
+  text-shadow: 1px 1px 1px #0f0f0f;
+  font-size: 1.2rem;
+}
+
+main.user .profile .bottom div.section.data fieldset table, main.user .profile .bottom div.section.admin fieldset table {
+  border-collapse: collapse;
+  margin: 2rem 2rem 2rem 1rem;
+  min-width: 45em;
+}
+
+main.user .profile .bottom div.section.data fieldset table tr:nth-child(even), main.user .profile .bottom div.section.admin fieldset table tr:nth-child(even) {
+  background-color: #909090;
+}
+
+main.user .profile .bottom div.section.data fieldset table tr:nth-child(odd), main.user .profile .bottom div.section.admin fieldset table tr:nth-child(odd) {
+  background-color: #f0f0f0;
+}
+
+main.user .profile .bottom div.section.data fieldset table tr.main, main.user .profile .bottom div.section.admin fieldset table tr.main {
+  display: none;
+}
+
+main.user .profile .bottom div.section.data fieldset table tr.shown, main.user .profile .bottom div.section.admin fieldset table tr.shown {
+  display: table-row;
+}
+
+main.user .profile .bottom div.section.data fieldset table tr.hidden, main.user .profile .bottom div.section.admin fieldset table tr.hidden {
+  display: none;
+}
+
+main.user .profile .bottom div.section.data fieldset table tr td input, main.user .profile .bottom div.section.admin fieldset table tr td input {
+  background-color: #909090;
+  height: inherit;
+  color: #f0f0f0;
+  border: none;
+  width: inherit;
+}
+
+main.user .profile .bottom div.section.data fieldset table tr td input[type="submit"], main.user .profile .bottom div.section.admin fieldset table tr td input[type="submit"] {
+  cursor: pointer;
+}
+
+main.user .profile .bottom div.section.data fieldset table tr td input::-webkit-input-placeholder, main.user .profile .bottom div.section.admin fieldset table tr td input::-webkit-input-placeholder {
+  color: white;
+}
+
+main.user .profile .bottom div.section.data fieldset table tr td input:-ms-input-placeholder, main.user .profile .bottom div.section.admin fieldset table tr td input:-ms-input-placeholder {
+  color: white;
+}
+
+main.user .profile .bottom div.section.data fieldset table tr td input::-ms-input-placeholder, main.user .profile .bottom div.section.admin fieldset table tr td input::-ms-input-placeholder {
+  color: white;
+}
+
+main.user .profile .bottom div.section.data fieldset table tr td input::placeholder, main.user .profile .bottom div.section.admin fieldset table tr td input::placeholder {
+  color: white;
+}
+
+main.user .profile .bottom div.section.data fieldset table tr td select, main.user .profile .bottom div.section.admin fieldset table tr td select {
+  border: none;
+  border-radius: 3px;
+  border-bottom: 3px solid #6ccfec;
+  min-width: 6em;
+  padding-left: 0.5rem;
+  margin-left: 0.4em;
+}
+
+main.user .profile .bottom div.section.data fieldset table tr td,
+main.user .profile .bottom div.section.data fieldset table tr th, main.user .profile .bottom div.section.admin fieldset table tr td,
+main.user .profile .bottom div.section.admin fieldset table tr th {
+  padding: 0.5em 0.3em;
+  font-size: 1rem;
+}
+
+main.user .profile .bottom div.section.data fieldset table tr th, main.user .profile .bottom div.section.admin fieldset table tr th {
+  background-color: white;
+}
+
+main.user .profile .bottom div.section.data fieldset table tr th.hidden, main.user .profile .bottom div.section.admin fieldset table tr th.hidden {
+  display: none;
+}
+
+main.user .profile .bottom div.section.data fieldset table tr td, main.user .profile .bottom div.section.admin fieldset table tr td {
+  border-top: 1px solid #abcaaa;
+  border-right: 1px solid #fff;
+  color: white;
+  width: 3rem;
+}
+
+main.user .profile .bottom div.section.data fieldset table tr td:last-child, main.user .profile .bottom div.section.admin fieldset table tr td:last-child {
+  border-right: #000;
+}
+
+@media (min-width: 1200px) {
+  main.user .profile .bottom div.section.data fieldset table tr td, main.user .profile .bottom div.section.admin fieldset table tr td {
+    width: 5.4rem;
+  }
+}
+
+@media (min-width: 1900px) {
+  main.user .profile .bottom div.section.data fieldset table tr td, main.user .profile .bottom div.section.admin fieldset table tr td {
+    width: 7rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  main.user .profile .bottom div.section.data fieldset table, main.user .profile .bottom div.section.admin fieldset table {
+    min-width: 62em;
+  }
+}
+
+@media (min-width: 1300px) {
+  main.user .profile .bottom div.section.data fieldset table, main.user .profile .bottom div.section.admin fieldset table {
+    min-width: 70em;
+  }
+}
+
+@media (min-width: 1900px) {
+  main.user .profile .bottom div.section.data fieldset table, main.user .profile .bottom div.section.admin fieldset table {
+    min-width: 101em;
+  }
+}
+
+main.user .profile .bottom div.section.data form {
+  padding-left: 8.5rem;
+}
+
+@media (min-width: 1200px) {
+  main.user .profile .bottom div.section.data form {
+    padding-left: 13rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  main.user .profile .bottom div.section.data form {
+    padding-left: 16rem;
+  }
+}
+
+@media (min-width: 1900px) {
+  main.user .profile .bottom div.section.data form {
+    padding-left: 26rem;
+  }
+}
+
+main.user .profile .bottom div.section.data form .inputgroup label,
+main.user .profile .bottom div.section.data form .inputgroup input {
+  display: block;
+}
+
+main.user .profile .bottom div.section.data form .inputgroup label {
+  font-size: 1.1rem;
+  color: #222;
+}
+
+main.user .profile .bottom div.section.data form .inputgroup input {
+  border: none;
+  border-bottom: 2px solid #4574fa;
+  border-radius: 5px;
+  min-width: 5em;
+  width: 13em;
+  font-size: 1rem;
+  margin: 0 1em 0 0.2em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0.5em;
+  color: #111;
+}
+
+main.user .profile .bottom div.section.data form input[type="submit"] {
+  border: none;
+  border-bottom: 2px solid #4574fa;
+  border-radius: 5px;
+  width: 13em;
+  font-size: 1rem;
+  margin: 1.3em 1em 1em 0.2em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0.5em;
+  color: #111;
+}
+
+main.user .profile .bottom div.section.admin tr:nth-child(odd) {
+  background-color: #909090;
+}
+
+main.user .profile .bottom div.section.admin tr:nth-child(odd) td {
+  background-color: #909090;
 }
 
 @media (min-width: 1900px) {
   main.user .profile .bottom div.section {
     width: 86.486%;
+  }
+}
+
+@media (min-width: 1200px) {
+  main.user .profile {
+    width: 74.9%;
+  }
+}
+
+@media (min-width: 1900px) {
+  main.user .profile {
+    width: 70%;
+  }
+}
+
+main.terms {
+  background-color: #3a7ca5;
+}
+
+main.terms div.text {
+  max-width: 86rem;
+  padding: 8rem 5rem 6rem 5rem;
+}
+
+main.terms div.text p {
+  font-size: 1rem;
+  color: #f2f1ef;
+}
+
+main.terms div.text strong {
+  font-size: 1.5rem;
+  color: #f2f1ef;
+}
+
+main.terms div.text ul li {
+  color: #f2f1ef;
+  font-size: 1.1rem;
+}
+
+main.terms div.text ul li a {
+  color: #f2f1ef;
+  text-decoration: none;
+}
+
+main.terms div.text img {
+  margin-left: 12rem;
+  padding-top: 2rem;
+}
+
+@media (min-width: 1200px) {
+  main.terms div.text img {
+    margin-left: 20rem;
+  }
+}
+
+@media (min-width: 1900px) {
+  main.terms div.text img {
+    margin-left: 40rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

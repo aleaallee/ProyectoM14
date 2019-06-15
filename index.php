@@ -9,19 +9,21 @@ require_once('php/langVar.php');
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>A.P.D 2 - Inicio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
     <meta name="description" content="A.P.D.2 Alexa Play Despacito 2">
     <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.min.css?v=<?php echo time();?>">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.min.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="assets/slick/slick.css">
     <link rel="stylesheet" href="assets/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css"/>
     <script src="js/jquery-3.3.1.min.js.js"></script>
     <script src="assets/slick/slick.min.js" defer></script>
     <script src="js/main.js?v=<?php echo time(); ?>" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
     <script src="js/nav.js" defer></script>
-    <script src="js/slider.js" defer></script>
+
+
 </head>
 
 <body>
@@ -32,7 +34,9 @@ if (isset($_GET['message'])) {
       echo "<script>
         Swal.fire('Registered!.',
         'You have succesfully registered',
-        'success')
+        'success').then(function(){
+          window.location.replace('https://www.apd2.es/');
+        })
       </script>";
       break;
 
@@ -55,16 +59,20 @@ if (isset($_GET['message'])) {
                 <li class="obj-nav actual"><a href="index.php"><?php echo NAV_HOME ?></a></li>
                 <li class="obj-nav"><a href="gallery.php"><?php echo NAV_GALLERY ?></a></li>
                 <li class="obj-nav"><a href="contact.php"><?php echo NAV_CONTACT ?></a></li>
-                <span class="bar"></span>
+              <?php
+              if (isset($_COOKIE['user'])) {
+                echo "<li class=\"obj-nav\"><a href=\"downloads.php\">" . NAV_DOWNLOADS . " </a></li>";
+              }
+              ?>
             </div><?php
           if (isset($_COOKIE['user'])) {
-              echo "
+            echo "
                 <li class=\"user obj-nav\">
                   <div class='circle'>
-                    <a href='user.php'>".$_COOKIE["user"][0]."</a>
+                    <a href='user.php'>" . $_COOKIE["user"][0] . "<span>" . $_COOKIE["user"] . "</span></a>
                   </div>
                   <div class='logOut'>
-                    <span class='sessionClose'>".NAV_SESSION_CLOSE."</span>
+                    <span class='sessionClose'>&#10005;</span>
                    </div>
                 </li>
               ";
@@ -86,25 +94,94 @@ if (isset($_GET['message'])) {
 <main class="hero">
     <div class="mainimage"></div>
     <section class="apdinfo">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt sollicitudin dui, in iaculis turpis
-            fringilla vehicula. Vivamus nunc odio, ultrices at risus ut, fermentum venenatis lorem. Mauris elit libero,
-            hendrerit ac felis ut, malesuada varius lectus. Donec a interdum nunc. Nullam elit neque, ultrices aliquet
-            pretium pulvinar, varius in mauris. Nunc id quam eu velit hendrerit iaculis. Etiam in felis vitae nisi
-            maximus vestibulum eget eu ante. Pellentesque elementum odio sed purus suscipit, quis interdum leo
-            condimentum. Sed venenatis leo luctus odio feugiat consectetur. </p>
+        <p><?php echo MAIN_HERO ?></p>
     </section>
 </main>
-<section class="slider">
-    <div>
-        <img src="assets/img/2.jpg" alt="img1">
-    </div>
-    <div>
-        <img src="assets/img/3.jpg" alt="img1">
-    </div>
-    <div>
-        <img src="assets/img/4.png" alt="img1">
-    </div>
-</section>
+<div class="projects">
+    <h1><?php echo MAIN_PROJECTS;?></h1>
+    <section class="gamesgrid">
+
+        <article class="griditem">
+            <a href="https://store.steampowered.com/app/242760/The_Forest/" target="_blank">
+                <img src="img/games/1.jpg" alt="Juego">
+            </a>
+            <div class="description">
+                <a href="https://store.steampowered.com/app/242760/The_Forest/" target="_blank"><?php echo MAIN_1 ?></a>
+            </div>
+        </article>
+        <article class="griditem">
+            <a href="https://store.steampowered.com/app/413150/Stardew_Valley/" target="_blank">
+                <img src="img/games/2.jpg" alt="Juego">
+            </a>
+            <div class="description">
+                <a href="https://store.steampowered.com/app/413150/Stardew_Valley/"
+                   target="_blank"><?php echo MAIN_2 ?></a>
+            </div>
+        </article>
+        <article class="griditem">
+            <a href="https://store.steampowered.com/app/460950/Katana_ZERO/" target="_blank">
+                <img src="img/games/3.jpg" alt="Juego">
+            </a>
+            <div class="description">
+                <a href="https://store.steampowered.com/app/460950/Katana_ZERO/"
+                   target="_blank"><?php echo MAIN_3 ?></a>
+            </div>
+        </article>
+        <article class="griditem">
+            <a href="https://store.steampowered.com/app/220200/Kerbal_Space_Program/" target="_blank">
+                <img src="img/games/4.jpg" alt="Juego">
+            </a>
+            <div class="description">
+                <a href="https://store.steampowered.com/app/220200/Kerbal_Space_Program/"
+                   target="_blank"><?php echo MAIN_4 ?></a>
+            </div>
+        </article>
+        <article class="griditem">
+            <a href="https://store.steampowered.com/app/453090/Parkitect/" target="_blank">
+                <img src="img/games/5.png" alt="Juego">
+            </a>
+            <div class="description">
+                <a href="https://store.steampowered.com/app/453090/Parkitect/" target="_blank"><?php echo MAIN_5 ?></a>
+            </div>
+        </article>
+        <article class="griditem">
+            <a href="https://store.steampowered.com/app/589290/Holdfast_Nations_At_War/" target="_blank">
+                <img src="img/games/6.jpg" alt="Juego">
+            </a>
+            <div class="description">
+                <a href="https://store.steampowered.com/app/589290/Holdfast_Nations_At_War/"
+                   target="_blank"><?php echo MAIN_6 ?></a>
+            </div>
+        </article>
+        <article class="griditem">
+            <a href="https://store.steampowered.com/app/613100/House_Flipper/" target="_blank">
+                <img src="img/games/7.png" alt="Juego">
+            </a>
+            <div class="description">
+                <a href="https://store.steampowered.com/app/613100/House_Flipper/"
+                   target="_blank"><?php echo MAIN_7 ?></a>
+            </div>
+        </article>
+        <article class="griditem">
+            <a href="https://store.steampowered.com/app/252950/Rocket_League/" target="_blank">
+                <img src="img/games/8.jpg" alt="Juego">
+            </a>
+            <div class="description">
+                <a href="https://store.steampowered.com/app/252950/Rocket_League/"
+                   target="_blank"><?php echo MAIN_8 ?></a>
+            </div>
+        </article>
+        <article class="griditem">
+            <a href="https://store.steampowered.com/app/105600/Terraria/" target="_blank">
+                <img src="img/games/9.jpg" alt="Juego">
+            </a>
+            <div class="description">
+                <a href="https://store.steampowered.com/app/105600/Terraria/" target="_blank"><?php echo MAIN_9 ?></a>
+            </div>
+        </article>
+    </section>
+</div>
+
 <footer>
     <div class="linkgroup">
         <ul class="links">
@@ -125,6 +202,23 @@ if (isset($_GET['message'])) {
         </ul>
     </div>
 </footer>
+<script>
+  var juegos = document.querySelectorAll(".griditem");
+  for (let juego of juegos) {
+    let description = juego.childNodes[3];
+    juego.addEventListener('mouseenter', function (e) {
+      description.classList.add('active');
+    });
+    juego.addEventListener('mouseleave', function (e) {
+      description.classList.remove('active');
+      description.classList.add('done');
+      setTimeout(function () {
+        description.classList.remove('done');
+      }, 1000)
+    });
+  }
+
+</script>
 </body>
 
 </html>

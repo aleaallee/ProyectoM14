@@ -63,7 +63,9 @@ $(document).on("submit", "form.loginform", function (event) {
     }).done(function ajaxDone(data) {
         if (data.redirect !== undefined) {
             document.cookie = `user=${data.user}`;
-            window.location.replace(data.redirect);
+            if (document.cookie.indexOf("user") >= 0) {
+                window.location.replace(data.redirect); s
+            }
         } else if (data.error !== undefined) {
             console.log('error 1:', data.error);
             Swal.fire({

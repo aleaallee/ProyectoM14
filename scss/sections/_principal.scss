@@ -1,42 +1,146 @@
-body{
+body {
   font-size: 62.5%;
   font-family: Lato;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
-main{
-  &.hero{
+main {
+  &.hero {
     margin-bottom: -1.8em;
-    .mainimage{
-      background: url("../assets/img/main-1.png");
+    .mainimage {
+      background: url("../assets/img/2.jpg");
       background-attachment: fixed;
       background-position: top;
       background-repeat: no-repeat;
       background-size: cover;
       display: block;
-      width: 100vw ;
-      height: 66.15em;
+      width: 100vw;
+      height: 83.15em;
       position: relative;
       z-index: -1;
-      @media(min-width: 1900px){
-        height: 100vh;
+      @media (min-width: 1200px) {
+        height: 82.55em;
+      }
+      @media (min-width: 1900px) {
+        height: 106.2vh;
       }
     }
-    
   }
-  section.apdinfo{ 
-    background-color: rgba(91, 104, 124, 0.7);
-    width: 45em;
+  section.apdinfo {
+    position: absolute;
+    background-color: rgba(91, 104, 124, 0.5);
+    max-width: 50%;
     margin: auto;
-    margin-top: -29.4em;
-    border-radius: 25px 25px 0px 0px;
-    p{
-      font-size: 1.8em;
-      color: $text;
+    top: 30%;
+    left: 25%;
+    border-radius: 25px;
+    p {
+      font-size: 2em;
+      color: #fff;
       padding: 1em;
       text-align: justify;
       text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.47);
     }
+  }
+}
+div.projects {
+  min-height: 52rem;
+  width: 100%;
+  padding: 1rem 5rem 3rem 5rem;
+  background-image: linear-gradient(
+    to right top,
+    #3259b3,
+    #0064af,
+    #006ca5,
+    #007196,
+    #007487
+  );
+
+  h1 {
+    font-size: 5em;
+    color: sandybrown;
+    text-align: center;
+  }
+
+  section.gamesgrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3em;
+    min-height: inherit;
+    width: inherit;
+    //padding: inherit;
+
+    h1 {
+      font-size: 2em;
+      grid-column: span 3;
+    }
+
+    .griditem {
+      position: relative;
+      width: 100%;
+      border-radius: 10px;
+      height: 21em;
+      a {
+        width: inherit;
+        border-radius: inherit;
+        height: inherit;
+        text-decoration: none;
+        color: white;
+        img {
+          width: inherit;
+          border-radius: inherit;
+          height: inherit;
+        }
+      }
+      .description {
+        position: absolute;
+        display: none;
+        background-color: rgba(0, 0, 0, 0.6);
+        top: 0;
+        padding: 1.2em 2.3em;
+        word-break: break-word;
+        text-align: justify;
+        text-indent: 2rem;
+        border-radius: inherit;
+        height: inherit;
+        width: inherit;
+        &.active {
+          display: block;
+          animation: slideInLeft .5s ease-in-out;
+        }
+        &.done {
+          display: block;
+          animation: slideOutRight .5s ease-in-out;
+        }
+        a {
+          color: white;
+          text-decoration: none;
+          font-size: 1.07rem;
+          @media (min-width: 1300px) {
+            font-size: 1.2rem;
+          }
+          @media (min-width: 1900px) {
+            font-size: 1.4rem;
+          }
+        }
+        @media (min-width: 1200px) {
+          padding: 1.2em 3.2em;
+        }
+        @media (min-width: 1300px) {
+          padding: 0.5em 2.6em;
+        }
+        @media (min-width: 1900px) {
+          padding: 3.2em 3.3em;
+        }
+      }
+      @media (min-width: 1900px) {
+        height: 25em;
+      }
+    }
+  }
+  @media (min-width: 1200px) {
+    min-height: 50rem;
+    padding: 1rem 9rem 3rem 9rem;
   }
 }

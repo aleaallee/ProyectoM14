@@ -22,7 +22,7 @@ if (isset($_COOKIE["user"])) {
     <script src="assets/slick/slick.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
     <script src="js/main.js" defer></script>
-    <script src="js/register.js?t=1491313943559" defer></script>
+    <script src="js/register.js?v=<?php echo time();?>" defer></script>
     <script src="js/particles.min.js"></script>
 </head>
 
@@ -46,11 +46,11 @@ if (isset($_COOKIE["user"])) {
             <form enctype="multipart/form-data" class="loginform">
                 <div class="input">
                     <label for="user"></label>
-                    <input type="text" name="user" placeholder="User" maxlength="15" required>
+                    <input type="text" name="user" placeholder="<?php echo DATA_USER ?>" maxlength="15" required>
                 </div>
                 <div class="input">
                     <label for="password"></label>
-                    <input type="password" name="password" placeholder="Password" maxlength="16" required>
+                    <input type="password" name="password" placeholder="<?php echo LOG_PASSWORD ?>" maxlength="16" required>
                 </div>
                 <button class="loginbutton" type="submit">Login</button>
             </form>
@@ -59,19 +59,19 @@ if (isset($_COOKIE["user"])) {
             <form enctype="multipart/form-data" class="regform">
                 <div class="input">
                     <label for="user"></label>
-                    <input type="text" name="user" placeholder="User" maxlength="15" required>
+                    <input type="text" name="user" placeholder="<?php echo DATA_USER ?>" maxlength="15" required>
                 </div>
                 <div class="input">
                     <label for="email"></label>
-                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="email" name="email" pattern="[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" placeholder="<?php echo DATA_EMAIL ?>" required>
                 </div>
                 <div class="input">
                     <label for="password"></label>
-                    <input type="password" name="password" placeholder="Password" maxlength="15" required>
+                    <input type="password" name="password" placeholder="<?php echo LOG_PASSWORD ?>" maxlength="15" required>
                 </div>
                 <div class="input">
                     <label for="reppassword"></label>
-                    <input type="password" name="reppassword" placeholder="Repeat password" maxlength="15"
+                    <input type="password" name="reppassword" placeholder="<?php echo LOG_REPPASSWORD ?>" maxlength="15"
                            autocomplete="current-password"
                            required>
                 </div>
@@ -84,7 +84,15 @@ if (isset($_COOKIE["user"])) {
 <footer>
     <div class="linkgroup">
         <ul class="links">
-            <li><a href="index.php">A.P.D.2</a></li>
+            <!--<li><a href="index.php">A.P.D.2</a></li>-->
+            <li>
+                <select name="langSelector">
+                    <option selected disabled><?php echo MENU_LANG ?></option>
+                    <option value="ES">ES</option>
+                    <option value="EN">EN</option>
+                    <option value="CAT">CAT</option>
+                </select>
+            </li>
             <li><a href="gallery.php"><?php echo NAV_GALLERY ?></a></li>
         </ul>
         <ul class="links">

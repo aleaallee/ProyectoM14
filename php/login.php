@@ -22,9 +22,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $password = $_POST['password'];
 
         if (User::verifyPassword($user, $password)) {
-            $return['redirect'] = '/index.php?message=logged';
+            log::userLog($_POST['user'], 'IN');
+            $return['redirect'] = 'https://apd2.es/index.php?message=logged';
             $return['user'] = $user;
-            //TODO: Cookies de inicio de sesión
+            
         } else {
             $return['error'] = "La contraseña introducida es errónea.";
 

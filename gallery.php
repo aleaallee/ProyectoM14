@@ -8,7 +8,7 @@ require_once('php/classes/img.php');
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>A.P.D 2 - Inicio</title>
+    <title>A.P.D 2 - Galería</title>
     <link rel="manifest" href="site.webmanifest">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="A.P.D.2 - Gallery">
@@ -35,16 +35,21 @@ require_once('php/classes/img.php');
                 <li class="obj-nav "><a href="index.php"><?php echo NAV_HOME; ?></a></li>
                 <li class="obj-nav actual"><a href="gallery.php"><?php echo NAV_GALLERY ?></a></li>
                 <li class="obj-nav"><a href="contact.php"><?php echo NAV_CONTACT ?></a></li>
+              <?php
+              if (isset($_COOKIE['user'])) {
+                echo "<li class=\"obj-nav\"><a href=\"downloads.php\">" . NAV_DOWNLOADS . " </a></li>";
+              }
+              ?>
             </div>
           <?php
           if (isset($_COOKIE['user'])) {
             echo "
                 <li class=\"user obj-nav\">
                   <div class='circle'>
-                    <a href='user.php'>".$_COOKIE["user"][0]."</a>
+                    <a href='user.php'>" . $_COOKIE["user"][0] . "<span>" . $_COOKIE["user"] . "</span></a>
                   </div>
                   <div class='logOut'>
-                    <span class='sessionClose'>".NAV_SESSION_CLOSE."</span>
+                    <span class='sessionClose'>&#10005;</span>
                    </div>
                 </li>
               ";
@@ -69,7 +74,7 @@ require_once('php/classes/img.php');
                 <legend><?php echo GALLERY_UPLOAD_IMAGE ?></legend>
                 <label for="title"><?php echo GALLERY_TITLE ?>: <input type="text" name="title"
                                                                        placeholder="<?php echo GALLERY_TITLE ?>"></label><br/>
-                <label for="image"><?php echo GALLERY_IMAGE ?>: <input type="file" name="image"></label><br/>
+                <label for="image"><?php echo GALLERY_IMAGE ?>: <input type="file" name="image" id="galleryimgfile"></label><br/>
                 <img src="#" alt="UploadedImage" id="UploadedImage">
                 <button class="imgUpload"><?php echo GALLERY_UPLOAD ?></button>
             </fieldset>
@@ -80,7 +85,7 @@ require_once('php/classes/img.php');
       <?php echo img::printImages(); ?>
       <?php
       if (isset($_COOKIE['user'])) {
-          echo "<a data-fancybox data-src=\"#uploadModal\" href=\"javascript:;\"><div class=\"img upload\"></div></a>";
+        echo "<a data-fancybox data-src=\"#uploadModal\" href=\"javascript:;\"><div class=\"img upload\"></div></a>";
       }
       ?>
     </section>
@@ -106,8 +111,11 @@ require_once('php/classes/img.php');
         </ul>
     </div>
 </footer>
-<script>
-  $(document).ready(function () {
+
+<?php
+$mensaje = UPLOAD_SIZE_ERROR;
+echo "<script>
+        $(document).ready(function () {
     function readURL(input) {
 
       if (input.files && input.files[0]) {
@@ -117,16 +125,20 @@ require_once('php/classes/img.php');
           $('fieldset > img').attr('src', e.target.result);
           $('fieldset > img').addClass('active');
         };
-
         reader.readAsDataURL(input.files[0]);
+        if (input.files[0].name.length > 32) {
+          alert(\"$mensaje\");
+          setInterval(window.location.replace(window.location.href), 1000);
+        }
       }
     }
 
-    $("input[type=file]").change(function () {
+    $('input[type=file]').change(function () {
       readURL(this);
     });
   })
-</script>
+    </script>";
+?>
 </body>
 
 </html>

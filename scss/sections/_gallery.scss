@@ -1,5 +1,6 @@
 main.gallery {
   width: 100vw;
+  min-height: 100vh;
   background-color: $principal;
   display: inline-block;
 
@@ -89,10 +90,10 @@ main.gallery {
     }
 
     @media (min-width: 1900px) {
-      grid-template-columns: repeat(4, 1fr);
+      //grid-template-columns: repeat(3, 1fr);
       margin-top: 13em;
       margin-bottom: 2em;
-      padding-left: 12%;
+      padding-left: 23%;
       padding-right: 12%;
     }
 
@@ -149,7 +150,7 @@ main.gallery {
         }
         @media (min-width: 1900px) {
           height: 25em;
-          width: 33em;
+          //width: 33em;
         }
       }
       @media(min-width: 1900px){

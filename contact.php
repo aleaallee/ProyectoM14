@@ -8,40 +8,66 @@ require_once('php/langVar.php');
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>A.P.D 2 - Inicio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
     <meta name="description" content="A.P.D.2 Alexa Play Despacito 2">
+    <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.min.css?v=<?php echo time();?>">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.min.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="assets/slick/slick.css">
     <link rel="stylesheet" href="assets/slick/slick-theme.css">
     <script src="js/jquery-3.3.1.min.js.js"></script>
     <script src="assets/slick/slick.min.js" defer></script>
-    <script src="js/main.js" defer></script>
-    <script src="js/register.js"></script>
+    <script src="js/main.js?v=<?php echo time(); ?>" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
     <script src="js/nav.js" defer></script>
-    <script src="js/slider.js" defer></script>
+    <script src="js/particles.min.js"></script>
 </head>
 
 <body>
+<?php
+if (isset($_GET['message'])) {
+  switch ($_GET['message']) {
+    case 'welcome':
+      echo "<script>
+        Swal.fire('Registered!.',
+        'You have succesfully registered',
+        'success')
+      </script>";
+      break;
+
+    case 'logged':
+      echo "<script>
+        Swal.fire('Logged!.',
+        'You have succesfully logged-in',
+        'success')
+      </script>";
+      header("Location: https://www.apd2.es/");
+      break;
+  }
+}
+?>
 <header class="nav">
     <div class="navbar">
         <ul role="navigation">
             <li class="logo"><a href="index.php">A.P.D.2</a></li>
             <div class="menu">
-                <li class="obj-nav "><a href="index.php"><?php echo NAV_HOME;?></a></li>
+                <li class="obj-nav "><a href="index.php"><?php echo NAV_HOME ?></a></li>
                 <li class="obj-nav"><a href="gallery.php"><?php echo NAV_GALLERY ?></a></li>
                 <li class="obj-nav actual"><a href="contact.php"><?php echo NAV_CONTACT ?></a></li>
-                <span class="bar"></span>
-            </div>
-          <?php
+              <?php
+              if (isset($_COOKIE['user'])) {
+                echo "<li class=\"obj-nav\"><a href=\"downloads.php\">" . NAV_DOWNLOADS . " </a></li>";
+              }
+              ?>
+            </div><?php
           if (isset($_COOKIE['user'])) {
             echo "
                 <li class=\"user obj-nav\">
                   <div class='circle'>
-                    <a href='user.php'>".$_COOKIE["user"][0]."</a>
+                    <a href='user.php'>" . $_COOKIE["user"][0] . "<span>" . $_COOKIE["user"] . "</span></a>
                   </div>
                   <div class='logOut'>
-                    <span class='sessionClose'>".NAV_SESSION_CLOSE."</span>
+                    <span class='sessionClose'>&#10005;</span>
                    </div>
                 </li>
               ";
@@ -56,43 +82,112 @@ require_once('php/langVar.php');
               ';
           }
           ?>
+
         </ul>
     </div>
 </header>
-<main class="hero">
-    <div class="mainimage"></div>
-    <section class="apdinfo">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt sollicitudin dui, in iaculis turpis
-            fringilla vehicula. Vivamus nunc odio, ultrices at risus ut, fermentum venenatis lorem. Mauris elit libero,
-            hendrerit ac felis ut, malesuada varius lectus. Donec a interdum nunc. Nullam elit neque, ultrices aliquet
-            pretium pulvinar, varius in mauris. Nunc id quam eu velit hendrerit iaculis. Etiam in felis vitae nisi
-            maximus vestibulum eget eu ante. Pellentesque elementum odio sed purus suscipit, quis interdum leo
-            condimentum. Sed venenatis leo luctus odio feugiat consectetur. </p>
-    </section>
+<div id="particles-js" class="particlesjs"
+     style="z-index: 0 !important; background-color: rgba(0,0,0,0) !important;"></div>
+<main class="contact">
+    <div class=" contactform">
+        <div class="left" id="map"></div>
+        <div class="right">
+            <form action="sendMail.php" method="post" class="contact" enctype="multipart/form-data">
+                <fieldset>
+                    <legend><?php echo NAV_CONTACT ?></legend>
+
+                    <div class="field">
+                        <label for="name"><?PHP echo DATA_NAME . ": " ?><span class="required" style="color: red;">*</span><input type="text" name="name" value=""
+                                                                               placeholder="<?PHP echo DATA_NAME ?> " required></label>
+                    </div>
+
+                    <div class="field">
+                        <label for="email"><?PHP echo DATA_EMAIL . ": " ?><span class="required" style="color: red;">*</span><input type="email" name="email"
+                                                                                 placeholder="<?PHP echo DATA_EMAIL ?> " required></label>
+                    </div>
+
+                    <div class="field">
+                        <label for="message"><?PHP echo CONTACT_SUBJECT . ": " ?><span class="required" style="color: red;">*</span><textarea name="message" cols="30"
+                                                                                           rows="10"
+                                                                                           placeholder="<?php echo CONTACT_SUBJECT; ?>" required></textarea></label>
+                    </div>
+                    <input type="submit">
+                </fieldset>
+
+            </form>
+        </div>
+    </div>
 </main>
-<section class="slider">
-    <div>
-        <img src="assets/img/2.jpg" alt="img1">
-    </div>
-    <div>
-        <img src="assets/img/3.jpg" alt="img1">
-    </div>
-    <div>
-        <img src="assets/img/4.png" alt="img1">
-    </div>
-</section>
+
 <footer>
     <div class="linkgroup">
         <ul class="links">
-            <li><a href="#">A.P.D.2</a></li>
-            <li><a href="#">Gallery</a></li>
+            <!--<li><a href="index.php">A.P.D.2</a></li>-->
+            <li>
+                <select name="langSelector">
+                    <option selected disabled><?php echo MENU_LANG ?></option>
+                    <option value="ES">ES</option>
+                    <option value="EN">EN</option>
+                    <option value="CAT">CAT</option>
+                </select>
+            </li>
+            <li><a href="gallery.php"><?php echo NAV_GALLERY ?></a></li>
         </ul>
         <ul class="links">
-            <li><a href="#">Contact</a></li>
-            <li><a href="#"><?php echo BODY_TERMS ?></a></li>
+            <li><a href="contact.php"><?php echo NAV_CONTACT ?></a></li>
+            <li><a href="terms.php"><?php echo BODY_TERMS ?></a></li>
         </ul>
     </div>
 </footer>
+<script>
+  particlesJS.load('particles-js', 'js/particles.json', function () {
+    console.log('callback - particles.js config loaded');
+  });
+</script>
+<script>
+  function initMap() {
+    // The location of Uluru
+    var bcn = {lat: 41.797329, lng: 2.218604};
+    // The map, centered at Uluru
+    var map = new google.maps.Map(
+        document.getElementById('map'), {zoom: 4, center: bcn});
+    // The marker, positioned at Uluru
+    var marker = new google.maps.Marker({position: bcn, map: map});
+  }
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATIvs5Vl-DYjcR61gnEHiCXfRslJAHVrc&callback=initMap"
+        type="text/javascript"></script>
+
 </body>
 
 </html>
+<?php
+
+if (isset($_GET['message'])) {
+  if ($_GET['message'] == 'formSent') {
+    echo "<script>
+    swal.fire({
+          title: 'Mensaje enviado',
+          text: 'Ha enviado el mensaje con éxito',
+          type: 'success',
+          confirmButtonText: 'Volver al inicio'
+        }).then(function () {
+          window.location.replace('https://www.apd2.es/')
+        });
+</script>";
+  }
+  if ($_GET['message'] == 'error') {
+    echo "<script>
+    swal.fire({
+          title: 'Error',
+          text: 'No se ha podido enviar el mensaje',
+          type: 'error',
+          confirmButtonText: 'Volver al inicio'
+        }).then(function () {
+          window.location.replace('https://www.apd2.es/contact.php')
+        });
+</script>";
+  }
+}
+?>

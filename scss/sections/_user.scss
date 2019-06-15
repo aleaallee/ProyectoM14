@@ -5,7 +5,7 @@ main.user {
   background-color: #3a7ca5;
   .profile {
     display: grid;
-    width: 70%;
+    width: 76%;
     background-color: hsl(210, 67%, 75%);
     margin: auto;
     margin-top: 15em;
@@ -54,7 +54,7 @@ main.user {
     .bottom {
       display: flex;
       width: 100%;
-      //height: 45em;
+      min-height: 33em;
       aside.list,
       div.section {
         float: left;
@@ -74,21 +74,18 @@ main.user {
           font-size: 2.2em;
           color: white;
           list-style-type: none;
-          margin-top: 7.5em;
+          margin-top: 3.5em;
           margin-left: 1em;
           margin-right: 0;
           padding: 0;
           li {
             margin-bottom: 1em;
-            a {
-              text-decoration: none;
-              color: inherit;
-            }
             &.active {
-              a {
-                color: #005088;
-                font-weight: bold;
-              }
+              color: #005088;
+              font-weight: bold;
+            }
+            &:hover {
+              cursor: pointer;
             }
           }
         }
@@ -121,13 +118,13 @@ main.user {
             .image {
               width: 100%;
               border-radius: 10px;
-              transition: all 0.5s linear-in-out;
+              transition: all 0.5s linear;
               &:hover {
                 cursor: pointer;
               }
               &.activeImg {
                 grid-column: 1 / span 3;
-                transition: all 0.5s linear-in-out;
+                transition: all 0.5s linear;
               }
               a {
                 width: inherit;
@@ -137,8 +134,166 @@ main.user {
                 }
               }
             }
+            @media(min-width: 1300px){
+              width: 82.939%;
+            }
             @media (min-width: 1900px) {
+              width: 80.939%;
               padding-left: 3em;
+            }
+          }
+        }
+        &.data,
+        &.admin {
+          fieldset {
+            margin: 1rem 3rem 1rem 3rem;
+            border: 2px solid #a2aebb;
+            border-radius: 8px;
+            legend {
+              color: #dfe0e2;
+              text-shadow: 1px 1px 1px #0f0f0f;
+              font-size: 1.2rem;
+            }
+            table {
+              border-collapse: collapse;
+              margin: 2rem 2rem 2rem 1rem;
+              min-width: 45em;
+              tr {
+                &:nth-child(even) {
+                  background-color: #909090;
+                }
+                &:nth-child(odd) {
+                  background-color: #f0f0f0;
+                }
+                &.main {
+                  display: none;
+                }
+                &.shown {
+                  display: table-row;
+                }
+                &.hidden {
+                  display: none;
+                }
+
+                td {
+                  input {
+                    background-color: #909090;
+                    height: inherit;
+                    color: #f0f0f0;
+                    border: none;
+                    width: inherit;
+                    &[type="submit"] {
+                      cursor: pointer;
+                    }
+                    &::placeholder {
+                      color: white;
+                    }
+                  }
+                  select{
+                    border: none;
+                    border-radius: 3px;
+                    border-bottom: 3px solid #6ccfec;
+                    min-width: 6em;
+                    padding-left: 0.5rem;
+                    margin-left: 0.4em;
+                  }
+                }
+
+                td,
+                th {
+                  padding: 0.5em 0.3em;
+                  font-size: 1rem;
+                }
+                th {
+                  background-color: white;
+                  &.hidden {
+                    display: none;
+                  }
+                }
+                td {
+                  border-top: 1px solid #abcaaa;
+                  border-right: 1px solid #fff;
+                  color: white;
+                  width: 3rem;
+                  &:last-child {
+                    border-right: #000;
+                  }
+                  @media (min-width: 1200px) {
+                    width: 5.4rem;
+                  }
+                  @media (min-width: 1900px) {
+                    width: 7rem;
+                  }
+                }
+              }
+              @media(min-width: 1200px){
+                min-width: 62em;
+              }
+              @media(min-width: 1300px){
+                min-width: 70em;
+              }
+              @media(min-width: 1900px){
+                min-width: 101em;
+              }
+            }
+          }
+        }
+        &.data {
+          form {
+            padding-left: 8.5rem;
+            @media(min-width: 1200px){
+              padding-left: 13rem;
+            }
+            @media(min-width: 1300px){
+              padding-left: 16rem;
+            }
+            @media(min-width: 1900px){
+              padding-left: 26rem;
+            }
+            .inputgroup {
+              label,
+              input {
+                display: block;
+              }
+              label {
+                font-size: 1.1rem;
+                color: #222;
+              }
+              input {
+                border: none;
+                border-bottom: 2px solid #4574fa;
+                border-radius: 5px;
+                min-width: 5em;
+                width: 13em;
+                font-size: 1rem;
+                margin: 0 1em 0 0.2em;
+                padding-top: 0.5em;
+                padding-bottom: 0.5em;
+                padding-left: 0.5em;
+                color: #111;
+              }
+            }
+            input[type="submit"] {
+              border: none;
+              border-bottom: 2px solid #4574fa;
+              border-radius: 5px;
+              width: 13em;
+              font-size: 1rem;
+              margin: 1.3em 1em 1em 0.2em;
+              padding-top: 0.5em;
+              padding-bottom: 0.5em;
+              padding-left: 0.5em;
+              color: #111;
+            }
+          }
+        }
+        &.admin {
+          tr {
+            &:nth-child(odd) {
+              background-color: #909090;
+              td {
+                background-color: #909090;
+              }
             }
           }
         }
@@ -147,6 +302,12 @@ main.user {
           width: 86.486%;
         }
       }
+    }
+    @media (min-width: 1200px) {
+      width: 74.9%;
+    }
+    @media (min-width: 1900px) {
+      width: 70%;
     }
   }
 }

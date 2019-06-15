@@ -1,0 +1,107 @@
+main.contact {
+  background-image: linear-gradient(
+    to right top,
+    #3259b3,
+    #0064af,
+    #006ca5,
+    #007196,
+    #007487
+  );
+  min-height: 122vh;
+  
+  .contactform {
+    border-top-right-radius: 3em;
+    border-bottom-right-radius: 3em;
+    -webkit-box-shadow: 1px 1px 10px #111;
+    box-shadow: 1px 1px 10px #111;
+    min-width: 50%;
+    width: 93%;
+    height: 40rem;
+    position: absolute;
+    top: 12%;
+    left: 3%;
+
+    .left,
+    .right {
+      float: left;
+      height: 100%;
+      width: 50%;
+    }
+    .left {
+      div {
+        //border-radius: 5em;
+      }
+      iframe {
+        //border-radius: 5em;
+      }
+    }
+    .right {
+      background-image: linear-gradient(
+        to right bottom,
+        #0095dd,
+        #009de0,
+        #00a4e2,
+        #00ace3,
+        #00b3e4
+      );
+      border-top-right-radius: 3em;
+      border-bottom-right-radius: 3em;
+      form {
+        fieldset {
+          border-top-right-radius: 3em;
+          margin-top: 6em;
+          border: none;
+          legend {
+            margin-left: 9rem;
+            font-size: 3em;
+          }
+          div.field {
+            margin-top: 1rem;
+            label {
+              float: left;
+              clear: both;
+              font-size: 2em;
+              margin-left: 5%;
+              padding-top: 0.5em;
+              input,
+              textarea {
+                border: none;
+                outline: none;
+                vertical-align: top;
+                margin-left: 1em;
+                padding: 0.3em;
+                border-radius: 0.5em;
+              }
+            }
+          }
+          input[type="submit"] {
+            float: left;
+            font-size: 2.5em;
+            border: none;
+            -webkit-border-radius: 0.5em;
+            -moz-border-radius: 0.5em;
+            border-radius: 0.5em;
+            margin-top: 1em;
+            margin-left: 41%;
+            padding: 0.6rem 1.2rem 0.8rem 1.2rem;
+            background: #f27474;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+
+    @media (min-width: 1200px) {
+      width: 70%;
+      top: 12%;
+      left: 16%;
+    }
+    @media (min-width: 1900px) {
+      top: 18%;
+      left: 25%;
+      width: 50%;
+    }
+  }
+}

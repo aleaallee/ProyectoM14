@@ -1,8 +1,9 @@
 <?php
-require('classes/config.php');
+require_once('classes/config.php');
+require_once('langVar.php');
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-
+header('Content-Type: application/json');
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   $return = [];
@@ -28,21 +29,26 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       if ($filesize > 10000000) {
         $return[] = "Este archivo pesa más 10MB, suba uno más pequeño";
       }else{
-        $addImage = $con->prepare("INSERT INTO Images VALUES(:id, :title)");
-        $addImage->bindParam(":id", $filename, PDO::PARAM_STR);
-        $addImage->bindParam(":title", $title, PDO::PARAM_STR);
-        $addImage->execute();
+        if(Img::verifyExistence($filename)){
+          $addImage = $con->prepare("INSERT INTO Images VALUES(:id, :title)");
+          $addImage->bindParam(":id", $filename, PDO::PARAM_STR);
+          $addImage->bindParam(":title", $title, PDO::PARAM_STR);
+          $addImage->execute();
 
-        $addUpload = $con->prepare("INSERT INTO Uploads VALUES(:id, :uploader, NOW(), 1)");
-        $addUpload->bindParam(":id", $filename, PDO::PARAM_STR);
-        $addUpload->bindParam(":uploader", $uploader, PDO::PARAM_STR);
-        $addUpload->execute();
-        $uploaded = move_uploaded_file($tempName, $uploadFolder);
-        if(!$uploaded){
-          $return[] = "No se ha podido subir la imagen";
+          $addUpload = $con->prepare("INSERT INTO Uploads VALUES(:id, :uploader, NOW(), 1)");
+          $addUpload->bindParam(":id", $filename, PDO::PARAM_STR);
+          $addUpload->bindParam(":uploader", $uploader, PDO::PARAM_STR);
+          $addUpload->execute();
+          $uploaded = move_uploaded_file($tempName, $uploadFolder);
+          if(!$uploaded){
+            $return[] = "No se ha podido subir la imagen";
+          }else{
+            $return[] = UPLOAD_SUCCESS;
+          }
         }else{
-          $return[] = "Se ha subido la imagen";
+          $return[] = UPLOAD_EXISTS;
         }
+
 
       }
 

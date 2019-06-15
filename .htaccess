@@ -2,3 +2,7 @@ RewriteEngine On
 RewriteCond %{HTTPS} On
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+<FilesMatch "\.(js|css|ico|pdf|flv|jpg|jpeg|png|gif|swf|mp3|mp4|ttf)$">
+Header set Cache-Control "public"
+Header set Expires "Thu, 15 Apr 2020 20:00:00 GMT"
+</FilesMatch>

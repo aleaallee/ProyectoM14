@@ -8,12 +8,12 @@ require_once('php/langVar.php');
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>A.P.D 2 - Inicio</title>
+    <title>A.P.D 2 - Términos y Condiciones</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="A.P.D.2 Alexa Play Despacito 2">
     <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.min.css?v=<?php echo time();?>">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.min.css?v=<?php echo time(); ?>">
     <script src="js/jquery-3.3.1.min.js.js"></script>
     <script src="js/main.js?v=<?php echo time(); ?>" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
@@ -48,19 +48,24 @@ if (isset($_GET['message'])) {
         <ul role="navigation">
             <li class="logo"><a href="index.php">A.P.D.2</a></li>
             <div class="menu">
-                <li class="obj-nav actual"><a href="index.php"><?php echo NAV_HOME ?></a></li>
+                <li class="obj-nav"><a href="index.php"><?php echo NAV_HOME ?></a></li>
                 <li class="obj-nav"><a href="gallery.php"><?php echo NAV_GALLERY ?></a></li>
                 <li class="obj-nav"><a href="contact.php"><?php echo NAV_CONTACT ?></a></li>
-                <span class="bar"></span>
+              <?php
+              if (isset($_COOKIE['user'])) {
+                echo "<li class=\"obj-nav\"><a href=\"downloads.php\">" . NAV_DOWNLOADS . " </a></li>";
+              }
+              ?>
+
             </div><?php
           if (isset($_COOKIE['user'])) {
             echo "
                 <li class=\"user obj-nav\">
                   <div class='circle'>
-                    <a href='user.php'>".$_COOKIE["user"][0]."</a>
+                    <a href='user.php'>" . $_COOKIE["user"][0] . "<span>".$_COOKIE["user"]."</span></a>
                   </div>
                   <div class='logOut'>
-                    <span class='sessionClose'>".NAV_SESSION_CLOSE."</span>
+                    <span class='sessionClose'>&#10005;</span>
                    </div>
                 </li>
               ";
@@ -79,7 +84,495 @@ if (isset($_GET['message'])) {
         </ul>
     </div>
 </header>
-<main>
+<main class="terms">
+    <div class="text">
+        <p>
+            <strong>Política de privacidad</strong>
+            <strong></strong>
+        </p>
+        <ul type="disc">
+            <li>
+                <a
+                        href="https://www.mediamarkt.es/?gclid=CjwKCAjw8qjnBRA-EiwAaNvhwLi5Zjg5olTDijL1tmJduK3xaf63CSEk8jYUFQCruWY5AfTmjAI-HBoCgfwQAvD_BwE&amp;gclsrc=aw.ds#identificacion"
+                >
+                    1. Identificación
+                </a>
+            </li>
+            <li>
+                <a
+                        href="https://www.mediamarkt.es/?gclid=CjwKCAjw8qjnBRA-EiwAaNvhwLi5Zjg5olTDijL1tmJduK3xaf63CSEk8jYUFQCruWY5AfTmjAI-HBoCgfwQAvD_BwE&amp;gclsrc=aw.ds#informacion"
+                >
+                    2. Información y consentimiento
+                </a>
+            </li>
+            <li>
+                <a
+                        href="https://www.mediamarkt.es/?gclid=CjwKCAjw8qjnBRA-EiwAaNvhwLi5Zjg5olTDijL1tmJduK3xaf63CSEk8jYUFQCruWY5AfTmjAI-HBoCgfwQAvD_BwE&amp;gclsrc=aw.ds#obligacion"
+                >
+                    3. Obligatoriedad datos
+                </a>
+            </li>
+            <li>
+                <a
+                        href="https://www.mediamarkt.es/?gclid=CjwKCAjw8qjnBRA-EiwAaNvhwLi5Zjg5olTDijL1tmJduK3xaf63CSEk8jYUFQCruWY5AfTmjAI-HBoCgfwQAvD_BwE&amp;gclsrc=aw.ds#finalidad"
+                >
+                    4. Finalidad de datos
+                </a>
+            </li>
+            <li>
+                <a
+                        href="https://www.mediamarkt.es/?gclid=CjwKCAjw8qjnBRA-EiwAaNvhwLi5Zjg5olTDijL1tmJduK3xaf63CSEk8jYUFQCruWY5AfTmjAI-HBoCgfwQAvD_BwE&amp;gclsrc=aw.ds#datos"
+                >
+                    5. Datos del usuario
+                </a>
+            </li>
+            <li>
+                <a
+                        href="https://www.mediamarkt.es/?gclid=CjwKCAjw8qjnBRA-EiwAaNvhwLi5Zjg5olTDijL1tmJduK3xaf63CSEk8jYUFQCruWY5AfTmjAI-HBoCgfwQAvD_BwE&amp;gclsrc=aw.ds#cookies"
+                >
+                    6. Cookies, web y redes.
+                </a>
+            </li>
+            <li>
+                <a
+                        href="https://www.mediamarkt.es/?gclid=CjwKCAjw8qjnBRA-EiwAaNvhwLi5Zjg5olTDijL1tmJduK3xaf63CSEk8jYUFQCruWY5AfTmjAI-HBoCgfwQAvD_BwE&amp;gclsrc=aw.ds#tratamiento"
+                >
+                    7. Tratamiento de tus datos
+                </a>
+            </li>
+            <li>
+                <a
+                        href="https://www.mediamarkt.es/?gclid=CjwKCAjw8qjnBRA-EiwAaNvhwLi5Zjg5olTDijL1tmJduK3xaf63CSEk8jYUFQCruWY5AfTmjAI-HBoCgfwQAvD_BwE&amp;gclsrc=aw.ds#compartir"
+                >
+                    8. Compartir los datos
+                </a>
+            </li>
+            <li>
+                <a
+                        href="https://www.mediamarkt.es/?gclid=CjwKCAjw8qjnBRA-EiwAaNvhwLi5Zjg5olTDijL1tmJduK3xaf63CSEk8jYUFQCruWY5AfTmjAI-HBoCgfwQAvD_BwE&amp;gclsrc=aw.ds#responsabilidad"
+                >
+                    9. Responsabilidad del usuario
+                </a>
+            </li>
+            <li>
+                <a
+                        href="https://www.mediamarkt.es/?gclid=CjwKCAjw8qjnBRA-EiwAaNvhwLi5Zjg5olTDijL1tmJduK3xaf63CSEk8jYUFQCruWY5AfTmjAI-HBoCgfwQAvD_BwE&amp;gclsrc=aw.ds#comunicacion"
+                >
+                    10. Comunicaciones comerciales-promocionales
+                </a>
+            </li>
+            <li>
+                <a
+                        href="https://www.mediamarkt.es/?gclid=CjwKCAjw8qjnBRA-EiwAaNvhwLi5Zjg5olTDijL1tmJduK3xaf63CSEk8jYUFQCruWY5AfTmjAI-HBoCgfwQAvD_BwE&amp;gclsrc=aw.ds#funcion"
+                >
+                    11. Función de chat
+                </a>
+            </li>
+            <li>
+                <a
+                        href="https://www.mediamarkt.es/?gclid=CjwKCAjw8qjnBRA-EiwAaNvhwLi5Zjg5olTDijL1tmJduK3xaf63CSEk8jYUFQCruWY5AfTmjAI-HBoCgfwQAvD_BwE&amp;gclsrc=aw.ds#ejercicio-derechos"
+                >
+                    12. Ejercicio de derechos
+                </a>
+            </li>
+            <li>
+                <a
+                        href="https://www.apd2.es/?gclid=CjwKCAjw8qjnBRA-EiwAaNvhwLi5Zjg5olTDijL1tmJduK3xaf63CSEk8jYUFQCruWY5AfTmjAI-HBoCgfwQAvD_BwE&amp;gclsrc=aw.ds#medidas"
+                >
+                    13. Medidas de seguridad
+                </a>
+            </li>
+            <li>
+                <a
+                        href="https://www.apd2.es/?gclid=CjwKCAjw8qjnBRA-EiwAaNvhwLi5Zjg5olTDijL1tmJduK3xaf63CSEk8jYUFQCruWY5AfTmjAI-HBoCgfwQAvD_BwE&amp;gclsrc=aw.ds#cambios-privacidad"
+                >
+                    14. Cambios política privacidad
+                </a>
+            </li>
+        </ul>
+        <p>
+            Nuestro objetivo es que te sientas cómodo en nuestro sitio web. La
+            protección de tu privacidad es muy importante para nosotros. Por lo tanto,
+            nos gustaría pedirte que leas detenidamente el siguiente resumen sobre cómo
+            funciona nuestro sitio web. Puedes confiar en un procesamiento de datos
+            transparente y justo ya que nos esforzamos día a día para manejar tus datos
+            de forma segura, cuidadosa y responsable.
+        </p>
+        <p>
+            Las siguientes políticas de privacidad están destinadas a informarte sobre
+            cómo usamos tu información personal cumpliendo con las disposiciones y
+            requisitos del Reglamento General Europeo de Protección de Datos
+        </p>
+        <p>
+            <strong>1. Identificación</strong>
+        </p>
+        <ul type="disc">
+            <li>
+                Titular: APD2 S.A.
+            </li>
+            <li>
+                NIF: A64421738
+            </li>
+            <li>
+                Domicilio social: C/ Riumende, 15 , 08540 Centelles, Barcelona
+            </li>
+            <li>
+                Correo electrónico:
+                <a href="mailto:atencionalcliente@apd2.es">
+                    atencionalcliente@apd2.es
+                </a>
+            </li>
+            <li>
+                Delegado de Protección de Datos: El usuario puede contactar con el
+                Delegado de Protección de Datos mediante escrito dirigido al domicilio
+                a APD2 a la atención del “Delegado de Protección de Datos” o al correo
+                electrónico <a href="mailto:dpo@apd2.es">dpo@apd2.es</a>
+            </li>
+        </ul>
+        <p>
+            <strong>2. Información y consentimiento</strong>
+        </p>
+        <p>
+            Mediante la lectura de la presente Política de Privacidad, el usuario queda
+            informado sobre la forma en la que APD2 recaba, trata y protege los datos
+            de carácter personal que le son facilitados a través de los formularios
+            dispuestos a través del sitio web <a href="https://www.apd2.es/">www.APD2.es</a> (en adelante, el
+            “Sitio Web”), así como los datos derivados de su navegación y aquellos
+            otros datos que pueda facilitar en un futuro a APD2.
+        </p>
+        <p>
+            El usuario debe leer con atención esta Política de Privacidad, que ha sido
+            redactada de forma clara y sencilla, para facilitar su comprensión,
+            determinando libre y voluntariamente si desea facilitar sus datos
+            personales a APD2.
+        </p>
+        <p>
+            <strong>3. Obligatoriedad de facilitar los datos</strong>
+        </p>
+        <p>
+            Los datos solicitados en los formularios dispuestos en el Sitio Web son,
+            con carácter general, obligatorios (salvo que en el campo requerido se
+            especifique lo contrario) para cumplir con las finalidades establecidas.
+        </p>
+        <p>
+            Por lo tanto, si no se facilitan dichos datos o estos no son correctos no
+            podrán atenderse las mismas.
+        </p>
+        <p>
+            <strong>
+                4. ¿Con qué finalidad tratará APD2 los datos personales del usuario y
+                durante cuánto tiempo?
+            </strong>
+        </p>
+        <p>
+            Los datos personales recabados serán tratados por APD2 conforme a las
+            siguientes finalidades:
+        </p>
+        <ul type="disc">
+            <li>
+                Gestionar sus solicitudes de contacto con APD2 a través de los canales
+                dispuestos para ello en el Sitio Web de APD2.
+            </li>
+            <li>
+                Gestionar las compras efectuadas en el marco del Sitio Web, incluyendo
+                la gestión del pago y la remisión del pedido.
+            </li>
+            <li>
+                Gestionar la suscripción a la newsletter, realizada a través del canal
+                dispuesto en el Sitio Web de APD2.
+            </li>
+            <li>
+                Efectuar análisis sobre la utilización del Sitio Web y comprobar las
+                preferencias y comportamiento de los usuarios.
+            </li>
+            <li>
+                Gestionar el envío de comunicaciones comerciales de APD2 y del resto de
+                compañías que forman parte de su mismo grupo, salvo que el usuario
+                indique lo contrario marcando la casilla correspondiente, o muestre su
+                oposición a dicho tratamiento.
+            </li>
+            <li>
+                Gestionar el envío de encuestas de satisfacción en base a la compra del
+                producto o servicio de APD2 realizada, mara mejorar día a día la
+                experiencia de nuestros clientes.
+            </li>
+            <li>
+                Analizar sus datos a fin de elaborar perfiles de usuario que permitan
+                definir con mayor detalle los productos que puedan resultar de su
+                interés.
+            </li>
+        </ul>
+        <p>
+            Los datos se conservarán durante el tiempo necesario para la realización de
+            las finalidades para las que fueron recabados, salvo que el usuario
+            solicite su baja a APD2, oponiéndose o revocando su consentimiento.
+        </p>
+        <p>
+            <strong>5. ¿Qué datos del usuario tratará APD2?</strong>
+        </p>
+        <p>
+            APD2 tratará las siguientes categorías de datos:
+        </p>
+        <ul type="disc">
+            <li>
+                Datos identificativos: nombre, apellidos, documento nacional de
+                identidad o número de identidad de extranjero e imagen.
+            </li>
+            <li>
+                Datos de contacto: domicilio, teléfono fijo, teléfono móvil, dirección
+                de correo electrónico.
+            </li>
+            <li>
+                Datos de características personales: fecha de nacimiento, edad, sexo,
+                nacionalidad.
+            </li>
+            <li>
+                Datos bancarios: número de cuenta, titular, mandato SEPA.
+            </li>
+            <li>
+                Datos económicos, financieros y de seguros: ingresos y rentas.
+            </li>
+            <li>
+                Otros datos: datos facilitados por los propios interesados en los
+                campos abiertos de los formularios dispuestos en el Sitio Web.
+            </li>
+            <li>
+                Datos de navegación.
+            </li>
+        </ul>
+        <p>
+            En caso de que el usuario facilite datos de terceros, manifiesta contar con
+            el consentimiento de los mismos y se compromete a trasladar al interesado,
+            titular de dichos datos, la información contenida en la Política de
+            Privacidad, eximiendo a APD2 de cualquier responsabilidad en este sentido.
+            No obstante, APD2 podrá llevar a cabo las verificaciones necesarias para
+            constatar este hecho, adoptando las medidas de diligencia debida que
+            correspondan, conforme a la normativa de protección de datos.
+        </p>
+        <p>
+            <strong>6. Cookies, servicios de análisis web y redes sociales</strong>
+        </p>
+        <p>
+            Utilizamos cookies, servicios de análisis web y complementos de redes
+            sociales en nuestro sitio web para mejorar tu experiencia de navegación.
+        </p>
+        <p>
+            <strong>7. Cuál es la legitimación del tratamiento de tus datos?</strong>
+        </p>
+        <p>
+            El tratamiento de datos para la adquisición de productos por medio del
+            Sitio Web será necesario para el cumplimiento de la relación contractual
+            surgida entre el usuario y APD2.
+        </p>
+        <p>
+            El tratamiento de sus datos con fines de marketing, relativo a bienes y
+            servicios propios de APD2 y servicios análogos para sus clientes, se basará
+            en el interés legítimo reconocido por la normativa cuando el usuario haya
+            adquirido bienes y/o servicios de APD2. En caso no existir tal relación
+            contractual, el tratamiento de datos se basará en el consentimiento del
+            usuario recogido en la normativa actual vigente.
+        </p>
+        <p>
+            El tratamiento para las referidas finalidades, se realizará siempre previo
+            consentimiento del usuario o en base al referido interés legítimo, y será
+            necesario para la atención de su solicitud. Asimismo, en caso de retirar su
+            consentimiento a cualquiera de los tratamientos, ello no afectará a la
+            licitud de los tratamientos efectuados con anterioridad.
+        </p>
+        <p>
+            Para revocar dicho consentimiento, el Usuario podrá contactar con APD2 a
+            través de los canales siguientes: mediante carta dirigida al Departamento
+            de Protección de Datos de APD2 Iberia a la dirección C/ Riumende, 15 ,
+            08540 Centelles, Barcelona o bien haciendo click sobre el link de baja
+            automática disponible en cada comunicación comercial enviada por APD2 o
+            bien mediante correo electrónico dirigido a <a href="mailto:dpo@apd2.es"
+                                                           target="_blank">dpo@APD2.es</a>.
+        </p>
+        <p>
+            <strong>
+                8. ¿Con qué destinatarios se compartirán los datos del usuario?
+            </strong>
+        </p>
+        <p>
+            Los datos del usuario podrán ser comunicados a:
+        </p>
+        <ul type="disc">
+            <li>
+                Empresas del grupo al que pertenece APD2, que puedes consultar
+                <a
+                        href="https://www.mediamarkt.es/?gclid=CjwKCAjw8qjnBRA-EiwAaNvhwLi5Zjg5olTDijL1tmJduK3xaf63CSEk8jYUFQCruWY5AfTmjAI-HBoCgfwQAvD_BwE&amp;gclsrc=aw.ds#listado-sociedades"
+                >
+                    aquí
+                </a>
+                , únicamente para fines administrativos internos y/o para las
+                finalidades anteriormente indicadas.
+            </li>
+            <li>
+                Empresas del grupo al que pertenece APD2 para el envío de
+                comunicaciones comerciales sobre los productos y servicios ofertados
+                por las empresas que lo forman, siempre que el Usuario así lo haya
+                consentido.
+            </li>
+            <li>
+                Administraciones Públicas y autoridades nacionales y/o europeas
+                competentes, en los casos previstos por la Ley.
+            </li>
+        </ul>
+        <p>
+            Adicionalmente, los datos podrán ser accesibles por la entidad APD2Saturn
+            Retail Group GmbH y por proveedores de APD2, siendo dicho acceso el
+            necesario para el adecuado cumplimiento de las obligaciones legales y/o de
+            las finalidades anteriormente indicadas. Dichos proveedores no tratarán sus
+            datos para finalidades propias que no hayan sido previamente informadas por
+            APD2.
+        </p>
+        <p>
+            Los destinatarios indicados en el presente apartado pueden encontrarse
+            ubicados dentro o fuera del Espacio Económico Europeo, encontrándose en
+            este último caso debidamente legitimadas las transferencias internacionales
+            de datos.
+        </p>
+        <p>
+            <strong>9. Responsabilidad del usuario</strong>
+        </p>
+        <p>
+            El usuario:
+        </p>
+        <ul type="disc">
+            <li>
+                Garantiza que es mayor de dieciocho (18) años y que los datos que
+                facilita a APD2 son verdaderos, exactos, completos y actualizados. A
+                estos efectos, el usuario responde de la veracidad de todos los datos
+                que comunique y mantendrá convenientemente actualizada la información
+                facilitada, de tal forma que responda a su situación real.
+            </li>
+            <li>
+                Garantiza que ha informado a los terceros de los que facilite sus
+                datos, en caso de hacerlo, de los aspectos contenidos en este
+                documento. Asimismo, garantiza que ha obtenido su autorización para
+                facilitar sus datos a APD2 para los fines señalados.
+            </li>
+            <li>
+                Será responsable de las informaciones falsas o inexactas que
+                proporcione a través del Sitio Web y de los daños y perjuicios,
+                directos o indirectos, que ello cause a APD2 o a terceros.
+            </li>
+        </ul>
+        <p>
+            <strong>10. Comunicaciones comerciales y promocionales</strong>
+        </p>
+        <p>
+            Una de las finalidades para las que APD2 trata los datos personales
+            proporcionados por parte de los usuarios es para remitirles comunicaciones
+            electrónicas con información relativa a bienes, servicios, promociones,
+            ofertas, eventos o noticias relevantes para los usuarios. Siempre que se
+            realice alguna comunicación de este tipo, ésta será dirigida única y
+            exclusivamente a aquellos Usuarios que no hubieran manifestado previamente
+            su negativa a la recepción de las mismas.
+        </p>
+        <p>
+            Para llevar a cabo la labor anterior, APD2 podrá analizar los datos
+            obtenidos por las entidades que forman del grupo de empresas al que
+            pertenece APD2, a fin de elaborar perfiles de usuario que permitan definir
+            con mayor detalle los productos que puedan resultar de su interés.
+        </p>
+        <p>
+            En caso de que el usuario desee dejar de recibir comunicaciones comerciales
+            o promocionales por parte de APD2, puede solicitar la baja del servicio
+            haciendo click sobre el enlace habilitado a tales efectos en el propio
+            cuerpo de dichas comunicaciones comerciales o bien enviando un email a la
+            siguiente dirección de correo electrónico: <a href="mailto:dpo@mediamarkt.es"
+                                                          target="_blank">dpo@APD2.es</a> así como
+            indicando su negativa a la recepción de las mismas, a través de la casilla
+            así dispuesta en el formulario de recogida de sus datos o indicándolo
+            mediante la opción de baja proporcionada en cada una de las comunicaciones
+            comerciales enviadas.
+        </p>
+        <p>
+            <strong>11. Uso de la función de chat “atención al cliente”</strong>
+        </p>
+        <p>
+            Una de las posibilidades que te ofrecemos es la de "Chat de Atención al
+            Cliente" para que nuestro servicio sea aún más agradable para ti. A través
+            de este chat tienes la oportunidad de consultar antes de comprar en nuestro
+            sitio web. Todo el proceso de chat se realiza de forma totalmente anónima,
+            sin que se muestre tu nombre u otros datos personales. Con el fin de
+            mejorar constantemente la calidad de nuestro servicio al cliente en el
+            chat, registramos este historial para fines de análisis y mejora, de forma
+            totalmente anónima. Estos registros se eliminan una vez evaluados.
+        </p>
+        <p>
+            <strong>12. Ejercicio de derechos</strong>
+        </p>
+        <p>
+            El usuario puede enviar un escrito a APD2, a la dirección indicada en el
+            encabezado de la presente Política, o bien por medio de un correo
+            electrónico a la dirección <a href="mailto:dpo@mediamarkt.es" target="_blank">dpo@APD2.es</a>,
+            adjuntando fotocopia de su documento de identidad, en cualquier momento y
+            de manera gratuita, para:
+        </p>
+        <ul type="disc">
+            <li>
+                Revocar los consentimientos otorgados.
+            </li>
+            <li>
+                Obtener confirmación acerca de si en APD2 se están tratando datos
+                personales que conciernen al Usuario o no.
+            </li>
+            <li>
+                Acceder a sus datos personales.
+            </li>
+            <li>
+                Rectificar los datos inexactos o incompletos.
+            </li>
+            <li>
+                Solicitar la supresión de sus datos cuando, entre otros motivos, los
+                datos ya no sean necesarios para los fines que fueron recogidos.
+            </li>
+            <li>
+                Obtener de APD2 la limitación del tratamiento de los datos cuando se
+                cumpla alguna de las condiciones previstas en la normativa de
+                protección de datos.
+            </li>
+            <li>
+                Obtener intervención humana, a expresar tu punto de vista y a impugnar
+                las decisiones automatizadas a adoptadas por parte de APD2.
+            </li>
+            <li>
+                Solicitar la portabilidad de tus datos.
+            </li>
+            <li>
+                Ponerse en contacto con el DPO de APD2 a través de la siguiente
+                dirección: <a href="mailto:dpo@mediamarkt.es" target="_blank">dpo@APD2.es</a>
+            </li>
+            <li>
+                Interponer una reclamación relativa a la protección de sus datos
+                personales cuando el interesado considere que APD2 ha vulnerado los
+                derechos que le son reconocidos por la normativa aplicable en
+                protección de datos.
+            </li>
+        </ul>
+        <p>
+            <strong>13. Medidas de seguridad</strong>
+        </p>
+        <p>
+            APD2 tratará los datos del Usuario en todo momento de forma absolutamente
+            confidencial y guardando el secreto de los mismos, de conformidad con lo
+            previsto en la normativa de aplicación, adoptando al efecto las medidas de
+            índole técnico-organizativa necesarias que garanticen la seguridad de sus
+            datos y eviten su alteración, pérdida, tratamiento o acceso no autorizado,
+            habida cuenta del estado de la tecnología, la naturaleza de los datos
+            almacenados y los riesgos a que están expuestos.
+        </p>
+        <p>
+            <strong>14. Cambios en la política de privacidad</strong>
+        </p>
+        <p>
+            Para garantizar que nuestras directrices de protección de datos cumplan
+            siempre con los requisitos legales actuales, nos reservamos el derecho de
+            realizar cambios para estar siempre adecuados a la legislación vigente.
+        </p>
+    </div>
 
 </main>
 <footer>

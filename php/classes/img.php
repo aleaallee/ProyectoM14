@@ -82,8 +82,6 @@ class img {
             </form></td>";
       echo "</tr>";
     }
-
-
   }
 
   /**
@@ -153,7 +151,6 @@ class img {
    * @param $imgName
    */
   public static function removeFromFolder($imgName) {
-
     $current = getcwd();
     echo '<script language="javascript">';
     echo 'alert("'.$current.'1")';
@@ -177,6 +174,4 @@ class img {
       return true;
     }
   }
-
-
 }

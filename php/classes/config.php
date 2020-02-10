@@ -7,8 +7,8 @@ require_once('/home/apd25972/public_html/php/classes/log.php');
  * Class DB
  */
 class DB {
-  protected static $user = 'apd25972_remote';
-  protected static $password = 'aA123456789!';
+  protected static $user = 'fakeuser';
+  protected static $password = 'fakepasswd!';
 
   //variable de conexion
   protected static $con;
